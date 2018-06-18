@@ -1,0 +1,16 @@
+﻿{
+  "Descriptor": {
+    "UId": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+    "PackageVersion": "7.12.1",
+    "Name": "InfChangeModifications",
+    "ModifiedOnUtc": "\/Date(1529351042000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "abec5b07-3f41-4fcc-ba9d-0acf9bc03aa0",
+        "PackageVersion": "12.1.3",
+        "Name": "INF_Tools"
+      }
+    ]
+  }
+}
