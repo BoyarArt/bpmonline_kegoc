@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+    "Name": "InfFindPlannedViolationsProcess",
+    "ModifiedOnUtc": "\/Date(1529357518000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Изменения: поиск нарушений плановых сроков",
+    "DependsOn": []
+  }
+}

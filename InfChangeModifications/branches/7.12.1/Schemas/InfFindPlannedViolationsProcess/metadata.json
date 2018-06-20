@@ -1,0 +1,184 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessSchemaManager",
+      "UId": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+      "A2": "InfFindPlannedViolationsProcess",
+      "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+      "B1": [],
+      "B2": [],
+      "B3": [
+        {
+          "UId": "1ae3f7a5-a0d9-4cb1-afac-84ff9759356a",
+          "A2": "Terrasoft.Core.Process",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+          "GF1": "null"
+        },
+        {
+          "UId": "5a3bc2c6-11b2-4bf5-9ccf-4ca6924eafdd",
+          "A2": "Terrasoft.Core",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+          "GF1": "null"
+        }
+      ],
+      "B6": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+      "B8": "7.12.1.924",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "97fe1789-92b3-459f-ae2d-db3324f1dc5b",
+          "A2": "CurrentDate",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#SysVariable.CurrentDateTime#]",
+            "GS5": "380e6f4d-c4f6-4591-857e-a8fa970709f5"
+          }
+        }
+      ],
+      "IJ1": true,
+      "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+      "BK15": [],
+      "BK37": {
+        "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+        "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+        "A2": "NotificationCaption",
+        "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+        "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+        "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+        "L8": {
+          "GS1": 3,
+          "GS2": "[#[PropertyValue:Caption]#]"
+        }
+      },
+      "BK1": "FFFFFFFF",
+      "BK2": "FFBBBBBB",
+      "BK3": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaLaneSet",
+          "UId": "819686ec-fc03-478a-8fa1-1c92e1b69d1a",
+          "A2": "LaneSet1",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "BM1": 0,
+          "BM4": [
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
+              "UId": "8e3b41b4-1805-4f0e-8b9b-926c4e7ae3f1",
+              "A2": "Lane1",
+              "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+              "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+              "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+              "IL2": "819686ec-fc03-478a-8fa1-1c92e1b69d1a",
+              "BL7": "abcd74b9-5912-414b-82ac-f1aa4dcd554e",
+              "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+              "CD1": [],
+              "CD2": [],
+              "CD4": "819686ec-fc03-478a-8fa1-1c92e1b69d1a",
+              "CD7": []
+            }
+          ]
+        }
+      ],
+      "BK5": [],
+      "BK4": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaStartEvent",
+          "UId": "d57608bb-e672-43a6-8482-3274fedc2b30",
+          "A2": "StartEvent1",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "IL2": "8e3b41b4-1805-4f0e-8b9b-926c4e7ae3f1",
+          "BL3": "50;184",
+          "BL7": "53818048-7868-48f6-ada0-0ebaa65af628",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": [],
+          "ED1": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
+          "UId": "6c9c3f14-1bfc-4d4d-9d24-74038e916da0",
+          "A2": "TerminateEvent1",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "IL2": "8e3b41b4-1805-4f0e-8b9b-926c4e7ae3f1",
+          "BL3": "573;184",
+          "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": []
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaScriptTask",
+          "UId": "8b30a691-ec99-4d73-966f-7bbb9baf786e",
+          "A2": "ScriptTask1",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "IL2": "8e3b41b4-1805-4f0e-8b9b-926c4e7ae3f1",
+          "BL3": "277;170",
+          "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "BN2": "69;55",
+          "BO3": true,
+          "BP2": [],
+          "CL2": "FFFFFFFF",
+          "CH1": "UserConnection = UserConnection.AppConnection.SystemUserConnection;\nvar esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, \"Change\");\n\nstring idColumnName = esq.AddColumn(esq.RootSchema.GetPrimaryColumnName()).Name;\nvar OwnerColumnName = esq.AddColumn(\"[Contact:Id:Owner].Name\").Name;\nvar OwnerEmailColumnName = esq.AddColumn(\"[Contact:Id:Owner].Email\").Name;// ФИО ответственного\nesq.AddColumn(\"Owner\");\nesq.AddColumn(\"Number\"); // Номер изменения\nesq.AddColumn(\"ScheduledClosureDate\"); // Плановый срок завершения реализации\nesq.AddColumn(\"ScheduledStartDate\"); // Плановый срок начала реализации\nesq.AddColumn(\"ScheduledCustomerDate\"); // Плановый срок приемки заказчиком\nesq.AddColumn(\"ScheduledImplantationDate\"); // Плановый срок внедрения\n\nvar esqFirstFilter = esq.CreateFilterWithParameters(\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFilterComparisonType.Less,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ScheduledClosureDate\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrentDate\n\t\t\t\t\t\t\t\t\t\t\t\t\t);\nvar esqSecondFilter = esq.CreateFilterWithParameters(\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFilterComparisonType.Less,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ScheduledStartDate\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrentDate\n\t\t\t\t\t\t\t\t\t\t\t\t\t);\nvar esqThirdFilter = esq.CreateFilterWithParameters(\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFilterComparisonType.Less,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ScheduledCustomerDate\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrentDate\n\t\t\t\t\t\t\t\t\t\t\t\t\t);\nvar esqFourthFilter = esq.CreateFilterWithParameters(\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFilterComparisonType.Less,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ScheduledImplantationDate\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrentDate\n\t\t\t\t\t\t\t\t\t\t\t\t\t);\nesq.Filters.LogicalOperation = LogicalOperationStrict.Or;\nesq.Filters.Add(esqFirstFilter);\nesq.Filters.Add(esqSecondFilter);\nesq.Filters.Add(esqThirdFilter);\nesq.Filters.Add(esqFourthFilter);\n\nvar items = esq.GetEntityCollection(UserConnection);\nif (items.Count > 0) {\n\tforeach(var item in items) {\n\t\tvar ChangeId = item.GetTypedColumnValue<Guid>(idColumnName);\n\t\tvar OwnerId = item.GetTypedColumnValue<Guid>(\"OwnerId\");\n\t\tvar OwnerName = item.GetTypedColumnValue<string>(OwnerColumnName);\n\t\tvar OwnerEmail = item.GetTypedColumnValue<string>(OwnerEmailColumnName);\n\t\tvar Number = item.GetTypedColumnValue<string>(\"Number\");\n\t\tvar ScheduledClosureDate = item.GetTypedColumnValue<DateTime>(\"ScheduledClosureDate\");\n\t\tvar ScheduledStartDate = item.GetTypedColumnValue<DateTime>(\"ScheduledStartDate\");\n\t\tvar ScheduledCustomerDate = item.GetTypedColumnValue<DateTime>(\"ScheduledCustomerDate\");\n\t\tvar ScheduledImplantationDate = item.GetTypedColumnValue<DateTime>(\"ScheduledImplantationDate\");\n\t\t\n\t\tstring MessageText = \"Уважаемый \" + OwnerName + \".\\n Изменения №\" + Number + \" просрочены по следующим срокам:\\n\";\n\t\tif (DateTime.Compare(ScheduledClosureDate, CurrentDate) < 0) {\n\t\t\tMessageText += \"Плановый срок завершения реализации - \" + ScheduledClosureDate.ToString() + \"\\n\";\n\t\t}\n\t\tif (DateTime.Compare(ScheduledStartDate, CurrentDate) < 0) {\n\t\t\tMessageText += \"Плановый срок начала реализации - \" + ScheduledStartDate.ToString() + \"\\n\";\n\t\t}\n\t\tif (DateTime.Compare(ScheduledCustomerDate, CurrentDate) < 0) {\n\t\t\tMessageText += \"Плановый срок приемки заказчиком - \" + ScheduledCustomerDate.ToString() + \"\\n\";\n\t\t}\n\t\tif (DateTime.Compare(ScheduledImplantationDate, CurrentDate) < 0) {\n\t\t\tMessageText += \"Плановый срок внедрения - \" + ScheduledImplantationDate.ToString() + \"\\n\";\n\t\t}\n\t\t\n\t\tvar processSchemaManager = (ProcessSchemaManager)UserConnection.GetSchemaManager(@\"ProcessSchemaManager\");\n\t\tvar processSchema = processSchemaManager.GetInstanceByName(@\"KmChangeViolationEmailProcess\");\n\t\tvar process = processSchema.CreateProcess(UserConnection);\n\t\tprocess.SetPropertyValue(@\"MessageText\", MessageText);\n\t\tprocess.SetPropertyValue(@\"Recipient\", OwnerName + \" <\" + OwnerEmail + \">\");\n\t\tprocess.SetPropertyValue(@\"ChangeId\", OwnerId);\n\t\tprocess.SetPropertyValue(@\"RecipientId\", ChangeId);\n\t\tprocess.Execute(UserConnection);\n\t}\n}\nreturn true;"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "108a22b2-f0a4-4d8a-a627-f07bae20dfa8",
+          "A2": "SequenceFlow1",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "CI1": "d57608bb-e672-43a6-8482-3274fedc2b30",
+          "CI2": "8b30a691-ec99-4d73-966f-7bbb9baf786e",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI8": "-1;0"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "3f7584ea-54bb-40f3-be2e-d18ae3146d3c",
+          "A2": "SequenceFlow2",
+          "A3": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A4": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "380e6f4d-c4f6-4591-857e-a8fa970709f5",
+          "CI1": "8b30a691-ec99-4d73-966f-7bbb9baf786e",
+          "CI2": "6c9c3f14-1bfc-4d4d-9d24-74038e916da0",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI7": "1;0",
+          "CI8": "-1;0"
+        }
+      ],
+      "BK9": [],
+      "BK18": "Business Process",
+      "BK29": true,
+      "BK31": true,
+      "BK34": "null",
+      "BK24": []
+    }
+  }
+}

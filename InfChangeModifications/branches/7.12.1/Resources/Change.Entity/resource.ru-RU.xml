@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.ScheduledClosureDate.Caption" Value="Плановый срок завершения реализации" />
+			<Item Name="Columns.ScheduledCustomerDate.Caption" Value="Плановый срок приемки заказчиком" />
+			<Item Name="Columns.ScheduledImplantationDate.Caption" Value="Плановый срок внедрения" />
+			<Item Name="Columns.ScheduledStartDate.Caption" Value="Плановый срок начала реализации" />
+		</Items>
+	</Group>
+</Resources>

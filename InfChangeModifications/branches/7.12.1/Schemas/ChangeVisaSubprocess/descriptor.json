@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "75cab7ba-d5b8-4578-8b04-61911ac2e44b",
+    "Name": "ChangeVisaSubprocess",
+    "ModifiedOnUtc": "\/Date(1529472352000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Получение визы по изменению",
+    "DependsOn": []
+  }
+}
