@@ -4,6 +4,12 @@
 		<Items>
 			<Item Name="Caption" Value="Визы в разделе Изменение" />
 			<Item Name="Columns.Change.Caption" Value="Изменение" />
+			<Item Name="Columns.StageNumber.Caption" Value="Этап" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess3_15b5866cafe54e44840159290865b607.Caption" Value="Событийный подпроцесс 3" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask3_cfaec8b64fca4496aac41b16c2e72aab.Caption" Value="Log" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage3_788533b23e6944fe8a84ebc75c7b32df.Caption" Value="Saving" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet2_24503e8d1d6d483abf8716f21ed20cc5.Caption" Value="Пул 2" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet2_24503e8d1d6d483abf8716f21ed20cc5.Lanes.Lane1_c5e0dcf565fb40ff9463b16b455e7ae0.Caption" Value="Дорожка 1" />
 		</Items>
 	</Group>
 </Resources>

@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "dc8d283f-2d24-47ea-8966-73955ee277fe",
+    "Name": "VisaDetailV2",
+    "ModifiedOnUtc": "\/Date(1529784784000)\/",
+    "Parent": {
+      "UId": "98aea892-0cc5-4484-97a0-23e5927fc70e",
+      "Name": "VisaDetailV2"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "VisaDetailV2",
+    "DependsOn": []
+  }
+}

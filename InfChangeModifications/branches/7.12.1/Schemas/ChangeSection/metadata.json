@@ -93,5 +93,4 @@
 = MetaData.Schema.B8 "7.12.1.924"
 = MetaData.Schema.HD1 "01f0550c-6a65-456d-923f-2716583c8b7c"
 = MetaData.Schema.HD5 []
-- MetaData.Schema.HD12
 + MetaData.Schema.B7 true

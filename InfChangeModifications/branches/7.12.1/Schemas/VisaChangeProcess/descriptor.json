@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "577eefa8-2506-44b6-a4f7-57bcecfc74d6",
     "Name": "VisaChangeProcess",
-    "ModifiedOnUtc": "\/Date(1529472779000)\/",
+    "ModifiedOnUtc": "\/Date(1529614883000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Процесс визирования изменения",
     "DependsOn": []

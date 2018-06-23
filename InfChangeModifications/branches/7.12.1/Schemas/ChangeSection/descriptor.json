@@ -2,14 +2,14 @@
   "Descriptor": {
     "UId": "72f48ec3-2d30-498e-a4be-ee6159d561c1",
     "Name": "ChangeSection",
-    "ModifiedOnUtc": "\/Date(1529436012000)\/",
+    "ModifiedOnUtc": "\/Date(1529783688000)\/",
     "Parent": {
       "UId": "01f0550c-6a65-456d-923f-2716583c8b7c",
       "Name": "ChangeSection"
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Page schema - Changes section",
+    "Caption": "Схема раздела: \"Изменения\"",
     "DependsOn": []
   }
 }

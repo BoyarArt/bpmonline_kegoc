@@ -1,8 +1,18 @@
 define("ChangeSection", [], function() {
 	return {
 		entitySchemaName: "Change",
+		messages: {
+			"msgVisaMenuButtonClick": {
+				mode: Terrasoft.MessageMode.BROADCAST,
+				direction: Terrasoft.MessageDirectionType.PUBLISH
+			}
+		},
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
-		diff: /**SCHEMA_DIFF*/[]/**SCHEMA_DIFF*/,
-		methods: {}
+		methods: {
+			"getVisaGoal": function() {
+				this.sandbox.publish("msgVisaMenuButtonClick", null, ["ChangeVisaSandbox"]);
+			}
+		},
+		diff: /**SCHEMA_DIFF*/[]/**SCHEMA_DIFF*/
 	};
 });
