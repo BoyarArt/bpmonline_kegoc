@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Переход по фазам" />
+			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Stages.Stage1.Caption" Value="Регистрация" />
+			<Item Name="Stages.Stage2.Caption" Value="Первичный анализ" />
+			<Item Name="Stages.Stage3.Caption" Value="Реализация" />
+			<Item Name="Stages.Stage4.Caption" Value="Внедрение" />
+			<Item Name="Stages.Stage5.Caption" Value="Утверждение" />
+			<Item Name="Stages.Stage6.Caption" Value="PIR" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5d09a907-76bd-41bb-9a6a-178340669b9f",
+    "Name": "Case1",
+    "ModifiedOnUtc": "\/Date(1529854185000)\/",
+    "ManagerName": "DcmSchemaManager",
+    "Caption": "Переход по фазам",
+    "DependsOn": []
+  }
+}

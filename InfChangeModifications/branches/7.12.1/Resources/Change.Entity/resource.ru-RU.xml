@@ -2,6 +2,8 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.InfStatus.Caption" Value="Статус" />
+			<Item Name="Columns.Phase.Caption" Value="Фаза" />
 			<Item Name="Columns.ScheduledClosureDate.Caption" Value="Плановый срок завершения реализации" />
 			<Item Name="Columns.ScheduledCustomerDate.Caption" Value="Плановый срок приемки заказчиком" />
 			<Item Name="Columns.ScheduledImplantationDate.Caption" Value="Плановый срок внедрения" />

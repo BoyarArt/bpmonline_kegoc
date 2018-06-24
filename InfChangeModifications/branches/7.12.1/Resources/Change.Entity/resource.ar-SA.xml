@@ -2,7 +2,7 @@
 <Resources Culture="ar-SA">
 	<Group Type="String">
 		<Items>
-			<Item Name="EventsProcessSchema.Caption" Value="سيرورة العمل" />
+			<Item Name="Caption" Value="Change" />
 		</Items>
 	</Group>
 </Resources>
