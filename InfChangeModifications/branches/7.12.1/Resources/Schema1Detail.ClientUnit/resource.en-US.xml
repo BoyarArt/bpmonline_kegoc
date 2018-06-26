@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Схема детали: &quot;Изменения (диаграмма)&quot;" />
+			<Item Name="LocalizableStrings.DenyAccess.Value" Value="The package of the web service cannot be modified or you do not have permission to edit this web service. Copy this web service or modify the &quot;Current package&quot; system setting, or obtain corresponding permissions." />
+			<Item Name="LocalizableStrings.EmptyGrid.Value" Value="Add methods that bpm'online can call to trigger web service actions" />
+			<Item Name="LocalizableStrings.HttpMethodTypeColumnCaption.Value" Value="Type" />
+			<Item Name="LocalizableStrings.MethodNameColumnCaption.Value" Value="Name" />
+		</Items>
+	</Group>
+</Resources>

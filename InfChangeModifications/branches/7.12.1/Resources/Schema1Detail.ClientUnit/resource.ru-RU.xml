@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Схема детали: &quot;Изменения (диаграмма)&quot;" />
+			<Item Name="LocalizableStrings.DenyAccess.Value" Value="Пакет, в котором находится веб-сервис, недоступен для редактирования или у вас нет прав на редактирование этого веб-сервиса. Создайте копию этого веб-сервиса или измените системную настройку &quot;Текущий пакет&quot;, или получите необходимые права доступа." />
+			<Item Name="LocalizableStrings.EmptyGrid.Value" Value="Для выполнения действий веб-сервисом добавьте методы, которые будут вызываться из bpm'online" />
+			<Item Name="LocalizableStrings.HttpMethodTypeColumnCaption.Value" Value="Тип" />
+			<Item Name="LocalizableStrings.MethodNameColumnCaption.Value" Value="Название" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "661fad02-6806-4c60-88fc-b4accf1e49ae",
+    "Name": "Schema1Detail",
+    "ModifiedOnUtc": "\/Date(1529867106000)\/",
+    "Parent": {
+      "UId": "42abc2d4-95c4-41a8-9e1a-6ef73e786245",
+      "Name": "GlbGanttDetail"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Изменения (диаграмма)\"",
+    "DependsOn": []
+  }
+}

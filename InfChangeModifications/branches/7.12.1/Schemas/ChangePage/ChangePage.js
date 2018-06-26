@@ -102,11 +102,34 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					"masterColumn": "Id",
 					"detailColumn": "Change"
 				}
+			},
+			"GanttDiagramDetail": {
+				"schemaName": "Schema1Detail",
+				"entitySchemaName": "Change",
+				"filter": {
+					"detailColumn": "Id",
+					"masterColumn": "Id"
+				},
+				"customConfig": {
+					"displayColumn": "Number",
+					"endDateColumn": "ScheduledClosureDate",
+					"startDateColumn": "ScheduledStartDate"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
+			{
+				"operation": "insert",
+				"name": "GanttDiagramDetail",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "ClassificationTab",
+				"propertyName": "items"
+			},
 			{
 				"operation": "insert",
 				"parentName": "LeftContainer",
