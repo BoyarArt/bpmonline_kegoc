@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7f30e4e1-33de-4348-acd8-4f213caa0d77",
+    "Name": "Schema1Detail",
+    "ModifiedOnUtc": "\/Date(1529782786000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Попытки приостановки\"",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
+			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
+		</Items>
+	</Group>
+</Resources>

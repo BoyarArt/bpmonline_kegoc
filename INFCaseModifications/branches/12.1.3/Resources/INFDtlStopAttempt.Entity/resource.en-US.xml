@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Объект детали попытки приостановки" />
+			<Item Name="Columns.Case.Caption" Value="Обращение" />
+			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.CurrentDate.Caption" Value="Текущая дата" />
+			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
+			<Item Name="Columns.User.Caption" Value="Пользователь" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "5139874e-42b9-4480-bc7b-f315e63bc129",
+    "Name": "INFDtlStopAttempt1Page",
+    "ModifiedOnUtc": "\/Date(1529778355000)\/",
+    "Parent": {
+      "UId": "d3cc497c-f286-4f13-99c1-751c468733c0",
+      "Name": "BasePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Карточка схемы: \"Объект детали попытки приостановки\"",
+    "DependsOn": []
+  }
+}

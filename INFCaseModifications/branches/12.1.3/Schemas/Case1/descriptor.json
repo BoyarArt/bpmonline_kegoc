@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a8a5525f-4b95-4e4c-ad66-70d0fe6690ac",
+    "Name": "Case1",
+    "ModifiedOnUtc": "\/Date(1529406889000)\/",
+    "ManagerName": "DcmSchemaManager",
+    "Caption": "Стадии обращений",
+    "DependsOn": []
+  }
+}
