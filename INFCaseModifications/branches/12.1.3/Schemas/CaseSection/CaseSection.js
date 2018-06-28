@@ -128,7 +128,7 @@ define("CaseSection", [],
 						"name": "CloseButton",
 						"values": {
 							"itemType": Terrasoft.ViewItemType.BUTTON,
-							"caption": "Заклыть",
+							"caption": "Закрыть",
 							"click": {bindTo: "onCloseButtonClick"},
 							"style": Terrasoft.controls.ButtonEnums.style.GREEN,
 							"styles": {
