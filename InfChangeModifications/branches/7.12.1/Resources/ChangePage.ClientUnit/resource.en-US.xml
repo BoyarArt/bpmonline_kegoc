@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Postpone till" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="History of changes" />
 			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="More than one queue element connected to the process. Process Id: {0}" />
 			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-queue" />
 			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />

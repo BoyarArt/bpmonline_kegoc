@@ -104,7 +104,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				}
 			},
 			"GanttDiagramDetail": {
-				"schemaName": "Schema1Detail",
+				"schemaName": "ChangeDetail1",
 				"entitySchemaName": "Change",
 				"filter": {
 					"detailColumn": "Id",

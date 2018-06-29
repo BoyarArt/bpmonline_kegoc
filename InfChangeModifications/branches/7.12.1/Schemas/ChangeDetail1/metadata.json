@@ -1,5 +1,5 @@
 = MetaData.Schema.UId "661fad02-6806-4c60-88fc-b4accf1e49ae"
-= MetaData.Schema.A2 "Schema1Detail"
+= MetaData.Schema.A2 "ChangeDetail1"
 = MetaData.Schema.A5 "ac4f7f0f-d5d5-4e8b-997a-a2f7c46f033e"
 + MetaData.Schema.B2 {
   "UId": "ea09bd38-9528-47c6-885e-f27ca154cc08",
