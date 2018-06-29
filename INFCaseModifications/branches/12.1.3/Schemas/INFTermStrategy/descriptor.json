@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2d68f927-e2a0-46c6-87cb-499846336838",
+    "Name": "INFTermStrategy",
+    "ModifiedOnUtc": "\/Date(1530275509000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Расчет сроков",
+    "DependsOn": []
+  }
+}

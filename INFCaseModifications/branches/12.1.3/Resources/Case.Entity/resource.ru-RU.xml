@@ -2,9 +2,15 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
+			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
+			<Item Name="Columns.TechService.Caption" Value="Технический сервис" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Caption" Value="Пул 3" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Lanes.Lane4_0f92d505d2a14efb9f0b8084e855ae91.Caption" Value="Дорожка 4" />
 		</Items>
 	</Group>
 </Resources>

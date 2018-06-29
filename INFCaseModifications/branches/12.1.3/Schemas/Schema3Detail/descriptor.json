@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "ba0897e0-d4cb-4082-b100-0e945fbbb86c",
+    "Name": "Schema3Detail",
+    "ModifiedOnUtc": "\/Date(1530179697000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Целевой уровень сервиса\"",
+    "DependsOn": []
+  }
+}

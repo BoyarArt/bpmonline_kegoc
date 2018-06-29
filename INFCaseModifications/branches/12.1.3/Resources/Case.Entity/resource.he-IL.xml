@@ -2,7 +2,7 @@
 <Resources Culture="he-IL">
 	<Group Type="String">
 		<Items>
-			<Item Name="EventsProcessSchema.Caption" Value="תהליך עסקי" />
+			<Item Name="Caption" Value="Case" />
 		</Items>
 	</Group>
 </Resources>

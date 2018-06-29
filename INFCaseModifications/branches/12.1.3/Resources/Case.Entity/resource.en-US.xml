@@ -2,33 +2,15 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
+			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.Active.Caption" Value="Active action" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.Author.Caption" Value="Created by" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.Contact.Caption" Value="Recipient" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.Description.Caption" Value="Notification notes" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.IsListSubjectReminds.Caption" Value="Work with several notifications for object" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.IsSubjectDelete.Caption" Value="Notification record is deleted" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.NotificationType.Caption" Value="Type of notifications" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.PopupTitle.Caption" Value="PopupTitle" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.RemindTime.Caption" Value="Time of notification" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.Source.Caption" Value="Recipient role in object" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.SubjectPrimaryColumnValue.Caption" Value="Notification object" />
-			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.SysEntitySchema.Caption" Value="Object containing record being notified about" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.Active.Caption" Value="Active action" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.Author.Caption" Value="Created by" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.Contact.Caption" Value="Recipient" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.Description.Caption" Value="Notification notes" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.IsListSubjectReminds.Caption" Value="Work with several notifications for object" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.IsSubjectDelete.Caption" Value="Notification record is deleted" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.NotificationType.Caption" Value="Type of notifications" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.PopupTitle.Caption" Value="PopupTitle" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.RemindTime.Caption" Value="Time of notification" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.Source.Caption" Value="Recipient role in object" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.SubjectPrimaryColumnValue.Caption" Value="Notification object" />
-			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.SysEntitySchema.Caption" Value="Object containing record being notified about" />
+			<Item Name="Columns.TechService.Caption" Value="Технический сервис" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Caption" Value="Pool 3" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Lanes.Lane4_0f92d505d2a14efb9f0b8084e855ae91.Caption" Value="Lane 4" />
 		</Items>
 	</Group>
 </Resources>

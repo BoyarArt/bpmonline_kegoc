@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "440d6198-587b-405a-893d-a5b0464ec1b7",
+    "Name": "ServiceItemPage",
+    "ModifiedOnUtc": "\/Date(1530185770000)\/",
+    "Parent": {
+      "UId": "f14c93b3-06c4-48ae-bb2a-2092645614ad",
+      "Name": "ServiceItemPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "ServiceItemPage",
+    "DependsOn": []
+  }
+}

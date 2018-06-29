@@ -78,6 +78,72 @@ define("CasePage", [], function() {
 						"methodName": "changeDetailSender"
 					}
 				]
+			},
+			"BusinessService": {
+				lookupListConfig: {
+					filter: function() {
+						var filterGroup = new this.Terrasoft.createFilterGroup();
+						if (this.get("ServicePact") == null) {
+							filterGroup.add(
+								"ServiceItemByNULL",
+								this.Terrasoft.createColumnFilterWithParameter(
+									Terrasoft.ComparisonType.EQUAL,
+									"Id",
+									Terrasoft.GUID_EMPTY
+								)
+							);
+							return filterGroup;
+						}
+						filterGroup.add("INFBisServiceByServicePact", this.Terrasoft.createColumnFilterWithParameter(
+							this.Terrasoft.ComparisonType.EQUAL,
+							"[ServiceInServicePact:ServiceItem:Id].ServicePact", this.get("ServicePact").value));
+						return filterGroup;
+					}
+				}
+			},
+			"ServiceItem": {
+				columns: ["ServiceItem"],
+				lookupListConfig: {
+					filter: function() {
+						var filterGroup = new this.Terrasoft.createFilterGroup();
+						filterGroup.add(
+						"BusinessServiceFilter",
+							this.Terrasoft.createColumnFilterWithParameter(
+								Terrasoft.ComparisonType.EQUAL,
+								"[ServiceRelationship:ServiceItemA:Id].[ServiceItem:Id:ServiceItemB]." +
+								"[ServiceInServicePact:ServiceItem:Id].ServiceItem",
+								this.get("BusinessService").value
+							)
+						);
+						
+						filterGroup.add(
+						"ServicePactFilter",
+							this.Terrasoft.createColumnFilterWithParameter(
+								Terrasoft.ComparisonType.EQUAL,
+								"[ServiceRelationship:ServiceItemA:Id].[ServiceItem:Id:ServiceItemB]." +
+								"[ServiceInServicePact:ServiceItem:Id].ServicePact",
+								this.get("ServicePact").value
+							)
+						);
+						return filterGroup;
+					}
+				}
+			},
+			"TechService": {
+				lookupListConfig: {
+					filter: function() {
+						var filterGroup = new this.Terrasoft.createFilterGroup();
+						filterGroup.add(
+						"ServiceBizItemFilter",
+							this.Terrasoft.createColumnFilterWithParameter(
+								Terrasoft.ComparisonType.EQUAL,
+								"[ServiceRelationship:ServiceItemA:Id].ServiceItemB",
+								this.get("ServiceItem").value
+							)
+						);
+						return filterGroup;
+					}
+				}
 			}
 		},
 		details: /**SCHEMA_DETAILS*/{
@@ -101,6 +167,264 @@ define("CasePage", [], function() {
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
+			{
+				"operation": "insert",
+				"name": "ToWorkButton",
+				"values": {
+					"itemType": 5,
+					"caption": "Взять в работу",
+					"click": {
+						"bindTo": "onToWorkButtonClick"
+					},
+					"style": "green",
+					"styles": {
+						"textStyle": {
+							"margin-left": "5px",
+							"margin-right": "5px"
+						}
+					},
+					"enabled": {
+						"bindTo": "isToWorkButtonVisible"
+					},
+					"visible": {
+						"bindTo": "isToWorkButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "StopButton",
+				"values": {
+					"itemType": 5,
+					"caption": "Приостановить",
+					"click": {
+						"bindTo": "onStopButtonClick"
+					},
+					"style": "green",
+					"styles": {
+						"textStyle": {
+							"margin-left": "5px",
+							"margin-right": "5px"
+						}
+					},
+					"enabled": {
+						"bindTo": "isStopButtonVisible"
+					},
+					"visible": {
+						"bindTo": "isStopButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 11
+			},
+			{
+				"operation": "insert",
+				"name": "AppointToGroupButton",
+				"values": {
+					"itemType": 5,
+					"caption": "Направить в группу",
+					"click": {
+						"bindTo": "onAppointToGroupButtonClick"
+					},
+					"style": "green",
+					"styles": {
+						"textStyle": {
+							"margin-left": "5px",
+							"margin-right": "5px"
+						}
+					},
+					"enabled": {
+						"bindTo": "isAppointToGroupButtonVisible"
+					},
+					"visible": {
+						"bindTo": "isAppointToGroupButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 12
+			},
+			{
+				"operation": "insert",
+				"name": "DoButton",
+				"values": {
+					"itemType": 5,
+					"caption": "Выполнить",
+					"click": {
+						"bindTo": "onDoButtonClick"
+					},
+					"style": "green",
+					"styles": {
+						"textStyle": {
+							"margin-left": "5px",
+							"margin-right": "5px"
+						}
+					},
+					"enabled": {
+						"bindTo": "isDoButtonVisible"
+					},
+					"visible": {
+						"bindTo": "isDoButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 13
+			},
+			{
+				"operation": "insert",
+				"name": "ToCloseButton",
+				"values": {
+					"itemType": 5,
+					"caption": "Закрыть",
+					"click": {
+						"bindTo": "onCloseButtonClick"
+					},
+					"style": "green",
+					"styles": {
+						"textStyle": {
+							"margin-left": "5px",
+							"margin-right": "5px"
+						}
+					},
+					"enabled": {
+						"bindTo": "isCloseButtonVisible"
+					},
+					"visible": {
+						"bindTo": "isCloseButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 14
+			},
+			{
+				"operation": "merge",
+				"name": "ServicePact",
+				"values": {
+					"contentType": 5,
+					"enabled": true
+				}
+			},
+			{
+				"operation": "move",
+				"name": "ServicePact",
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUP4956359c-cdf4-4fc4-8c3f-277610c7ad6b",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "BusinessService",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "merge",
+				"name": "ServiceItem",
+				"values": {
+					"enabled": true,
+					"contentType": 5
+				}
+			},
+			{
+				"operation": "move",
+				"name": "ServiceItem",
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUPe7771ef2-284e-4208-ac62-807a2513b7cc",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 7,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "TechService",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "merge",
+				"name": "CaseCategory",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 8
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "ConfItem",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 9
+					}
+				}
+			},
+			{
+				"operation": "move",
+				"name": "ConfItem",
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "merge",
+				"name": "CaseGroup",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 10
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "CaseOwner",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 11
+					}
+				}
+			},
 			{
 				"operation": "insert",
 				"name": "Schema2Detailb9e8651d",
@@ -227,6 +551,10 @@ define("CasePage", [], function() {
 			},
 			{
 				"operation": "remove",
+				"name": "CasePriority"
+			},
+			{
+				"operation": "remove",
 				"name": "CaseAssignToMeButton"
 			},
 			{
@@ -240,34 +568,6 @@ define("CasePage", [], function() {
 			{
 				"operation": "remove",
 				"name": "CaseCreatedOnValue"
-			},
-			{
-				"operation": "move",
-				"name": "ResoluitonContainer",
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "move",
-				"name": "ServiceItem",
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "move",
-				"name": "ConfItem",
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 7
-			},
-			{
-				"operation": "move",
-				"name": "ServicePact",
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 4
 			},
 			{
 				"operation": "move",
@@ -289,106 +589,6 @@ define("CasePage", [], function() {
 				"parentName": "TermsControlGroup_GridLayout",
 				"propertyName": "items",
 				"index": 3
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "ToWorkButton",
-				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
-					"caption": "Взять в работу",
-					"click": {bindTo: "onToWorkButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
-					"styles": {
-						"textStyle": {
-							"margin-left": "5px",
-							"margin-right": "5px"
-						}
-					},
-					"enabled": {bindTo: "isToWorkButtonVisible"},
-					"visible": {bindTo: "isToWorkButtonVisible"}
-				}
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "StopButton",
-				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
-					"caption": "Приостановить",
-					"click": {bindTo: "onStopButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
-					"styles": {
-						"textStyle": {
-							"margin-left": "5px",
-							"margin-right": "5px"
-						}
-					},
-					"enabled": {bindTo: "isStopButtonVisible"},
-					"visible": {bindTo: "isStopButtonVisible"}
-				}
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "AppointToGroupButton",
-				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
-					"caption": "Направить в группу",
-					"click": {bindTo: "onAppointToGroupButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
-					"styles": {
-						"textStyle": {
-							"margin-left": "5px",
-							"margin-right": "5px"
-						}
-					},
-					"enabled": {bindTo: "isAppointToGroupButtonVisible"},
-					"visible": {bindTo: "isAppointToGroupButtonVisible"}
-				}
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "DoButton",
-				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
-					"caption": "Выполнить",
-					"click": {bindTo: "onDoButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
-					"styles": {
-						"textStyle": {
-							"margin-left": "5px",
-							"margin-right": "5px"
-						}
-					},
-					"enabled": {bindTo: "isDoButtonVisible"},
-					"visible": {bindTo: "isDoButtonVisible"}
-				}
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "ToCloseButton",
-				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
-					"caption": "Закрыть",
-					"click": {bindTo: "onCloseButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
-					"styles": {
-						"textStyle": {
-							"margin-left": "5px",
-							"margin-right": "5px"
-						}
-					},
-					"enabled": {bindTo: "isCloseButtonVisible"},
-					"visible": {bindTo: "isCloseButtonVisible"}
-				}
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
@@ -550,6 +750,65 @@ define("CasePage", [], function() {
 								"type": 0,
 								"value": "7e9f1204-f46b-1410-fb9a-0050ba5d6c38",
 								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"ServiceItem": {
+				"BindingServiceItemToOriginalServiceItem": {
+					"uId": "a92ecd18-b0fc-43b9-ad13-51b637ba349d",
+					"enabled": false,
+					"ruleType": 0,
+					"property": 1,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 1,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "OriginalServiceItem"
+							}
+						}
+					]
+				},
+				"BindingServiceItemToServicePact": {
+					"uId": "998bd75d-beb4-454e-8213-f1f9cd7ac9fd",
+					"enabled": false,
+					"ruleType": 0,
+					"property": 1,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 2,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "ServicePact"
+							}
+						},
+						{
+							"comparisonType": 1,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "OriginalServiceItem"
+							}
+						}
+					]
+				}
+			},
+			"ServicePact": {
+				"EnableServicePactOnAdd": {
+					"uId": "b6405675-ddd0-4451-acab-f13904be9423",
+					"enabled": false,
+					"ruleType": 0,
+					"property": 1,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 1,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "OriginalServiceItem"
 							}
 						}
 					]

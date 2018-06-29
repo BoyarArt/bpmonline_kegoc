@@ -2,7 +2,7 @@
 <Resources Culture="fa-IR">
 	<Group Type="String">
 		<Items>
-			<Item Name="EventsProcessSchema.Caption" Value="فرایند تجاری" />
+			<Item Name="Caption" Value="Case" />
 		</Items>
 	</Group>
 </Resources>

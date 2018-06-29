@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Целевой уровень сервиса" />
+			<Item Name="Columns.ChangeTimeUnit.Caption" Value="Время согласования изменения" />
+			<Item Name="Columns.ChangeTimeValue.Caption" Value="Значение времени выполнения" />
+			<Item Name="Columns.IncidentTimeUnit.Caption" Value="Единица времени выполнения" />
+			<Item Name="Columns.IncidentTimeValue.Caption" Value="Значение времени выполнения" />
+			<Item Name="Columns.ITService.Caption" Value="ИТ услуга" />
+			<Item Name="Columns.RequestTimeUnit.Caption" Value="Время исполнения запроса на обслуживание" />
+			<Item Name="Columns.RequestTimeValue.Caption" Value="Значение времени выполнения" />
+			<Item Name="Columns.ServicePact.Caption" Value="Сервисный договор" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

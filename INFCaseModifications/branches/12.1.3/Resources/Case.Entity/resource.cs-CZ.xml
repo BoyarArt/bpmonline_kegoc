@@ -2,7 +2,7 @@
 <Resources Culture="cs-CZ">
 	<Group Type="String">
 		<Items>
-			<Item Name="EventsProcessSchema.Caption" Value="Byznys proces" />
+			<Item Name="Caption" Value="Case" />
 		</Items>
 	</Group>
 </Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c840eeb3-ebde-4ac1-89c2-07141ae6913c",
+    "Name": "INFCaseTermStrategyByINFslo",
+    "ModifiedOnUtc": "\/Date(1530275468000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "INFCaseTermStrategyByINFslo",
+    "DependsOn": []
+  }
+}
