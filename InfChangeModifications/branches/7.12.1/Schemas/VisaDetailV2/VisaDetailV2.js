@@ -7,8 +7,38 @@ define("VisaDetailV2",
 				SecurityUtilitiesMixin: "Terrasoft.SecurityUtilitiesMixin"
 			},
 			methods: {
+				addToolsButtonMenuItems: function(toolsButtonMenu) {
+					this.addRecordOperationsMenuItems(toolsButtonMenu);
+					
+					var isPortalUser = this.Terrasoft.CurrentUser.userType === this.Terrasoft.UserType.SSP;
+					if (!isPortalUser) {
+						this.addGridOperationsMenuItems(toolsButtonMenu);
+						this.addDetailWizardMenuItems(toolsButtonMenu);
+					}
+				},
 				addRecordOperationsMenuItems: function(toolsButtonMenu) {
-					this.callParent(arguments);
+					var isPortalUser = this.Terrasoft.CurrentUser.userType === this.Terrasoft.UserType.SSP;
+					if (!isPortalUser) {
+						this.callParent(arguments);
+					} else {
+						toolsButtonMenu.addItem(this.getButtonMenuSeparator());
+						toolsButtonMenu.addItem(this.getButtonMenuItem({
+							Caption: {"bindTo": "Resources.Strings.Approve"},
+							Click: {"bindTo": "approve"},
+							Enabled: {bindTo: "getEditRecordButtonEnabled"}
+						}));
+						toolsButtonMenu.addItem(this.getButtonMenuItem({
+							Caption: {"bindTo": "Resources.Strings.Reject"},
+							Click: {"bindTo": "reject"},
+							Enabled: {bindTo: "getEditRecordButtonEnabled"}
+						}));
+						toolsButtonMenu.addItem(this.getButtonMenuItem({
+							Caption: {"bindTo": "Resources.Strings.ChangeVisaOwner"},
+							Click: {"bindTo": "changeVizier"},
+							Enabled: {bindTo: "setEnableVisaOwnerMenuActions"}
+						}));
+					}
+					
 					toolsButtonMenu.addItem(this.getButtonMenuItem({
 						Caption: "Отменить",
 						Click: {"bindTo": "cancelVisa"},

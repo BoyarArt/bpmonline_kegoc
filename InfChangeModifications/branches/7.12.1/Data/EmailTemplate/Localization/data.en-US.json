@@ -5,6 +5,44 @@
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "ColumnName": "Id",
+          "Value": "f98dec66-d4a7-4901-a9ae-3e36101135bf"
+        },
+        {
+          "SchemaColumnUId": "ca53e2c8-0767-4f2c-8a18-2ee5821f134e",
+          "ColumnName": "Name",
+          "Value": "Виза на сотрудника (US, RU)"
+        },
+        {
+          "SchemaColumnUId": "b4972436-c042-4a3b-a025-f04575f10532",
+          "ColumnName": "TemplateConfig",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "71a2cbc8-81d6-43f7-b3c6-54e7cd5479d8"
+        },
+        {
+          "SchemaColumnUId": "ca53e2c8-0767-4f2c-8a18-2ee5821f134e",
+          "ColumnName": "Name",
+          "Value": "Виза на портального юзера (US, RU)"
+        },
+        {
+          "SchemaColumnUId": "b4972436-c042-4a3b-a025-f04575f10532",
+          "ColumnName": "TemplateConfig",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
           "Value": "0767b3e3-c5c8-4522-b0cb-81f57fc713f3"
         },
         {

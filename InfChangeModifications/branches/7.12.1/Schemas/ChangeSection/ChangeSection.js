@@ -77,6 +77,18 @@ define("ChangeSection", [], function() {
 					}.bind(this),
 					["ButtonVisibilityMessageKey_Change"]
 				);
+				
+				var isPortalUser = this.Terrasoft.CurrentUser.userType === this.Terrasoft.UserType.SSP;
+				if (isPortalUser) {
+					this.set("IsAddRecordButtonVisible", false);
+				}
+			},
+			isSeparateModeActionsButtonVisible: function() {
+				var isPortalUser = this.Terrasoft.CurrentUser.userType === this.Terrasoft.UserType.SSP;
+				if (isPortalUser) {
+					return false;
+				}
+				return true;
 			},
 			setButtonVisible: function(items) {
 				for (var item in items) {

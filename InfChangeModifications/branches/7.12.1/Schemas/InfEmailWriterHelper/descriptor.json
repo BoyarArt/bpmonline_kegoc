@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "067389b3-54bd-492d-bfb4-b32577943c4b",
+    "Name": "InfEmailWriterHelper",
+    "ModifiedOnUtc": "\/Date(1530558889000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "InfEmailWriterHelper",
+    "DependsOn": []
+  }
+}

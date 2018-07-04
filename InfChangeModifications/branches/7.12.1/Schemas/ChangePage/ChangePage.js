@@ -907,12 +907,12 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					"4"
 				);
 				FilterGroup.addItem(filterUnitType);
-				var filterRoleType = this.Terrasoft.createColumnFilterWithParameter(
+				/* filterRoleType = this.Terrasoft.createColumnFilterWithParameter(
 					this.Terrasoft.ComparisonType.NOT_EQUAL,
 					"[SysUserInRole:SysUser:Id].[SysAdminUnit:Id:SysRole].Id",
 					"720b771c-e7a7-4f31-9cfb-52cd21c3739f" //все пользователи портала
 				);
-				FilterGroup.addItem(filterRoleType);
+				FilterGroup.addItem(filterRoleType);*/
 				//Конфигурационный объект
 				var config = {
 					// Название схемы объекта, записи которого будут отображены в справочнике.

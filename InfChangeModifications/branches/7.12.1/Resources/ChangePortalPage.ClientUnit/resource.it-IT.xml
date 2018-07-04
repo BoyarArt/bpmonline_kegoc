@@ -2,16 +2,23 @@
 <Resources Culture="it-IT">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Edit page schema - Changes section" />
+			<Item Name="Caption" Value="BaseModulePageV2 (ESN)" />
 			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Rinvia fino al" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
 			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Più di un elemento della coda collegato al rocesso. Id processo {0}" />
+			<Item Name="LocalizableStrings.NotesAndFilesTabCaption.Value" Value="Attachments and notes" />
+			<Item Name="LocalizableStrings.NotesGroupCaption.Value" Value="Notes" />
 			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Ri-accoda" />
 			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Impossibile ri-accodare l'elemento. Messaggio di errore: {0}" />
 			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="La pagina non è collegata all'elemento della coda del desktop agente. Azione annullata." />
 			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Impossibile ri-accodare l'elemento" />
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Ri-accodato con successo" />
-			<Item Name="LocalizableStrings.ReleaseCaption.Caption" Value="Rilascio" />
-			<Item Name="LocalizableStrings.ReleaseCaption.Value" Value="Rilascio" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Segui il feed" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="Stai ora seguendo il feed: {0}" />
+			<Item Name="LocalizableStrings.TabVisaCaption.Value" Value="Approvazioni" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Linea temporale" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Smetti di seguire il feed" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="Hai smesso di seguire il feed: {0}" />
 		</Items>
 	</Group>
 </Resources>

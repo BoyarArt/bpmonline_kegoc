@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "39202293-03cf-460a-83c0-aa820da8e41a",
+    "Name": "InfEmailWriterHelper_Register",
+    "DBEngineType": 0,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1530559108000)\/",
+    "DependsOn": []
+  }
+}
