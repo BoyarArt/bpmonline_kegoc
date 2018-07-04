@@ -89,7 +89,7 @@
 			<Item Name="Parameters.itservice.Caption" Value="Услуга" />
 			<Item Name="Parameters.Reaction.Caption" Value="Reaction" />
 			<Item Name="Parameters.RegTime.Caption" Value="RegTime" />
-			<Item Name="Parameters.RegTime.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Дата и время последнего направления в группу#].ToString()" />
+			<Item Name="Parameters.RegTime.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Дата регистрации#].ToString()" />
 			<Item Name="Parameters.Solution.Caption" Value="Solution" />
 			<Item Name="Parameters.str.Caption" Value="str" />
 			<Item Name="Parameters.TimeInPause.Caption" Value="TimeInPause" />
