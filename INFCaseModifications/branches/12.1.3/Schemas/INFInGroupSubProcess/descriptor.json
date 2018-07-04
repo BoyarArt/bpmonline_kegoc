@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8470d767-3cc7-4abf-a709-9bbd4ecd27cf",
+    "Name": "INFInGroupSubProcess",
+    "ModifiedOnUtc": "\/Date(1530373273000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Подпроцесс отправки уведомления при назначении в группу (INF)",
+    "DependsOn": []
+  }
+}

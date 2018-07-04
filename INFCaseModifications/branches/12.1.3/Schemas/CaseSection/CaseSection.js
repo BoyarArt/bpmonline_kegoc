@@ -137,8 +137,8 @@ define("CaseSection", [],
 									"margin-right": "5px"
 								}
 							},
-							"enabled": {bindTo: "isCloseButtonVisible"},
-							"visible": {bindTo: "isCloseButtonVisible"}
+							"enabled": false,
+							"visible": false
 						}
 					}
 				]/**SCHEMA_DIFF*/,

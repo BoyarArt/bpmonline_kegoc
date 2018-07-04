@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ChangeDataUserTask2.Caption" Value="Изменить даты в обращении - Копия" />
+			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
+			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.EntitySchemaUId.Caption" Value="Объект" />
+			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.Caption" Value="Если объект соответствует условиям" />
+			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
+			<Item Name="BaseElements.FormulaTask1.Caption" Value="Формула" />
+			<Item Name="BaseElements.IntermediateCatchTimer1.Caption" Value="Обработка таймера" />
+			<Item Name="BaseElements.IntermediateCatchTimer1.Parameters.StartOffset.Caption" Value="Стартовать через (сек.)" />
+			<Item Name="BaseElements.IntermediateCatchTimer1.Parameters.StartOffset.DisplayValue" Value="1" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="TimeTerms" />
+			<Item Name="Caption" Value="Расчет плановых сроков" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.CaseCategory.Caption" Value="Category" />
+			<Item Name="Parameters.CaseId.Caption" Value="CaseId" />
+			<Item Name="Parameters.CategoryName.Caption" Value="Название категории" />
+			<Item Name="Parameters.Group.Caption" Value="Группа" />
+			<Item Name="Parameters.Index.Caption" Value="index" />
+			<Item Name="Parameters.itservice.Caption" Value="ИТ услуга" />
+			<Item Name="Parameters.Reaction.Caption" Value="Reaction" />
+			<Item Name="Parameters.RegOn.Caption" Value="RegOn" />
+			<Item Name="Parameters.RegTime.Caption" Value="RegTime" />
+			<Item Name="Parameters.Solution.Caption" Value="Solution" />
+			<Item Name="Parameters.str.Caption" Value="str" />
+			<Item Name="Parameters.TimeInPause.Caption" Value="TimeInPause" />
+			<Item Name="Parameters.TimeInPause.DisplayValue" Value="0" />
+		</Items>
+	</Group>
+</Resources>

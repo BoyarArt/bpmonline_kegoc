@@ -1,4 +1,7 @@
-define("CasePage", [], function() {
+define("CasePage", ["BusinessRuleModule", "ConfigurationConstants",
+"ProcessModuleUtilities", "CaseServiceUtility", "ServiceHelper", "CasesEstimateLabel", "ServiceDeskConstants"],
+function(BusinessRuleModule, ConfigurationConstants, ProcessModuleUtilities,
+CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 	return {
 		entitySchemaName: "Case",
 		messages: {
@@ -20,6 +23,11 @@ define("CasePage", [], function() {
 			}
 		},
 		attributes: {
+			"isGroupEnabled": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
 			"isToWorkButtonVisible": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
@@ -76,6 +84,15 @@ define("CasePage", [], function() {
 					{
 						"columns": ["Category"],
 						"methodName": "changeDetailSender"
+					}
+				]
+			},
+			"Status": {
+				"dataValueType": Terrasoft.DataValueType.LOOKUP,
+				"dependencies": [
+					{
+						"columns": ["Status"],
+						"methodName": "onStatusChanged"
 					}
 				]
 			},
@@ -291,12 +308,8 @@ define("CasePage", [], function() {
 							"margin-right": "5px"
 						}
 					},
-					"enabled": {
-						"bindTo": "isCloseButtonVisible"
-					},
-					"visible": {
-						"bindTo": "isCloseButtonVisible"
-					}
+					"enabled": false,
+					"visible": false
 				},
 				"parentName": "LeftContainer",
 				"propertyName": "items",
@@ -410,6 +423,9 @@ define("CasePage", [], function() {
 						"rowSpan": 1,
 						"column": 0,
 						"row": 10
+					},
+					"enabled": {
+						"bindTo": "isGroupEnabled"
 					}
 				}
 			},
@@ -550,6 +566,158 @@ define("CasePage", [], function() {
 				"index": 1
 			},
 			{
+				"operation": "insert",
+				"name": "Tab2c83318cTabLabelGroupbdb2efee",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.Tab2c83318cTabLabelGroupbdb2efeeGroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "Tab2c83318cTabLabel",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "Tab2c83318cTabLabelGroupbdb2efee",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "INFPauseTime7c43e609-3331-4bf1-bedb-2ba6457c8ccc",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+					},
+					"bindTo": "INFPauseTime",
+					"enabled": false
+				},
+				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "INFPause100c9d31-2371-4644-b34f-44c9915fc21d",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 0,
+						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+					},
+					"bindTo": "INFPause",
+					"enabled": false
+				},
+				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "INFPauseTimeOutc1324e79-186e-4d1b-afa4-7e858383612f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1,
+						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+					},
+					"bindTo": "INFPauseTimeOut",
+					"enabled": false
+				},
+				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "INFPauseMina04499ff-811d-47b2-8cbc-ff435f1bf4c8",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 1,
+						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+					},
+					"bindTo": "INFPauseMin",
+					"enabled": false
+				},
+				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "merge",
+				"name": "ResponseCaptionContainer",
+				"values": {
+					"layout": {
+						"colSpan": 6,
+						"rowSpan": 1,
+						"column": 4,
+						"row": 4
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "SolutionCaptionContainer",
+				"values": {
+					"layout": {
+						"colSpan": 6,
+						"rowSpan": 1,
+						"column": 16,
+						"row": 4
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "ClosureDate",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5
+					}
+				}
+			},
+			{
+				"operation": "insert",
+				"name": "INFLastTimeInGroupb90b6c79-6a84-4af4-8281-6985eda9646c",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "TermsControlGroup_GridLayout"
+					},
+					"bindTo": "INFLastTimeInGroup",
+					"enabled": false
+				},
+				"parentName": "TermsControlGroup_GridLayout",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
 				"operation": "remove",
 				"name": "CasePriority"
 			},
@@ -592,12 +760,61 @@ define("CasePage", [], function() {
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			onStatusChanged: function() {
+				var currentState = this.get("Status").displayValue;
+				if (currentState === "В работе") {
+					this.set("isGroupEnabled", true);
+					this.setCurrentUser();
+				} else if (currentState === "Направлено в группу") {
+					this.cleanOwner();
+					this.set("isGroupEnabled", false);
+				} else {
+					this.set("isGroupEnabled", false);
+				}
+			},
+			setCurrentUser: function() {
+				if (!this.get("Owner")) {
+					this.set("Owner", Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT);
+				}
+			},
 			cleanOwner: function() {
 				this.set("Owner", null);
+			},
+			CaseTerm: function() {
+				var idEntry = this.get("Id");
+				var service = this.get("ServiceItem").value;
+				var group = this.get("Group").value;
+				var datein = this.get("RegisteredOn");
+				var pause = this.get("INFPauseMin");
+				var cat = this.get("Category").displayValue;
+				var dx = 0;
+				var args = {
+					sysProcessName: "CasePageTimeTerms",
+					parameters: {
+						CaseId: idEntry,
+						itservice: service,
+						Group: group,
+						RegOn : datein,
+						TimeInPause : pause,
+						CategoryName: cat,
+						Index: dx
+					}
+				};
+				if (service != null && cat != null) {
+					//ProcessModuleUtilities.executeProcess(args);
+					//setTimeout(this.reloadEntity(), 1000);
+				}
 			},
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				document.scope = this;
+				if (this.isAddMode() || this.isCopyMode()) {
+					this.set("isGroupEnabled", true);
+					this.Terrasoft.SysSettings.querySysSettingsItem("DefaultGroup",
+					function(value) {
+						this.set("Group", value);
+					}, this);
+				}
 				this.setButtonsVisible();
 				this.sandbox.subscribe("ButtonClickMessage",
 					function(method) {
@@ -619,7 +836,7 @@ define("CasePage", [], function() {
 				}
 				this.sandbox.publish("ChangeDetailMessage",
 						flag,
-						"ChangeDetailMessageKey"
+						["ChangeDetailMessageKey"]
 				);
 			},
 			setButtonsVisible: function() {
@@ -735,7 +952,7 @@ define("CasePage", [], function() {
 				"8e0668ee-5862-4180-b4fd-835a6f763da9": {
 					"uId": "8e0668ee-5862-4180-b4fd-835a6f763da9",
 					"enabled": true,
-					"removed": false,
+					"removed": true,
 					"ruleType": 0,
 					"property": 2,
 					"logical": 0,
@@ -809,6 +1026,103 @@ define("CasePage", [], function() {
 							"leftExpression": {
 								"type": 1,
 								"attribute": "OriginalServiceItem"
+							}
+						}
+					]
+				}
+			},
+			"Group": {
+				"2c42805d-cf10-4ec1-b88f-c634f595f958": {
+					"uId": "2c42805d-cf10-4ec1-b88f-c634f595f958",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 0,
+								"value": true,
+								"dataValueType": 12
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": true,
+								"dataValueType": 12
+							}
+						}
+					]
+				}
+			},
+			"StopReason": {
+				"4b816c4b-1572-4a6e-8fcc-4d43359c764a": {
+					"uId": "4b816c4b-1572-4a6e-8fcc-4d43359c764a",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Status"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "c3e56835-572f-4fc5-aecd-3f72e29286a8",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"Comment": {
+				"10cbf32c-395b-4b42-9978-278ff408e627": {
+					"uId": "10cbf32c-395b-4b42-9978-278ff408e627",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Status"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "c3e56835-572f-4fc5-aecd-3f72e29286a8",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"RenewalDate": {
+				"e81390d5-9911-4395-9eca-e04cef0357fb": {
+					"uId": "e81390d5-9911-4395-9eca-e04cef0357fb",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Status"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "c3e56835-572f-4fc5-aecd-3f72e29286a8",
+								"dataValueType": 10
 							}
 						}
 					]

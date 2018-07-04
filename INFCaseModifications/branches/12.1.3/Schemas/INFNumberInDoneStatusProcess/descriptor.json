@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "33a6d56f-c77c-4be2-8804-d80c7db2f7d3",
     "Name": "INFNumberInDoneStatusProcess",
-    "ModifiedOnUtc": "\/Date(1530212343000)\/",
+    "ModifiedOnUtc": "\/Date(1530362977000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Обращения: Количество раз в статусе Выполнено",
     "DependsOn": []

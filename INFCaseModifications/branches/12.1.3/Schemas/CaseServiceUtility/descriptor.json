@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "dfd028f6-ef7c-47d4-bd5e-81d050783f3f",
+    "Name": "CaseServiceUtility",
+    "ModifiedOnUtc": "\/Date(1530526364000)\/",
+    "Parent": {
+      "UId": "baefe686-9b45-4773-b93f-20c5705b3242",
+      "Name": "CaseServiceUtility"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Case Service Utility",
+    "DependsOn": []
+  }
+}

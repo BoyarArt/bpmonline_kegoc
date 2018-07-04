@@ -87,33 +87,106 @@ namespace Terrasoft.Configuration.Calendars
 	
 		#region Methods: Public
 		
-		public void FindCriterion (string ITServiceId) {
+		public void FindITService (string ITServiceId, string catName) {
 			var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "INFslo");
 			
 			esq.AddColumn("IncidentTimeUnit");
 			esq.AddColumn("IncidentTimeValue");
+			esq.AddColumn("RequestTimeUnit");
+			esq.AddColumn("RequestTimeValue");
+			esq.AddColumn("ChangeTimeUnit");
+			esq.AddColumn("ChangeTimeValue");
+			esq.AddColumn("ReactionTimeValue");
+			var serviceId = new Guid(ITServiceId);
 			
 			esq.Filters.Add(
 				esq.CreateFilterWithParameters(
 				FilterComparisonType.Equal,
-				"Id",
-				new Guid(ITServiceId)
+				"ITService",
+				serviceId
 				)
 			);
 			
 			var units = esq.GetEntityCollection(UserConnection);
 			
-			if (units.Count > 0) {
-				foreach (var unit in units) {
-					_solutionUnitType = unit.GetTypedColumnValue<Guid>("SolutionTimeUnitId").ToString();
-					_solutionUnitValue = unit.GetTypedColumnValue<int>("SolutionTimeValue");
+			if (catName == "Инцидент") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("IncidentTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("IncidentTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
+				}
+			} else if (catName == "Запрос на обслуживание") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("RequestTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("RequestTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
+				}
+			} else if (catName == "Запрос на изменение") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("ChangeTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("ChangeTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
 				}
 			}
-
+		}
+		
+		public void FindTechService (string ITServiceId, string catName) {
+			var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "TechSLO");
+			
+			esq.AddColumn("IncidentTimeUnit");
+			esq.AddColumn("IncidentTimeValue");
+			esq.AddColumn("RequestTimeUnit");
+			esq.AddColumn("RequestTimeValue");
+			esq.AddColumn("ChangeTimeUnit");
+			esq.AddColumn("ChangeTimeValue");
+			esq.AddColumn("ReactionTimeValue");
+			var serviceId = new Guid(ITServiceId);
+			
+			esq.Filters.Add(
+				esq.CreateFilterWithParameters(
+				FilterComparisonType.Equal,
+				"TechService",
+				serviceId
+				)
+			);
+			
+			var units = esq.GetEntityCollection(UserConnection);
+			
+			if (catName == "Инцидент") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("IncidentTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("IncidentTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
+				}
+			} else if (catName == "Запрос на обслуживание") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("RequestTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("RequestTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
+				}
+			} else if (catName == "Запрос на изменение") {
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						_solutionUnitType = unit.GetTypedColumnValue<Guid>("ChangeTimeUnitId").ToString();
+						_solutionUnitValue = unit.GetTypedColumnValue<int>("ChangeTimeValue");
+						_reactionUnitValue = unit.GetTypedColumnValue<int>("ReactionTimeValue");
+					}
+				}
+			}
 		}
 		
 		public void FindGroup (string GroupId) {
-			var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "InfCaseGroupReactionTime");
+			var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "CaseGroupReactionTime");
 			
 			esq.AddColumn("TimeValue");
 			esq.AddColumn("INFCalendar");
@@ -140,14 +213,25 @@ namespace Terrasoft.Configuration.Calendars
 		[OperationContract]
 		[WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,
 			ResponseFormat = WebMessageFormat.Json)]
-		public string CalculateTerms(string ITServiceId, string GroupId, string dateInput, int timeinpause) {
+			
+			
+		public string CalculateTerms(string ITServiceId, string GroupId, string dateInput, int timeinpause, string categoryname, int indx) {
 
 			DateTime RegTime = DateTime.Parse(dateInput);
-
-			FindCriterion(ITServiceId);
 			
-			GroupId = "b157e016-99d0-4eb1-8096-3fda7af06210";
-			_solutionUnitType = "bdcbb819-9b26-4627-946f-d00645a2d401";
+			if (indx == 0) {
+				FindITService(ITServiceId, categoryname);
+			} else if (indx == 1) {
+				FindTechService(ITServiceId, categoryname);
+			} else {
+				string errormes = "Не найдены сервисы по индексу: " + indx.ToString();
+				return errormes;
+			}
+			
+			
+			//GroupId = "b157e016-99d0-4eb1-8096-3fda7af06210";
+			//_solutionUnitType = "bdcbb819-9b26-4627-946f-d00645a2d401";
+			//_solutionUnitValue = 2;
 			
 			TimeTerm timeTerm = new TimeTerm();
 			
@@ -161,7 +245,8 @@ namespace Terrasoft.Configuration.Calendars
 				//Для рабочей минуты
 				timeTerm.Type = CalendarTimeUnit.WorkingMinute;
 			} else {
-				return "Единица времени не найдена";
+				string errormes = "Единица времени по категории не найдена: " + categoryname;
+				return errormes;
 			}
 			
 			timeTerm.Value = _solutionUnitValue;
@@ -182,7 +267,7 @@ namespace Terrasoft.Configuration.Calendars
 			//FindGroup(GroupId);
 			TimeTerm ReactionTimeTerm = new TimeTerm();
 			
-			if (GroupId == "b157e016-99d0-4eb1-8096-3fda7af06210" || _reactionUnitValue == 0) {
+			if (_reactionUnitValue == 0) {
 				//Id указан группы "Диспетчеры" т.к. она по умолчанию, а так же если группа не указана в справочнике _reactionUnitValue == 0
 				// TimeZoneInfo info = System.TimeZoneInfo.Local;
 				// var dateToConvert = DateTime.Now;
@@ -221,8 +306,7 @@ namespace Terrasoft.Configuration.Calendars
 			
 			DateTime ReactionTime = new DateTime();
 			
-			if (groupId == "b157e016-99d0-4eb1-8096-3fda7af06210" || _reactionUnitValue == 0) {
-				//Id указан группы "Диспетчеры" т.к. она по умолчанию, а так же если группа не указана в справочнике _reactionUnitValue == 0
+			if (_reactionUnitValue == 0) {
 				// TimeZoneInfo info = System.TimeZoneInfo.Local;
 				// var dateToConvert = DateTime.Now;
 				// DateTime ReactionTime = TimeZoneInfo.ConvertTimeToUtc(dateToConvert, info);
@@ -248,9 +332,9 @@ namespace Terrasoft.Configuration.Calendars
 			return ReactionTime;
 		}
 		
-		public DateTime _CalculateTerms(string ITServiceId) {
+		public DateTime _CalculateTerms(string ITServiceId, string categoryname) {
 
-			FindCriterion(ITServiceId);
+			FindITService(ITServiceId, categoryname);
 			
 			TimeTerm timeTerm = new TimeTerm();
 			

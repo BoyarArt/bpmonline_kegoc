@@ -122,7 +122,29 @@
   "E2": 1,
   "E5": false
 }
-~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8530baaa-586d-4180-886f-e0e0e964d9b1","12c8c6a3-cf60-427d-afd6-15f5f95f0301","cf84feae-2cf2-42db-ac59-caad98861156","c47b141e-8986-402e-8cd7-6871e4b10487","fc92d203-4bf1-4d35-8e43-9d7a9cc7a8ca","1af4d581-2ce4-4803-b37d-41bde3f349c2","050d7af8-d972-4bcc-bcd5-b6914c38a2c5","a2b2b02f-05fd-4219-b2f8-eb214e3e5b08"]
++ MetaData.Schema.D2 {
+  "UId": "47e6143e-1a21-435d-a355-4d384c5ab794",
+  "A2": "ReactionTimeUnit",
+  "A3": "084bfa9f-328a-4eef-8cd5-28143d91bb5b",
+  "A4": "084bfa9f-328a-4eef-8cd5-28143d91bb5b",
+  "A5": "3bbc5ae4-4a70-4736-9727-7a0bb32e622b",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "a9432d40-f95f-4d31-9f48-0444ebba77ab",
+  "E2": 1,
+  "E6": true,
+  "E17": "ReactionTimeUnitId",
+  "E18": "ReactionTimeUnitName"
+}
++ MetaData.Schema.D2 {
+  "UId": "98550c9d-8009-42c7-b594-fd65aad9900b",
+  "A2": "ReactionTimeValue",
+  "A3": "084bfa9f-328a-4eef-8cd5-28143d91bb5b",
+  "A4": "084bfa9f-328a-4eef-8cd5-28143d91bb5b",
+  "A5": "3bbc5ae4-4a70-4736-9727-7a0bb32e622b",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+  "E2": 1
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8530baaa-586d-4180-886f-e0e0e964d9b1","12c8c6a3-cf60-427d-afd6-15f5f95f0301","cf84feae-2cf2-42db-ac59-caad98861156","c47b141e-8986-402e-8cd7-6871e4b10487","fc92d203-4bf1-4d35-8e43-9d7a9cc7a8ca","1af4d581-2ce4-4803-b37d-41bde3f349c2","050d7af8-d972-4bcc-bcd5-b6914c38a2c5","a2b2b02f-05fd-4219-b2f8-eb214e3e5b08","47e6143e-1a21-435d-a355-4d384c5ab794","98550c9d-8009-42c7-b594-fd65aad9900b"]
 = MetaData.Schema.D20.A2 "INFsloEvents"
 - MetaData.Schema.EG1.BK29
 - MetaData.Schema.EG1.BK28

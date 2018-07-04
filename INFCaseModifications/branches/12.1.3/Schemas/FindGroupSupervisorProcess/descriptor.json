@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "823e5c6a-b320-43b4-ad0d-3047cf069f0e",
+    "Name": "FindGroupSupervisorProcess",
+    "ModifiedOnUtc": "\/Date(1530367692000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Подпроцесс поиска непосредственного руководителя (INF)",
+    "DependsOn": []
+  }
+}

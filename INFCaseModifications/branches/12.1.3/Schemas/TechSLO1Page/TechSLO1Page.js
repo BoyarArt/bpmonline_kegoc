@@ -46,6 +46,25 @@ define("TechSLO1Page", [], function() {
 		diff: /**SCHEMA_DIFF*/[
 			{
 				"operation": "insert",
+				"name": "LOOKUPb2fabba9-8e93-44eb-a63b-4735402dad54",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Header"
+					},
+					"bindTo": "ITService",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "TechService88c85b7b-ee80-485e-9833-0b8644003983",
 				"values": {
 					"layout": {
@@ -59,7 +78,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -76,7 +95,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -93,7 +112,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -110,7 +129,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -127,7 +146,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -144,7 +163,7 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -161,30 +180,98 @@ define("TechSLO1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
-				"name": "LOOKUPb2fabba9-8e93-44eb-a63b-4735402dad54",
+				"name": "ReactionTimeValue6080f745-850a-4170-bd30-f6a4ff975619",
 				"values": {
 					"layout": {
-						"colSpan": 12,
+						"colSpan": 6,
 						"rowSpan": 1,
-						"column": 0,
-						"row": 0,
+						"column": 6,
+						"row": 6,
 						"layoutName": "Header"
 					},
-					"bindTo": "ITService",
-					"enabled": true,
-					"contentType": 5
+					"bindTo": "ReactionTimeValue"
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "ReactionTimeUnit4e1ff4ef-50b4-4d26-bb22-f2321a7f47ce",
+				"values": {
+					"layout": {
+						"colSpan": 6,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 6,
+						"layoutName": "Header"
+					},
+					"bindTo": "ReactionTimeUnit"
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 9
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {},
 		rules: {},
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{
+			"IncidentTimeUnit": {
+				"b2c1357f-6899-47f3-a000-fbcf82079d73": {
+					"uId": "b2c1357f-6899-47f3-a000-fbcf82079d73",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "Code",
+					"comparisonType": 7,
+					"type": 0,
+					"value": "Working",
+					"dataValueType": 1
+				}
+			},
+			"RequestTimeUnit": {
+				"b2c1357f-6899-47f3-a000-fbcf82079d73": {
+					"uId": "b2c1357f-6899-47f3-a000-fbcf82079d73",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "Code",
+					"comparisonType": 7,
+					"type": 0,
+					"value": "Working",
+					"dataValueType": 1
+				}
+			},
+			"ChangeTimeUnit": {
+				"b2c1357f-6899-47f3-a000-fbcf82079d73": {
+					"uId": "b2c1357f-6899-47f3-a000-fbcf82079d73",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "Code",
+					"comparisonType": 7,
+					"type": 0,
+					"value": "Working",
+					"dataValueType": 1
+				}
+			},
+			"ReactionTimeUnit": {
+				"b2c1357f-6899-47f3-a000-fbcf82079d73": {
+					"uId": "b2c1357f-6899-47f3-a000-fbcf82079d73",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "Code",
+					"comparisonType": 7,
+					"type": 0,
+					"value": "Working",
+					"dataValueType": 1
+				}
+			}
+		}/**SCHEMA_BUSINESS_RULES*/
 	};
 });

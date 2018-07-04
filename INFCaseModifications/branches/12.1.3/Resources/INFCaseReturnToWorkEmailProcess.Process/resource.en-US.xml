@@ -2,7 +2,6 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Из Выполнено" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Caption" Value="Отправить email 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Account.Caption" Value="Account" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ActivityCategory.Caption" Value="Category" />
@@ -25,6 +24,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Record for macros" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Template message" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Уведомление при возврате Инициатором на доработку (INF) (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Execution context" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Ignore email errors" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />
@@ -46,6 +46,8 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.QueueItem.Caption" Value="Queue item" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient1.Caption" Value="Кому 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient1.DisplayValue" Value="[#Читать Обращение.Первый элемент результирующей коллекции.Ответственный#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.Caption" Value="Кому 2" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.DisplayValue" Value="[#Подпроцесс поиска непосредственного руководителя (INF) 1.Руководитель#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Caption" Value="Recommendation" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.DisplayValue" Value="Отправить email 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Value" Value="Отправить email 1" />
@@ -90,6 +92,10 @@
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Type of result" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="Обращение в работе" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
+			<Item Name="BaseElements.SubProcess1.Caption" Value="Подпроцесс поиска непосредственного руководителя (INF) 1" />
+			<Item Name="BaseElements.SubProcess1.Parameters.Group.Caption" Value="Группа" />
+			<Item Name="BaseElements.SubProcess1.Parameters.Group.DisplayValue" Value="[#Читать Обращение.Первый элемент результирующей коллекции.Группа ответственных#]" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SupervisorId.Caption" Value="Руководитель" />
 			<Item Name="Caption" Value="Обращения: отправка email при возврате Инициатором на доработку (INF)" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />

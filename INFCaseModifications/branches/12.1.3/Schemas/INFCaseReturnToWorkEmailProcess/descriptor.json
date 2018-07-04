@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c50bf038-82ff-4f36-8a4a-d2a0efa2e9b9",
     "Name": "INFCaseReturnToWorkEmailProcess",
-    "ModifiedOnUtc": "\/Date(1530208890000)\/",
+    "ModifiedOnUtc": "\/Date(1530367853000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Обращения: отправка email при возврате Инициатором на доработку (INF)",
     "DependsOn": []

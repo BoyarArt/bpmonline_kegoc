@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "115409af-dc29-46b4-ba14-f94124056b7d",
+    "Name": "FindUserSupervisorProcess",
+    "ModifiedOnUtc": "\/Date(1530366149000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Подпроцесс поиска непосредственного руководителя (INF)",
+    "DependsOn": []
+  }
+}

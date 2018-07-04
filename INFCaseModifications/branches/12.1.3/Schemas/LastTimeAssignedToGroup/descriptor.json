@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "0209194b-f84e-4ab6-8499-d89d7acba795",
+    "Name": "LastTimeAssignedToGroup",
+    "ModifiedOnUtc": "\/Date(1530694173000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Изменение значения поля \"Последнее направление в группу\"",
+    "DependsOn": []
+  }
+}

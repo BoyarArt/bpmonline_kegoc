@@ -3,6 +3,17 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="استجابة حالة" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="إخفاء رسائل النظام" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="أرشيف" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="ملف تعريف الحالة" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="معالجة" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="رسالة للمستخدم1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="بحث عن حالات مماثلة" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="إظهار رسائل النظام" />
 		</Items>
 	</Group>
 </Resources>

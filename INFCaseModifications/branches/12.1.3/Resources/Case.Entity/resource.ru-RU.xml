@@ -5,6 +5,12 @@
 			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
+			<Item Name="Columns.INFLastTimeInGroup.Caption" Value="Дата и время последнего направления в группу" />
+			<Item Name="Columns.INFPause.Caption" Value="Общая длительность остановки" />
+			<Item Name="Columns.INFPauseMin.Caption" Value="Длительность паузы в минутах" />
+			<Item Name="Columns.INFPauseTime.Caption" Value="Дата и время последней приостановки" />
+			<Item Name="Columns.INFPauseTimeOut.Caption" Value="Дата и время выхода из приостановки" />
+			<Item Name="Columns.IsPaused.Caption" Value="Находится в паузе" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
 			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />

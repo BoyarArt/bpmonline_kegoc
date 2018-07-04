@@ -28,7 +28,7 @@
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Тип результата" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="Обращение в статусе Выполнено" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
-			<Item Name="Caption" Value="Обращения: Количество раз в статусе Выполнено" />
+			<Item Name="Caption" Value="Обращения: Количество раз в статусе Выполнено (INF)" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />

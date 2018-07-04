@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "f933e5ca-d6e7-4c59-95c3-f33a227cd6c9",
     "Name": "INFStopAttempProcess",
-    "ModifiedOnUtc": "\/Date(1529857322000)\/",
+    "ModifiedOnUtc": "\/Date(1530689424000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Заполнение детали Попытки приостановки",
     "DependsOn": []

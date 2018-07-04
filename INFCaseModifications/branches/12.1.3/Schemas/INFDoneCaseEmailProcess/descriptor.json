@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "36228fc7-6bc5-4070-a289-03c50a54f634",
+    "Name": "INFDoneCaseEmailProcess",
+    "ModifiedOnUtc": "\/Date(1530370010000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Обращения: Отправка email при регистрации нового обращения",
+    "DependsOn": []
+  }
+}
