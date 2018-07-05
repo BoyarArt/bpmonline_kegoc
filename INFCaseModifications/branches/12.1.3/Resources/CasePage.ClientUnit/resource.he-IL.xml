@@ -3,17 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
-			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="תגובה למקרה" />
-			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
-			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="הסתר הודעות מערכת" />
-			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="היסטוריה" />
-			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="פרופיל מקרה" />
-			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="מעבד" />
-			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="הודעה למשתמש 1" />
-			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="חפש מקרים דומים" />
-			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
-			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
-			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="הראה הודעות מערכת" />
 		</Items>
 	</Group>
 </Resources>

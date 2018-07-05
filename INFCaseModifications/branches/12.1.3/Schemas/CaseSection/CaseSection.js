@@ -125,7 +125,7 @@ define("CaseSection", [],
 						"operation": "insert",
 						"parentName": "CombinedModeActionButtonsCardLeftContainer",
 						"propertyName": "items",
-						"name": "CloseButton",
+						"name": "ToCloseButton",
 						"values": {
 							"itemType": Terrasoft.ViewItemType.BUTTON,
 							"caption": "Закрыть",

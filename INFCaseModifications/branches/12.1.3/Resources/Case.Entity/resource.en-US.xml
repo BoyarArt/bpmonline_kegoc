@@ -6,15 +6,24 @@
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
 			<Item Name="Columns.INFLastTimeInGroup.Caption" Value="Дата и время последнего направления в группу" />
+			<Item Name="Columns.INFLastWorkMin.Caption" Value="Минут последнего выполнения" />
 			<Item Name="Columns.INFPause.Caption" Value="Общая длительность остановки" />
 			<Item Name="Columns.INFPauseMin.Caption" Value="Длительность паузы в минутах" />
 			<Item Name="Columns.INFPauseTime.Caption" Value="Дата и время последней приостановки" />
 			<Item Name="Columns.INFPauseTimeOut.Caption" Value="Дата и время выхода из приостановки" />
+			<Item Name="Columns.INFReopened.Caption" Value="Время переоткрытия инициатором" />
+			<Item Name="Columns.INFTimeBeforeLastWork.Caption" Value="Времени до последнего принятия в работу" />
+			<Item Name="Columns.INFTimeBeforeWork.Caption" Value="Времени до первого принятия в работу" />
+			<Item Name="Columns.INFTimeBeforeWorkMin.Caption" Value="Минут до первого принятия в работу" />
+			<Item Name="Columns.INFTimeInLife.Caption" Value="Длительность выполнения c учетом приостановки" />
+			<Item Name="Columns.INFTimeInLifeWithoutPause.Caption" Value="Длительность выполнения без приостановки в минутах" />
+			<Item Name="Columns.INFTimeInLifeWithPause.Caption" Value="Длительность выполнения в минутах" />
 			<Item Name="Columns.IsPaused.Caption" Value="Находится в паузе" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
 			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
 			<Item Name="Columns.TechService.Caption" Value="Технический сервис" />
+			<Item Name="Columns.TimeInLifeWithoutPause.Caption" Value="Длительность выполнения без учета приостановки" />
 			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Caption" Value="Pool 3" />
 			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Lanes.Lane4_0f92d505d2a14efb9f0b8084e855ae91.Caption" Value="Lane 4" />
 		</Items>

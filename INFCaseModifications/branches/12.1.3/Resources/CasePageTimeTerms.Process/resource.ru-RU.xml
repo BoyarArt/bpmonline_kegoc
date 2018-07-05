@@ -8,7 +8,6 @@
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.Caption" Value="Если объект соответствует условиям" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.DisplayValue" Value="true" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
-			<Item Name="BaseElements.FormulaTask1.Caption" Value="Формула" />
 			<Item Name="BaseElements.IntermediateCatchTimer1.Caption" Value="Обработка таймера" />
 			<Item Name="BaseElements.IntermediateCatchTimer1.Parameters.StartOffset.Caption" Value="Стартовать через (сек.)" />
 			<Item Name="BaseElements.IntermediateCatchTimer1.Parameters.StartOffset.DisplayValue" Value="1" />
@@ -30,7 +29,6 @@
 			<Item Name="Parameters.Solution.Caption" Value="Solution" />
 			<Item Name="Parameters.str.Caption" Value="str" />
 			<Item Name="Parameters.TimeInPause.Caption" Value="TimeInPause" />
-			<Item Name="Parameters.TimeInPause.DisplayValue" Value="0" />
 		</Items>
 	</Group>
 </Resources>

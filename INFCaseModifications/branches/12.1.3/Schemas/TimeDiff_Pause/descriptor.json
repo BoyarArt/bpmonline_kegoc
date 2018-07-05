@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "355cc911-2862-4221-9954-16396c2befa2",
     "Name": "TimeDiff_Pause",
-    "ModifiedOnUtc": "\/Date(1530692577000)\/",
+    "ModifiedOnUtc": "\/Date(1530720059000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Расчет длительности приостановки",
     "DependsOn": []

@@ -23,6 +23,31 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			}
 		},
 		attributes: {
+			"isOwnerEnabled": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
+			"isUserInGroup": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
+			"isUserInDefaultGroup": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
+			"DefaultGroup": {
+				"dataValueType": Terrasoft.DataValueType.LOOKUP,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
+			"isUserGroupSupervisor": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
 			"isGroupEnabled": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
@@ -46,7 +71,13 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			"isDoButtonVisible": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
-				"value": false
+				"value": false,
+				"dependencies": [
+					{
+						"columns": ["Owner"],
+						"methodName": "onOwnerChanged"
+					}
+				]
 			},
 			"isCloseButtonVisible": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
@@ -74,7 +105,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				"dependencies": [
 					{
 						"columns": ["Group"],
-						"methodName": "cleanOwner"
+						"methodName": "onGroupChanged"
 					}
 				]
 			},
@@ -321,6 +352,16 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				"values": {
 					"contentType": 5,
 					"enabled": true
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Owner",
+				"values": {
+					"contentType": 5,
+					"enabled": {
+						"bindTo": "isOwnerEnabled"
+					}
 				}
 			},
 			{
@@ -760,6 +801,153 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			getDefaultGroup: function() {
+				this.Terrasoft.SysSettings.querySysSettingsItem("DefaultGroup",
+				function(value) {
+					this.set("DefaultGroup", value);
+					this.isUserInDefaultGroup();
+				}, this);
+			},
+			onGroupChanged: function() {
+				this.cleanOwner();
+				this.isUserInGroup();
+			},
+			isUserInDefaultGroup: function() {
+				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
+				var groupId;
+				if (this.get("Group")) {
+					groupId = this.get("DefaultGroup").value;
+				} else {
+					return false;
+				}
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "SysAdminUnit"
+				});
+				esq.addColumn("[SysUserInRole:SysUser:Id].SysRole.Id", "RoleId");
+
+				var f1 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"Contact.Id",
+					currentUserId
+				);
+				
+				esq.filters.addItem(f1);
+				
+				esq.getEntityCollection(function(result) {
+					if (!result.success) {
+						this.showInformationDialog("Ошибка запроса данных");
+						return;
+					}
+					result.collection.each(function(item) {
+						if (item.get("RoleId") === groupId) {
+							this.set("isUserInDefaultGroup", true);
+						}
+					}.bind(this));
+				}, this);
+			},
+			isUserInGroup: function() {
+				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
+				var groupId;
+				if (this.get("Group")) {
+					groupId = this.get("Group").value;
+				} else {
+					this.set("isUserInGroup", false);
+					this.isUserGroupSupervisor();
+					return false;
+				}
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "SysAdminUnit"
+				});
+				esq.addColumn("[SysUserInRole:SysUser:Id].SysRole.Id", "RoleId");
+
+				var f1 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"Contact.Id",
+					currentUserId
+				);
+				
+				esq.filters.addItem(f1);
+				
+				esq.getEntityCollection(function(result) {
+					if (!result.success) {
+						this.showInformationDialog("Ошибка запроса данных");
+						return;
+					}
+					var values = [];
+					result.collection.each(function(item) {
+						values.push(item.get("RoleId"));
+					});
+					if (values.indexOf(groupId) !== -1) {
+						this.set("isUserInGroup", true);
+					} else {
+						this.set("isUserInGroup", false);
+					}
+					this.isUserGroupSupervisor();
+				}, this);
+			},
+			isUserGroupSupervisor: function() {
+				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
+				var groupId;
+				if (this.get("Group")) {
+					groupId = this.get("Group").value;
+				} else {
+					this.set("isUserGroupSupervisor", false);
+					this.setButtonsVisible();
+					this.setOwnerEnabled();
+					return false;
+				}
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "SysAdminUnit"
+				});
+				esq.addColumn("[SysAdminUnit:ParentRole:Id].[SysUserInRole:SysRole:Id].[SysAdminUnit:Id:SysUser].Contact.Id", "ContactId");
+				var f1 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"Id",
+					groupId
+				);
+
+				var f2 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"[SysAdminUnit:ParentRole:Id].SysAdminUnitTypeValue",
+					2
+				);
+
+				esq.filters.addItem(f1);
+				esq.filters.addItem(f2);
+				
+				esq.getEntityCollection(function(result) {
+					if (!result.success) {
+						this.showInformationDialog("Ошибка запроса данных");
+						return;
+					}
+					var values = [];
+					result.collection.each(function(item) {
+						values.push(item.get("ContactId"));
+					});
+					if (values.indexOf(currentUserId) !== -1) {
+						this.set("isUserGroupSupervisor", true);
+					} else {
+						this.set("isUserGroupSupervisor", false);
+					}
+					this.setButtonsVisible();
+					this.setOwnerEnabled();
+				}, this);
+			},
+			setOwnerEnabled: function() {
+				var currentState = this.get("Status").value;
+				
+				//Направлено в группу
+				if (currentState === "ae5f2f10-f46b-1410-fd9a-0050ba5d6c38" && this.get("isUserGroupSupervisor")) {
+					this.set("isOwnerEnabled", true);
+				} else if (currentState === "7e9f1204-f46b-1410-fb9a-0050ba5d6c38" && this.get("isUserGroupSupervisor")) {
+					this.set("isOwnerEnabled", true);
+				} else {
+					this.set("isOwnerEnabled", false);
+				}
+			},
+			onOwnerChanged: function() {
+				this.setButtonsVisible();
+			},
 			onStatusChanged: function() {
 				var currentState = this.get("Status").displayValue;
 				if (currentState === "В работе") {
@@ -808,6 +996,9 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				document.scope = this;
+				this.isUserInGroup();
+				//this.isUserGroupSupervisor();
+				this.getDefaultGroup();
 				if (this.isAddMode() || this.isCopyMode()) {
 					this.set("isGroupEnabled", true);
 					this.Terrasoft.SysSettings.querySysSettingsItem("DefaultGroup",
@@ -842,10 +1033,15 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			setButtonsVisible: function() {
 				var currentState = this.get("Status").value;
 				var visibleButtons = {};
+				var isDoButtonVisible;
+				var isAppointToGroupButtonVisible;
+				var isStopButtonVisible;
+				var isToWorkButtonVisible;
 				//Направлено в группу
 				if (currentState === "ae5f2f10-f46b-1410-fd9a-0050ba5d6c38") {
+					isToWorkButtonVisible = this.get("isUserInGroup");
 					visibleButtons = {
-						"isToWorkButtonVisible": true,
+						"isToWorkButtonVisible": isToWorkButtonVisible,
 						"isStopButtonVisible": false,
 						"isAppointToGroupButtonVisible": false,
 						"isDoButtonVisible": false,
@@ -853,14 +1049,26 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 					};
 				//В работе
 				} else if (currentState === "7e9f1204-f46b-1410-fb9a-0050ba5d6c38") {
+					isDoButtonVisible = false;
+					isAppointToGroupButtonVisible = false;
+					isStopButtonVisible = false;
+					if (this.get("Owner") && (this.get("Owner").value === Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value)) {
+						isDoButtonVisible = true;
+						isAppointToGroupButtonVisible = true;
+						isStopButtonVisible = true;
+					} else {
+						isDoButtonVisible = false;
+						isAppointToGroupButtonVisible = false;
+						isStopButtonVisible = false;
+					}
 					visibleButtons = {
 						"isToWorkButtonVisible": false,
-						"isStopButtonVisible": true,
-						"isAppointToGroupButtonVisible": true,
-						"isDoButtonVisible": true,
+						"isStopButtonVisible": isStopButtonVisible,
+						"isAppointToGroupButtonVisible": isAppointToGroupButtonVisible,
+						"isDoButtonVisible": isDoButtonVisible,
 						"isCloseButtonVisible": false
 					};
-				//Приостановлено	
+				//Приостановлено
 				} else if (currentState === "c3e56835-572f-4fc5-aecd-3f72e29286a8") {
 					visibleButtons = {
 						"isToWorkButtonVisible": true,
@@ -869,10 +1077,19 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"isDoButtonVisible": false,
 						"isCloseButtonVisible": false
 					};
-				//Выполнено	
+				//Выполнено
 				} else if (currentState === "1f3f61d6-ff88-423e-bcf8-31b3bee6426b") {
+					isToWorkButtonVisible = false;
+					if (this.get("Owner")) {
+						if (this.get("Owner").value === Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value) {
+							isToWorkButtonVisible = true;
+						}
+					}
+					if (this.get("isUserGroupSupervisor") || this.get("isUserInDefaultGroup")) {
+						isToWorkButtonVisible = true;
+					}
 					visibleButtons = {
-						"isToWorkButtonVisible": true,
+						"isToWorkButtonVisible": isToWorkButtonVisible,
 						"isStopButtonVisible": false,
 						"isAppointToGroupButtonVisible": false,
 						"isDoButtonVisible": false,

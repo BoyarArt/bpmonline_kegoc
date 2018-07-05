@@ -3,17 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
-			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="No seguir el feed" />
-			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="Problemas" />
-			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Estado" />
-			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Historial" />
-			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Fecha Inicio" />
-			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Usuarios" />
-			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Mensaje al usuario 1" />
-			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Search for similar cases" />
-			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="Editar esquema de página - sección &quot;Servicios&quot;" />
-			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
-			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Tiempo de respuesta" />
 		</Items>
 	</Group>
 </Resources>
