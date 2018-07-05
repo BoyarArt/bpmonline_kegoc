@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Контрагент" />
+			<Item Name="Columns.ChanelOwner.Caption" Value="Поставщик канала" />
+			<Item Name="Columns.ChanelType.Caption" Value="Тип канала" />
+			<Item Name="Columns.Components.Caption" Value="Компоненты" />
+			<Item Name="Columns.ContractType.Caption" Value="Тип контракта" />
+			<Item Name="Columns.Customer.Caption" Value="Заказчик" />
+			<Item Name="Columns.DeviceType.Caption" Value="Тип периферического устройства" />
+			<Item Name="Columns.DNSName.Caption" Value="DNS-имя" />
+			<Item Name="Columns.DueContractDate.Caption" Value="Дата окончания контракта" />
+			<Item Name="Columns.DueDate.Caption" Value="Дата окончания действия" />
+			<Item Name="Columns.EquipType.Caption" Value="Тип оборудования" />
+			<Item Name="Columns.FirstLocation.Caption" Value="Расположение 1" />
+			<Item Name="Columns.HDDTAPE.Caption" Value="Тип HDD/TAPE" />
+			<Item Name="Columns.HTCount.Caption" Value="Количество HDD/TAPE" />
+			<Item Name="Columns.IPAdress.Caption" Value="IP адрес" />
+			<Item Name="Columns.LastChangeDate.Caption" Value="Дата последнего изменения" />
+			<Item Name="Columns.Manufacturer.Caption" Value="Производитель" />
+			<Item Name="Columns.Monitoring.Caption" Value="Мониторинг" />
+			<Item Name="Columns.OS.Caption" Value="Операционная система" />
+			<Item Name="Columns.ReasonForCI.Caption" Value="Причина" />
+			<Item Name="Columns.SecondLocation.Caption" Value="Расположение 2" />
+			<Item Name="Columns.ServerModel.Caption" Value="Модель" />
+			<Item Name="Columns.ServerPurpose.Caption" Value="Назначение сервера" />
+			<Item Name="Columns.ServerSerialNumber.Caption" Value="Серийный номер" />
+			<Item Name="Columns.ServerType.Caption" Value="Тип сервера" />
+			<Item Name="Columns.SLAParam.Caption" Value="Параметры SLA" />
+			<Item Name="Columns.SoftVersion.Caption" Value="Версия" />
+			<Item Name="Columns.SoftwareType.Caption" Value="Тип лицензии" />
+			<Item Name="Columns.StartDate.Caption" Value="Дата начала действия" />
+			<Item Name="Columns.Subject.Caption" Value="Описание" />
+			<Item Name="Columns.Support.Caption" Value="Техническая поддержка" />
+			<Item Name="Columns.SupportContract.Caption" Value="Контракт на поддержку" />
+			<Item Name="Columns.SupportLevel.Caption" Value="Уровень поддержки" />
+			<Item Name="Columns.TechOptions.Caption" Value="Технические характеристики" />
+		</Items>
+	</Group>
+</Resources>

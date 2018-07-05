@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7055e5ae-845e-4fc8-91cf-083ad0651eea",
+    "Name": "ConfItemChanelType",
+    "ModifiedOnUtc": "\/Date(1530774740000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "683207a1-c321-433b-a87b-1ff29aee6878",
+    "Name": "CIDeviceType",
+    "ModifiedOnUtc": "\/Date(1530775767000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип периферического устройства",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,207 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a52769b7-c619-4327-b75b-3e183fe41c75"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Аварийный вывод"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781246057+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781493870+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "aa6c91e0-0224-4e43-858a-e8b94c6cf354"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Диагностика"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781506057+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781506057+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "dbb7a6d4-c7c2-4f9c-9004-f561ae268c23"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Модернизация"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781514964+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781514964+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "14607d2c-5517-4709-9fe7-6605692a2bc0"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "ППР"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781523385+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781523385+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "b49a1ace-c08a-454f-8068-a5cb5a603286"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Резервный"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781530448+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781530448+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "642ab3b6-dc44-4640-837f-a20820452dcc"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Ремонт"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781538339+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781538339+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "00b1f8f5-2771-4d63-b7af-27d706087fe6",
+          "DisplayValue": "Временно выведен из эксплуатации"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a9fe4990-ef06-42cb-8731-2f96dff3ccdb"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "Списан"
+        },
+        {
+          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+          "Value": "\/Date(1530781544386+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1530781544386+0600)\/"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "596f542e-3ff0-4d9a-b4dc-aa0ad1d96d07",
+          "Value": "c56a17d0-00c8-4c0b-9f2a-4f29a0b178f4",
+          "DisplayValue": "Утилизирован"
+        }
+      ]
+    }
+  ]
+}

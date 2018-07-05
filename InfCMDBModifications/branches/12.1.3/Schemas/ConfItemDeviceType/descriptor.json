@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "8d11bd09-bd11-45b6-8124-ae07f8ad1db5",
+    "Name": "ConfItemDeviceType",
+    "ModifiedOnUtc": "\/Date(1530774664000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}

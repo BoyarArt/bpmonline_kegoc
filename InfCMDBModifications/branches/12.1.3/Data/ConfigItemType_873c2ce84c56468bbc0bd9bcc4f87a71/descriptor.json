@@ -1,0 +1,56 @@
+﻿{
+  "Descriptor": {
+    "UId": "cf371c84-d504-491a-922c-5bc8e80c90c4",
+    "Name": "ConfigItemType_873c2ce84c56468bbc0bd9bcc4f87a71",
+    "ModifiedOnUtc": "\/Date(1530781694000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "da6e81b8-7237-4bb1-b5b1-b1e80977025e",
+      "Name": "ConfigItemType"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "CreatedOn",
+        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ModifiedOn",
+        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "b2e80537-a48f-40af-90bf-915bcfb0ecbc",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ConfItemCategory",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      }
+    ]
+  }
+}

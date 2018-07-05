@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "4e6c9c64-3428-47ad-a22b-e98000be2c0b",
+    "Name": "ConfItem",
+    "ModifiedOnUtc": "\/Date(1530784990000)\/",
+    "Parent": {
+      "UId": "ad707075-cf25-40bf-85c1-f5da38cf0d5d",
+      "Name": "ConfItem"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Configuration item",
+    "DependsOn": []
+  }
+}

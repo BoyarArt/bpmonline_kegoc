@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "5b3e2c0e-dfd4-4c96-8d78-b2ffa3f93701",
+    "Name": "SoftwareType",
+    "ModifiedOnUtc": "\/Date(1530774446000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}

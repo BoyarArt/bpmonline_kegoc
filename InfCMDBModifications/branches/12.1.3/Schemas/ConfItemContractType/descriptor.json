@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "88ef5f59-f6b7-49a3-a9c3-02a3eea356a4",
+    "Name": "ConfItemContractType",
+    "ModifiedOnUtc": "\/Date(1530774706000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}
