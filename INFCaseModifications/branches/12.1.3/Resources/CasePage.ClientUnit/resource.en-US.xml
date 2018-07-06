@@ -43,6 +43,7 @@
 			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="Support level" />
 			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="Symptoms" />
 			<Item Name="LocalizableStrings.Tab2c83318cTabLabelTabCaption.Value" Value="Причина приостановки" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelTabCaption.Value" Value="Аналитика" />
 		</Items>
 	</Group>
 </Resources>

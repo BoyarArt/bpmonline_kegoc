@@ -9,6 +9,8 @@
 			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.DisplayValue" Value="true" />
 			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
 			<Item Name="BaseElements.FormulaTask1.Caption" Value="Формула" />
+			<Item Name="BaseElements.FormulaTask2.Caption" Value="Записать ИТ сервис" />
+			<Item Name="BaseElements.FormulaTask3.Caption" Value="Записать индекс" />
 			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="Читать данные" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Имя колонки для агрегирующей функции" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.Caption" Value="Выполнять &quot;грязное чтение&quot;" />
@@ -36,7 +38,9 @@
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
 			<Item Name="Parameters.group.Caption" Value="Группа" />
+			<Item Name="Parameters.Index.Caption" Value="Index" />
 			<Item Name="Parameters.Reaction.Caption" Value="Reaction" />
+			<Item Name="Parameters.ServiceId.Caption" Value="ServiceId" />
 		</Items>
 	</Group>
 </Resources>

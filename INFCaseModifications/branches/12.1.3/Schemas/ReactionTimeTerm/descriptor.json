@@ -2,8 +2,9 @@
   "Descriptor": {
     "UId": "387d1a5d-2c23-4bd2-9ec8-d9c0b7626eb5",
     "Name": "ReactionTimeTerm",
-    "ModifiedOnUtc": "\/Date(1530603079000)\/",
+    "ModifiedOnUtc": "\/Date(1530864039000)\/",
     "ManagerName": "ProcessSchemaManager",
+    "Caption": "Перерасчёт времени реакции и разрешения",
     "DependsOn": []
   }
 }

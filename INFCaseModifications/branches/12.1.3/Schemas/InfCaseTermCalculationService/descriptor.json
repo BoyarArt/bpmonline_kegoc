@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c14599b6-1ff8-4fdf-ad0c-755d71f95d7c",
     "Name": "InfCaseTermCalculationService",
-    "ModifiedOnUtc": "\/Date(1530602048000)\/",
+    "ModifiedOnUtc": "\/Date(1530863711000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "InfCaseTermCalculationService",
     "DependsOn": []

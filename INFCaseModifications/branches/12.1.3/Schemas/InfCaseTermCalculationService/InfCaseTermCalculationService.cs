@@ -58,6 +58,7 @@ namespace Terrasoft.Configuration.Calendars
 		private int _reactionUnitValue = 0;
 		private string _solutionUnitType = "";
 		private int _solutionUnitValue = 0;
+		private string ITServiceByTechService = "";
 	
 		#endregion
 		
@@ -189,7 +190,6 @@ namespace Terrasoft.Configuration.Calendars
 			var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "CaseGroupReactionTime");
 			
 			esq.AddColumn("TimeValue");
-			esq.AddColumn("INFCalendar");
 			
 			esq.Filters.Add(
 				esq.CreateFilterWithParameters(
@@ -204,10 +204,76 @@ namespace Terrasoft.Configuration.Calendars
 			if (units.Count > 0) {
 				foreach (var unit in units) {
 					_reactionUnitValue = unit.GetTypedColumnValue<int>("TimeValue");
-					CalendarId = unit.GetTypedColumnValue<Guid>("INFCalendarId").ToString();
 				}
 			}
-
+		}
+		
+		public void FindITServiceByTechService (string ServiceId) {
+				var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "ServiceRelationship");
+				
+				esq.AddColumn("ServiceItemA");
+				esq.AddColumn("ServiceItemB");
+				
+				esq.Filters.Add(
+					esq.CreateFilterWithParameters(
+					FilterComparisonType.Equal,
+					"ServiceItemA",
+					new Guid(ServiceId)
+					)
+				);
+				
+				var units = esq.GetEntityCollection(UserConnection);
+				
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						ITServiceByTechService = unit.GetTypedColumnValue<Guid>("ServiceItemBId").ToString();
+					}
+				}
+		}
+		
+		public void FindCalendar (string ServiceId, int indx) {
+			if (indx == 0) {
+				var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "ServiceItem");
+				
+				esq.AddColumn("Calendar");
+				
+				esq.Filters.Add(
+					esq.CreateFilterWithParameters(
+					FilterComparisonType.Equal,
+					"Id",
+					new Guid(ServiceId)
+					)
+				);
+				
+				var units = esq.GetEntityCollection(UserConnection);
+				
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						CalendarId = unit.GetTypedColumnValue<Guid>("CalendarId").ToString();
+					}
+				}
+			} else if (indx == 1) {
+				FindITServiceByTechService(ServiceId);
+				var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "ServiceItem");
+				
+				esq.AddColumn("Calendar");
+				
+				esq.Filters.Add(
+					esq.CreateFilterWithParameters(
+					FilterComparisonType.Equal,
+					"Id",
+					new Guid(ITServiceByTechService)
+					)
+				);
+				
+				var units = esq.GetEntityCollection(UserConnection);
+				
+				if (units.Count > 0) {
+					foreach (var unit in units) {
+						CalendarId = unit.GetTypedColumnValue<Guid>("CalendarId").ToString();
+					}
+				}
+			}
 		}
 		
 		[OperationContract]
@@ -218,6 +284,7 @@ namespace Terrasoft.Configuration.Calendars
 		public string CalculateTerms(string ITServiceId, string GroupId, string dateInput, int timeinpause, string categoryname, int indx) {
 
 			DateTime RegTime = DateTime.Parse(dateInput);
+			FindCalendar(ITServiceId, indx);
 			
 			if (indx == 0) {
 				FindITService(ITServiceId, categoryname);
@@ -294,9 +361,10 @@ namespace Terrasoft.Configuration.Calendars
 			return json;
 		}
 		
-		public DateTime _CalculateTermsByGroup(string groupId) {
+		public DateTime _CalculateTermsByGroup(string groupId, string ServiceId, int indx) {
 
 			FindGroup(groupId);
+			FindCalendar(ServiceId, indx);
 			
 			var calendarUtility = new CalendarUtility(UserConnection);
 			

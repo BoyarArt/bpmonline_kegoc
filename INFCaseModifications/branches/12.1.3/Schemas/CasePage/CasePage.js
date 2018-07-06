@@ -355,16 +355,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				}
 			},
 			{
-				"operation": "merge",
-				"name": "Owner",
-				"values": {
-					"contentType": 5,
-					"enabled": {
-						"bindTo": "isOwnerEnabled"
-					}
-				}
-			},
-			{
 				"operation": "move",
 				"name": "ServicePact",
 				"parentName": "ProfileContainer",
@@ -479,6 +469,9 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"rowSpan": 1,
 						"column": 0,
 						"row": 11
+					},
+					"enabled": {
+						"bindTo": "isOwnerEnabled"
 					}
 				}
 			},
@@ -608,101 +601,258 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
-				"name": "Tab2c83318cTabLabelGroupbdb2efee",
+				"name": "Tabca6a6731TabLabel",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.Tab2c83318cTabLabelGroupbdb2efeeGroupCaption"
+						"bindTo": "Resources.Strings.Tabca6a6731TabLabelTabCaption"
+					},
+					"items": []
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Tabca6a6731TabLabelGroup8b8f2b96",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.Tabca6a6731TabLabelGroup8b8f2b96GroupCaption"
 					},
 					"itemType": 15,
 					"markerValue": "added-group",
 					"items": []
 				},
-				"parentName": "Tab2c83318cTabLabel",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "Tab2c83318cTabLabelGridLayout3b19913e",
-				"values": {
-					"itemType": 0,
-					"items": []
-				},
-				"parentName": "Tab2c83318cTabLabelGroupbdb2efee",
+				"parentName": "Tabca6a6731TabLabel",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "INFPauseTime7c43e609-3331-4bf1-bedb-2ba6457c8ccc",
+				"name": "Tabca6a6731TabLabelGridLayout725faa65",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "Tabca6a6731TabLabelGroup8b8f2b96",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "INFPauseTime65b5500f-7f01-4a66-a8e6-ae9c4ada0b25",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 0,
-						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
 					},
 					"bindTo": "INFPauseTime",
 					"enabled": false
 				},
-				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "INFPause100c9d31-2371-4644-b34f-44c9915fc21d",
+				"name": "INFPauseTimeOut1bcfad16-e9b6-4a2b-8f12-49387f43060a",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
 						"row": 0,
-						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
 					},
-					"bindTo": "INFPause",
+					"bindTo": "INFPauseTimeOut",
 					"enabled": false
 				},
-				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
 				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "INFPauseTimeOutc1324e79-186e-4d1b-afa4-7e858383612f",
+				"name": "INFTimeInLife462affcf-fc61-4792-823e-c5d19f5bc791",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFTimeInLife",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "TimeInLifeWithoutPause4463c0ed-08f3-42b3-9696-759fc95c66a4",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 4,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "TimeInLifeWithoutPause",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "INFPause4b216d5b-cb00-462f-9a26-ec5ed6064dba",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFPause",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "ResponseOverdue8e677a8d-5eb0-4b84-a3fd-7175bd87e866",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 6,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "ResponseOverdue",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "SolutionOverdue8d1ada3f-9226-464b-b2ea-16548592616c",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 7,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "SolutionOverdue",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "INFLastTimeInGroup11701ac3-5844-4e72-ad9b-e5b832f6acf3",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 1,
-						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
 					},
-					"bindTo": "INFPauseTimeOut",
+					"bindTo": "INFLastTimeInGroup",
 					"enabled": false
 				},
-				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
-				"index": 2
+				"index": 7
 			},
 			{
 				"operation": "insert",
-				"name": "INFPauseMina04499ff-811d-47b2-8cbc-ff435f1bf4c8",
+				"name": "INFReopened70c04490-c451-4398-b5c6-8c147185a852",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
 						"row": 1,
-						"layoutName": "Tab2c83318cTabLabelGridLayout3b19913e"
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
 					},
-					"bindTo": "INFPauseMin",
+					"bindTo": "INFReopened",
 					"enabled": false
 				},
-				"parentName": "Tab2c83318cTabLabelGridLayout3b19913e",
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
-				"index": 3
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "INFTimeBeforeWork16f34d3b-0b64-46e7-aa07-cbf527b00e9e",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFTimeBeforeWork",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "INFTimeBeforeLastWorkf1f7dc39-96e8-4e18-a92a-5df609894763",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 4,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFTimeBeforeLastWork",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "INFLastTimeInGroupb90b6c79-6a84-4af4-8281-6985eda9646c",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "TermsControlGroup_GridLayout"
+					},
+					"bindTo": "INFLastTimeInGroup",
+					"enabled": false
+				},
+				"parentName": "TermsControlGroup_GridLayout",
+				"propertyName": "items",
+				"index": 6
 			},
 			{
 				"operation": "merge",
@@ -739,24 +889,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"row": 5
 					}
 				}
-			},
-			{
-				"operation": "insert",
-				"name": "INFLastTimeInGroupb90b6c79-6a84-4af4-8281-6985eda9646c",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "TermsControlGroup_GridLayout"
-					},
-					"bindTo": "INFLastTimeInGroup",
-					"enabled": false
-				},
-				"parentName": "TermsControlGroup_GridLayout",
-				"propertyName": "items",
-				"index": 9
 			},
 			{
 				"operation": "remove",

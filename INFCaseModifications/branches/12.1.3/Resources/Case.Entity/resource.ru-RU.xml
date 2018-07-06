@@ -5,7 +5,6 @@
 			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
-			<Item Name="Columns.I1sReopened.Caption" Value="Было переоткрыто" />
 			<Item Name="Columns.INFLastTimeInGroup.Caption" Value="Дата и время последнего направления в группу" />
 			<Item Name="Columns.INFLastWorkMin.Caption" Value="Минут последнего выполнения" />
 			<Item Name="Columns.INFPause.Caption" Value="Общая длительность приостановки" />
