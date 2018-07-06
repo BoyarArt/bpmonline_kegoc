@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "0c7dd034-890c-4430-8cce-65aa9360f7c2",
+    "Name": "CalculateAddToArchiveTime",
+    "ModifiedOnUtc": "\/Date(1530875807000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Расчет даты и времени архивирования обращения",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "bb3f0c41-5d68-443c-8f92-31c929f90165",
+    "Name": "AddCaseToArchive",
+    "ModifiedOnUtc": "\/Date(1530876273000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Архивирование обращений",
+    "DependsOn": []
+  }
+}

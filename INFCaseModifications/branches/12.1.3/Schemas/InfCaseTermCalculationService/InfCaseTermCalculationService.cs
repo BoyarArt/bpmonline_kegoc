@@ -400,6 +400,27 @@ namespace Terrasoft.Configuration.Calendars
 			return ReactionTime;
 		}
 		
+		public DateTime CalculateArchiveTime(int wHours, string ServiceId, int indx) {
+
+			FindCalendar(ServiceId, indx);
+			
+			var calendarUtility = new CalendarUtility(UserConnection);
+			
+			var startDate = DateTime.Now;
+			
+			TimeTerm ReactionTimeTerm = new TimeTerm();
+			
+			DateTime ReactionTime = new DateTime();
+			
+				ReactionTimeTerm.Type = CalendarTimeUnit.WorkingHour;
+				ReactionTimeTerm.Value = wHours;
+				ReactionTimeTerm.CalendarId = new Guid(CalendarId);
+				
+				ReactionTime = calendarUtility.Add(startDate, ReactionTimeTerm, System.TimeZoneInfo.Local);
+			
+			return ReactionTime;
+		}
+		
 		public DateTime _CalculateTerms(string ITServiceId, string categoryname) {
 
 			FindITService(ITServiceId, categoryname);

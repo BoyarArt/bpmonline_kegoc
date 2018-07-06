@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.ArchiveDate.Caption" Value="Дата и время архивирования" />
 			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
