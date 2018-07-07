@@ -23,6 +23,11 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			}
 		},
 		attributes: {
+			"previousGroup": {
+				"dataValueType": Terrasoft.DataValueType.LOOKUP,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
 			"isOwnerEnabled": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
@@ -123,7 +128,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				"dependencies": [
 					{
 						"columns": ["Status"],
-						"methodName": "onStatusChanged"
+						"methodName": "onStatusChangedHandler"
 					}
 				]
 			},
@@ -676,96 +681,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
-				"name": "INFTimeInLife462affcf-fc61-4792-823e-c5d19f5bc791",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 3,
-						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
-					},
-					"bindTo": "INFTimeInLife",
-					"enabled": false
-				},
-				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "TimeInLifeWithoutPause4463c0ed-08f3-42b3-9696-759fc95c66a4",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 4,
-						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
-					},
-					"bindTo": "TimeInLifeWithoutPause",
-					"enabled": false
-				},
-				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "INFPause4b216d5b-cb00-462f-9a26-ec5ed6064dba",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 5,
-						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
-					},
-					"bindTo": "INFPause",
-					"enabled": false
-				},
-				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "ResponseOverdue8e677a8d-5eb0-4b84-a3fd-7175bd87e866",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 6,
-						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
-					},
-					"bindTo": "ResponseOverdue",
-					"enabled": false
-				},
-				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "SolutionOverdue8d1ada3f-9226-464b-b2ea-16548592616c",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 7,
-						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
-					},
-					"bindTo": "SolutionOverdue",
-					"enabled": false
-				},
-				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "insert",
 				"name": "INFLastTimeInGroup11701ac3-5844-4e72-ad9b-e5b832f6acf3",
 				"values": {
 					"layout": {
@@ -780,7 +695,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				},
 				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
-				"index": 7
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -798,7 +713,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				},
 				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
-				"index": 8
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -816,7 +731,25 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				},
 				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
 				"propertyName": "items",
-				"index": 9
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "INFTimeInLife462affcf-fc61-4792-823e-c5d19f5bc791",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFTimeInLife",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -830,6 +763,78 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
 					},
 					"bindTo": "INFTimeBeforeLastWork",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "TimeInLifeWithoutPause4463c0ed-08f3-42b3-9696-759fc95c66a4",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 4,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "TimeInLifeWithoutPause",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "INFPause4b216d5b-cb00-462f-9a26-ec5ed6064dba",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "INFPause",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "ResponseOverdue8e677a8d-5eb0-4b84-a3fd-7175bd87e866",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 6,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "ResponseOverdue",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "SolutionOverdue8d1ada3f-9226-464b-b2ea-16548592616c",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 7,
+						"layoutName": "Tabca6a6731TabLabelGridLayout725faa65"
+					},
+					"bindTo": "SolutionOverdue",
 					"enabled": false
 				},
 				"parentName": "Tabca6a6731TabLabelGridLayout725faa65",
@@ -889,6 +894,24 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"row": 5
 					}
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "ArchiveDatebb16a20a-2dea-4601-a63f-127b53a6c17f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 5,
+						"layoutName": "TermsControlGroup_GridLayout"
+					},
+					"bindTo": "ArchiveDate",
+					"enabled": false
+				},
+				"parentName": "TermsControlGroup_GridLayout",
+				"propertyName": "items",
+				"index": 10
 			},
 			{
 				"operation": "remove",
@@ -1067,7 +1090,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			},
 			setOwnerEnabled: function() {
 				var currentState = this.get("Status").value;
-				
 				//Направлено в группу
 				if (currentState === "ae5f2f10-f46b-1410-fd9a-0050ba5d6c38" && this.get("isUserGroupSupervisor")) {
 					this.set("isOwnerEnabled", true);
@@ -1077,20 +1099,30 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 					this.set("isOwnerEnabled", false);
 				}
 			},
+			setGroupEnabled: function() {
+				if (this.isAddMode() || this.isCopyMode()) {
+					this.set("isGroupEnabled", true);
+				} else {
+					var currentState = this.get("Status").displayValue;
+					var currentUser = this.get("Owner") ? this.get("Owner").value : null;
+					if (currentState === "В работе" && (currentUser === Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value ||
+					this.get("isUserGroupSupervisor"))) {
+						this.set("isGroupEnabled", true);
+						this.setCurrentUser();
+					} else if (currentState === "Направлено в группу") {
+						this.cleanOwner();
+						this.set("isGroupEnabled", false);
+					} else {
+						this.set("isGroupEnabled", false);
+					}
+				}
+			},
 			onOwnerChanged: function() {
 				this.setButtonsVisible();
 			},
-			onStatusChanged: function() {
-				var currentState = this.get("Status").displayValue;
-				if (currentState === "В работе") {
-					this.set("isGroupEnabled", true);
-					this.setCurrentUser();
-				} else if (currentState === "Направлено в группу") {
-					this.cleanOwner();
-					this.set("isGroupEnabled", false);
-				} else {
-					this.set("isGroupEnabled", false);
-				}
+			onStatusChangedHandler: function() {
+				this.setGroupEnabled();
+				this.setOwnerEnabled();
 			},
 			setCurrentUser: function() {
 				if (!this.get("Owner")) {
@@ -1129,8 +1161,8 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				this.callParent(arguments);
 				document.scope = this;
 				this.isUserInGroup();
-				//this.isUserGroupSupervisor();
 				this.getDefaultGroup();
+				this.setGroupEnabled();
 				if (this.isAddMode() || this.isCopyMode()) {
 					this.set("isGroupEnabled", true);
 					this.Terrasoft.SysSettings.querySysSettingsItem("DefaultGroup",
@@ -1149,6 +1181,12 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 					this.changeDetailSender.bind(this),
 					["ChangeDetailReadyKey"]
 				);
+				this.setPreviousGroup();
+			},
+			setPreviousGroup: function() {
+				if (this.get("Group")) {
+					this.set("previousGroup", this.get("Group"));
+				}
 			},
 			changeDetailSender: function() {
 				var flag = false;
@@ -1293,6 +1331,11 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			onSaved: function() {
 				this.callParent(arguments);
 				this.setButtonsVisible();
+				this.setGroupEnabled();
+				if (this.get("Group") !== this.get("previousGroup")) {
+					this.onAppointToGroupButtonClick();
+				}
+				this.setPreviousGroup();
 			}
 		},
 		rules: {},
@@ -1471,6 +1514,30 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 							"rightExpression": {
 								"type": 0,
 								"value": "c3e56835-572f-4fc5-aecd-3f72e29286a8",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"Owner": {
+				"1a832faa-e461-4984-b30a-9181a539bb18": {
+					"uId": "1a832faa-e461-4984-b30a-9181a539bb18",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Status"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "7e9f1204-f46b-1410-fb9a-0050ba5d6c38",
 								"dataValueType": 10
 							}
 						}

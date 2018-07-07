@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "205b1d1d-cfcb-45c6-a5d8-846031fbb819",
+    "Name": "TimeDiff_FirstWork",
+    "ModifiedOnUtc": "\/Date(1530882549000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Расчет длительности приостановки",
+    "DependsOn": []
+  }
+}
