@@ -23,15 +23,15 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			}
 		},
 		attributes: {
-			"previousGroup": {
-				"dataValueType": Terrasoft.DataValueType.LOOKUP,
-				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
-				"value": false
-			},
 			"isOwnerEnabled": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
 				"value": false
+			},
+			"isOwnerToBeChanged": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": true
 			},
 			"isUserInGroup": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
@@ -964,8 +964,18 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				}, this);
 			},
 			onGroupChanged: function() {
+				this.set("isOwnerToBeChanged", false);
 				this.cleanOwner();
 				this.isUserInGroup();
+				var status = {
+					IsFinal: false,
+					IsPaused: false,
+					IsResolved: false,
+					displayValue: "Направлено в группу",
+					primaryImageValue: "",
+					value: "ae5f2f10-f46b-1410-fd9a-0050ba5d6c38"
+				};
+				this.set("Status", status);
 			},
 			isUserInDefaultGroup: function() {
 				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
@@ -1181,12 +1191,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 					this.changeDetailSender.bind(this),
 					["ChangeDetailReadyKey"]
 				);
-				this.setPreviousGroup();
-			},
-			setPreviousGroup: function() {
-				if (this.get("Group")) {
-					this.set("previousGroup", this.get("Group"));
-				}
 			},
 			changeDetailSender: function() {
 				var flag = false;
@@ -1201,6 +1205,9 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				);
 			},
 			setButtonsVisible: function() {
+				if (!this.get("isOwnerToBeChanged")) {
+					return;
+				}
 				var currentState = this.get("Status").value;
 				var visibleButtons = {};
 				var isDoButtonVisible;
@@ -1332,10 +1339,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				this.callParent(arguments);
 				this.setButtonsVisible();
 				this.setGroupEnabled();
-				if (this.get("Group") !== this.get("previousGroup")) {
-					this.onAppointToGroupButtonClick();
-				}
-				this.setPreviousGroup();
+				this.set("isOwnerToBeChanged", true);
 			}
 		},
 		rules: {},
