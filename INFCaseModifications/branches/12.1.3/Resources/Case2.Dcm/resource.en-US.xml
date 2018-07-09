@@ -2,14 +2,14 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Стадии обращений" />
+			<Item Name="Caption" Value="Переход по фазам" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
-			<Item Name="Stages.Stage1.Caption" Value="Направлено в группу" />
-			<Item Name="Stages.Stage2.Caption" Value="В работе" />
-			<Item Name="Stages.Stage3.Caption" Value="Приостановлено" />
-			<Item Name="Stages.Stage4.Caption" Value="Выполнено" />
-			<Item Name="Stages.Stage5.Caption" Value="Закрыто" />
+			<Item Name="Stages.Stage1.Caption" Value="Регистрация" />
+			<Item Name="Stages.Stage2.Caption" Value="Первичный анализ" />
+			<Item Name="Stages.Stage3.Caption" Value="Реализация" />
+			<Item Name="Stages.Stage4.Caption" Value="Внедрение" />
+			<Item Name="Stages.Stage5.Caption" Value="Утверждение" />
 		</Items>
 	</Group>
 </Resources>

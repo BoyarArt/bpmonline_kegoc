@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a48a71e9-1b44-4a51-9519-93afd54da43d",
+    "Name": "InfChangeConfItemEmailProcess",
+    "ModifiedOnUtc": "\/Date(1531081851000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление изменения конфигурации",
+    "DependsOn": []
+  }
+}

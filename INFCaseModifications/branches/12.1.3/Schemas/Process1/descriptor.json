@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "be6ca56a-723b-43dc-960f-a13b2d42a0e3",
+    "Name": "Process1",
+    "ModifiedOnUtc": "\/Date(1531080607000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Пример уведомления по обращению с разными страницами",
+    "DependsOn": []
+  }
+}
