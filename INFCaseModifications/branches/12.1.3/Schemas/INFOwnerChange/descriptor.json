@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c1f9f43f-97ca-4a3a-864d-465062aba057",
     "Name": "INFOwnerChange",
-    "ModifiedOnUtc": "\/Date(1531076970000)\/",
+    "ModifiedOnUtc": "\/Date(1531138922000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Изменение значения поля \"Переназначений Исполнителя\" в разделе \"Обращения\"",
     "DependsOn": []

@@ -24,6 +24,8 @@
 			<Item Name="Columns.INFTimeInLifeWithoutPause.Caption" Value="Длительность выполнения без приостановки в минутах" />
 			<Item Name="Columns.INFTimeInLifeWithPause.Caption" Value="Длительность выполнения в минутах" />
 			<Item Name="Columns.IsPaused.Caption" Value="Находится в паузе" />
+			<Item Name="Columns.isReassigned.Caption" Value="Наличие переназначения исполнителя" />
+			<Item Name="Columns.isRegrouped.Caption" Value="Наличие переназначения группы" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
 			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
