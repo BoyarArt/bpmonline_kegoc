@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "775b45ed-bb97-4684-b930-895144ddd36d",
+    "Name": "addChangeToPortalWorkplace",
+    "DBEngineType": 0,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1531139218000)\/",
+    "DependsOn": []
+  }
+}
