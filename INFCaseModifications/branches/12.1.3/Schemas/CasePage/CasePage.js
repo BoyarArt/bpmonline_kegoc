@@ -242,72 +242,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 		diff: /**SCHEMA_DIFF*/[
 			{
 				"operation": "insert",
-				"name": "SolutionFieldContainer1",
-				"values": {
-					"layout": {
-						"column": 0,
-						"row": 1,
-						"colSpan": 24,
-						"rowSpan": 1
-					},
-					"wrapClass": ["control-width-15 control-left solution-field-container"],
-					"itemType": this.Terrasoft.ViewItemType.CONTAINER,
-					"items": []
-				},
-				"parentName": "CaseInformationTabGridLayoutcbc30250",
-				"propertyName": "items"
-			},
-			{
-				"operation": "insert",
-				"name": "SolutionFieldLabel_wrap1",
-				"values": {
-					"itemType": this.Terrasoft.ViewItemType.CONTAINER,
-					"wrapClass": ["label-wrap"],
-					"items": []
-				},
-				"parentName": "SolutionFieldContainer1",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "SolutionLabelValue1",
-				"values": {
-					"itemType": this.Terrasoft.ViewItemType.LABEL,
-					"caption": {
-						"bindTo": "Resources.Strings.SolutionCaption"
-					},
-					"markerValue": "SolutionLabelValue"
-				},
-				"parentName": "SolutionFieldLabel_wrap1",
-				"propertyName": "items"
-			},
-			{
-				"operation": "insert",
-				"name": "SolutionFieldControl_wrap1",
-				"values": {
-					"itemType": this.Terrasoft.ViewItemType.CONTAINER,
-					"wrapClass": ["control-wrap"],
-					"items": []
-				},
-				"parentName": "SolutionFieldContainer1",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "Solution1",
-				"values": {
-					"contentType": this.Terrasoft.ContentType.RICH_TEXT,
-					"generator": "InlineTextEditViewGenerator.generate",
-					"bindTo": "Solution",
-					"markerValue": "Solution"
-				},
-				"parentName": "SolutionFieldControl_wrap1",
-				"propertyName": "items"
-			},
-			{
-				"operation": "insert",
 				"name": "ToWorkButton",
 				"values": {
 					"itemType": 5,
@@ -590,7 +524,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"row": 9
 					},
 					"enabled": {
-						bindTo: "isGroupEnabled"
+						"bindTo": "isGroupEnabled"
 					},
 					"contentType": 5
 				}
@@ -771,13 +705,112 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
+				"name": "SolutionFieldContainer1",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1
+					},
+					"wrapClass": [
+						"control-width-15 control-left solution-field-container"
+					],
+					"itemType": 7,
+					"items": []
+				},
+				"parentName": "CaseInformationTabGridLayoutcbc30250",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "SolutionFieldLabel_wrap1",
+				"values": {
+					"itemType": 7,
+					"wrapClass": [
+						"label-wrap"
+					],
+					"items": []
+				},
+				"parentName": "SolutionFieldContainer1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "SolutionLabelValue1",
+				"values": {
+					"itemType": 6,
+					"caption": {
+						"bindTo": "Resources.Strings.SolutionCaption"
+					},
+					"markerValue": "SolutionLabelValue"
+				},
+				"parentName": "SolutionFieldLabel_wrap1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "SolutionFieldControl_wrap1",
+				"values": {
+					"itemType": 7,
+					"wrapClass": [
+						"control-wrap"
+					],
+					"items": []
+				},
+				"parentName": "SolutionFieldContainer1",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Solution1",
+				"values": {
+					"contentType": 4,
+					"generator": "InlineTextEditViewGenerator.generate",
+					"bindTo": "Solution",
+					"markerValue": "Solution"
+				},
+				"parentName": "SolutionFieldControl_wrap1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "merge",
+				"name": "ResponseDate",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "RespondedOn",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1
+					}
+				}
+			},
+			{
+				"operation": "insert",
 				"name": "INFLastTimeInGroupb90b6c79-6a84-4af4-8281-6985eda9646c",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 3,
+						"row": 2,
 						"layoutName": "TermsControlGroup_GridLayout"
 					},
 					"bindTo": "INFLastTimeInGroup",
@@ -788,30 +821,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				"index": 6
 			},
 			{
-				"operation": "merge",
-				"name": "ResponseCaptionContainer",
-				"values": {
-					"layout": {
-						"colSpan": 6,
-						"rowSpan": 1,
-						"column": 4,
-						"row": 4
-					}
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "ClosureDate",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 5
-					}
-				}
-			},
-			{
 				"operation": "insert",
 				"name": "ArchiveDatebb16a20a-2dea-4601-a63f-127b53a6c17f",
 				"values": {
@@ -819,7 +828,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 5,
+						"row": 4,
 						"layoutName": "TermsControlGroup_GridLayout"
 					},
 					"bindTo": "ArchiveDate",
@@ -1286,6 +1295,86 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 				"parentName": "Tabca6a6731TabLabelGridLayoutf36769d7",
 				"propertyName": "items",
 				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Tabca6a6731TabLabelGroup37a96e92",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.Tabca6a6731TabLabelGroup37a96e92GroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "Tabca6a6731TabLabel",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Tabca6a6731TabLabelGridLayout9a192682",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "Tabca6a6731TabLabelGroup37a96e92",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "INFReGroup2c6463b8-efc0-4f6a-bbf0-36295f19c431",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Tabca6a6731TabLabelGridLayout9a192682"
+					},
+					"bindTo": "INFReGroup",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout9a192682",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "INFReResponcea9fe81c4-7e37-4ef7-bc72-68399a4ea596",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1,
+						"layoutName": "Tabca6a6731TabLabelGridLayout9a192682"
+					},
+					"bindTo": "INFReResponce",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout9a192682",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "INFReInit318786f1-0511-4226-9940-a2b6f9c04b93",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 2,
+						"layoutName": "Tabca6a6731TabLabelGridLayout9a192682"
+					},
+					"bindTo": "INFReInit",
+					"enabled": false
+				},
+				"parentName": "Tabca6a6731TabLabelGridLayout9a192682",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "remove",

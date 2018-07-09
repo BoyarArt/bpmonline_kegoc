@@ -44,6 +44,8 @@
 			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="Support level" />
 			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="Symptoms" />
 			<Item Name="LocalizableStrings.Tab2c83318cTabLabelTabCaption.Value" Value="Причина приостановки" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelGroup37a96e92GroupCaption.Value" Value="Счетчики" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelGroup4f370306GroupCaption.Value" Value="Длительности" />
 			<Item Name="LocalizableStrings.Tabca6a6731TabLabelGroup8b8f2b96GroupCaption.Value" Value="Ключевые даты" />
 			<Item Name="LocalizableStrings.Tabca6a6731TabLabelTabCaption.Value" Value="Аналитика" />
 		</Items>

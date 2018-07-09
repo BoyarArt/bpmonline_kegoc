@@ -118,8 +118,8 @@
 			<Item Name="Parameters.CalendarTimeZone.Caption" Value="Временная зона календаря" />
 			<Item Name="Parameters.currentId.Caption" Value="ID обращения" />
 			<Item Name="Parameters.EndDate.Caption" Value="EndDate" />
-			<Item Name="Parameters.PauseMin.Caption" Value="Значение приостановки" />
-			<Item Name="Parameters.PauseMin.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Общая длительность приостановки#]" />
+			<Item Name="Parameters.INFPause.Caption" Value="Значение приостановки" />
+			<Item Name="Parameters.INFPause.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Общая длительность приостановки#]" />
 			<Item Name="Parameters.ResTime.Caption" Value="ResolvedTime" />
 			<Item Name="Parameters.ResTime.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Длительность выполнения c учетом приостановки#]" />
 			<Item Name="Parameters.ResultTime.Caption" Value="Результат функции" />

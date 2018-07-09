@@ -139,7 +139,7 @@
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
           "UId": "258e7e9f-ce7a-487f-ba56-be86cc6afa7f",
-          "A2": "PauseMin",
+          "A2": "INFPause",
           "A3": "0a371f33-d208-471c-b109-3db369eef127",
           "A4": "0a371f33-d208-471c-b109-3db369eef127",
           "L1": "325a73b8-0f47-44a0-8412-7606f78003ac",
@@ -2770,7 +2770,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "var userConnection = Get<UserConnection>(\"UserConnection\");\nvar currentId = Get<Guid>(\"currentId\");\nvar calendarId = Get<Guid>(\"calendarId\");\nvar calendarTimeZone = Get<string>(\"CalendarTimeZone\");\nvar userTimeZone = Get<string>(\"UserTimeZone\");\nvar startDate = Get<DateTime>(\"StartDateFirstWork\");\nvar endDate = Get<DateTime>(\"EndDate\");\nvar pause = Get<string>(\"INFPause\");\npause = pause.Replace(\"д. \", \".\");\nvar resTime = Get<string>(\"ResTime\");\nif (resTime != String.Empty) {\n\tresTime = resTime.Replace(\"д. \", \".\");\n}\nTimeSpan tsRessult = new TimeSpan(0, 0, 0);\nTimeSpan sum;\nvar isReopened = Get<bool>(\"IsReopened\");\n\nif (isReopened == false) {\n\tvar CaseESQ = new EntitySchemaQuery(userConnection.EntitySchemaManager,\t\"Case\");\n\tCaseESQ.AddAllSchemaColumns();\n\tCaseESQ.Filters.Add(CaseESQ.CreateFilterWithParameters( FilterComparisonType.Equal, \"Id\", currentId));\n\tvar CaseEC = CaseESQ.GetEntityCollection(userConnection);\n\tforeach(var entity in CaseEC){\n\t\tif (endDate > startDate)\n\t\t{\n\t\t\ttsRessult = UsrTimePeriodServise.GetRessult(startDate, endDate, calendarId, calendarTimeZone, userTimeZone, userConnection);\n\t\t\t\tif (pause!=String.Empty){\n\t\t\t\t\tif (TimeSpan.TryParse(pause, out sum)){\n\t\t\t\t\t\ttsRessult = tsRessult - sum;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\tstring res = String.Format(\"{0:0}д. {1:00}:{2:00}:{3:00}\", tsRessult.Days, tsRessult.Hours, tsRessult.Minutes, tsRessult.Seconds);\n\t\t\tint ttl = tsRessult.Days * 24 * 60 + tsRessult.Hours * 60 + tsRessult.Minutes;\n\t\t\tSet(\"ResultTime\", res);\n\t\t\tSet(\"TTLMinutes\", ttl);\n\t\t}\n\t\telse if(endDate == startDate)\n\t\t{\n\t\t\tSet(\"ResultTime\", \"0.00:00:00\");\n\t\t\tSet(\"TTLMinutes\", 0);\n\t\t}\n\t    \n\t}\n} else {\n\tvar CaseESQ = new EntitySchemaQuery(userConnection.EntitySchemaManager,\t\"Case\");\n\tCaseESQ.AddAllSchemaColumns();\n\tCaseESQ.Filters.Add(CaseESQ.CreateFilterWithParameters( FilterComparisonType.Equal, \"Id\", currentId));\n\tvar CaseEC = CaseESQ.GetEntityCollection(userConnection);\n\tforeach(var entity in CaseEC){\n\t\tif (endDate > startDate)\n\t\t{\n\t\t\ttsRessult = UsrTimePeriodServise.GetRessult(startDate, endDate, calendarId, calendarTimeZone, userTimeZone, userConnection);\n\t\t\t\tif (pause!=String.Empty){\n\t\t\t\t\tif (TimeSpan.TryParse(pause, out sum)){\n\t\t\t\t\t\ttsRessult = tsRessult - sum;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tif (resTime!=String.Empty){\n\t\t\t\t\tif (TimeSpan.TryParse(resTime, out sum)){\n\t\t\t\t\t\ttsRessult = tsRessult + sum;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\tstring res = String.Format(\"{0:0}д. {1:00}:{2:00}:{3:00}\", tsRessult.Days, tsRessult.Hours, tsRessult.Minutes, tsRessult.Seconds);\n\t\t\tint ttl = tsRessult.Days * 24 * 60 + tsRessult.Hours * 60 + tsRessult.Minutes;\n\t\t\tSet(\"ResultTime\", res);\n\t\t\tSet(\"TTLMinutes\", ttl);\n\t\t}\n\t\telse if(endDate == startDate)\n\t\t{\n\t\t\tSet(\"ResultTime\", \"0.00:00:00\");\n\t\t\tSet(\"TTLMinutes\", 0);\n\t\t}\n\t    \n\t}\n}\nreturn true;",
+          "CH1": "var userConnection = Get<UserConnection>(\"UserConnection\");\nvar currentId = Get<Guid>(\"currentId\");\nvar calendarId = Get<Guid>(\"calendarId\");\nvar calendarTimeZone = Get<string>(\"CalendarTimeZone\");\nvar userTimeZone = Get<string>(\"UserTimeZone\");\nvar startDate = Get<DateTime>(\"StartDateFirstWork\");\nvar endDate = Get<DateTime>(\"EndDate\");\nvar pause = Get<string>(\"INFPause\");\npause = pause.Replace(\"д. \", \".\");\nvar resTime = Get<string>(\"ResTime\");\nif (resTime != String.Empty) {\n\tresTime = resTime.Replace(\"д. \", \".\");\n}\nTimeSpan tsRessult = new TimeSpan(0, 0, 0);\nTimeSpan sum;\n\nvar CaseESQ = new EntitySchemaQuery(userConnection.EntitySchemaManager,\t\"Case\");\nCaseESQ.AddAllSchemaColumns();\nCaseESQ.Filters.Add(CaseESQ.CreateFilterWithParameters( FilterComparisonType.Equal, \"Id\", currentId));\nvar CaseEC = CaseESQ.GetEntityCollection(userConnection);\nforeach(var entity in CaseEC){\n\tif (endDate > startDate)\n\t{\n\t\ttsRessult = UsrTimePeriodServise.GetRessult(startDate, endDate, calendarId, calendarTimeZone, userTimeZone, userConnection);\n\t\tif (pause!=String.Empty){\n\t\t\t\t\tif (TimeSpan.TryParse(pause, out sum)){\n\t\t\t\t\t\ttsRessult = tsRessult - sum;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\tstring res = String.Format(\"{0:0}д. {1:00}:{2:00}:{3:00}\", tsRessult.Days, tsRessult.Hours, tsRessult.Minutes, tsRessult.Seconds);\n\t\tint ttl = tsRessult.Days * 24 * 60 + tsRessult.Hours * 60 + tsRessult.Minutes;\n\t\tSet(\"ResultTime\", res);\n\t\tSet(\"TTLMinutes\", ttl);\n\t}\n\telse if(endDate == startDate)\n\t{\n\t\tSet(\"ResultTime\", \"0.00:00:00\");\n\t\tSet(\"TTLMinutes\", 0);\n\t}\n    \n\t\t\n\t\n}\n\nreturn true;",
           "CH2": true
         },
         {
@@ -3304,8 +3304,7 @@
       "BK29": true,
       "BK30": true,
       "BK34": "ru-RU",
-      "BK24": [],
-      "BK36": false
+      "BK24": []
     }
   }
 }

@@ -3,6 +3,17 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="Odpověď na požadavek" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Skrýt systémové zprávy" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Historie" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Profil požadavku" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Zpracování" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Zpráva uživateli 1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Najít shodné požadavky" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Zobrazit systémové zprávy" />
 		</Items>
 	</Group>
 </Resources>
