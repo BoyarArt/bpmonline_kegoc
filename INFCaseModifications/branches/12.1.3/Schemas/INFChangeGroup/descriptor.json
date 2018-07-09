@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a1173260-2f80-49e8-95c0-027286bcff92",
+    "Name": "INFChangeGroup",
+    "ModifiedOnUtc": "\/Date(1531077070000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Изменение значения поля \"Переназначений Исполнителя\" в разделе \"Обращения\"",
+    "DependsOn": []
+  }
+}

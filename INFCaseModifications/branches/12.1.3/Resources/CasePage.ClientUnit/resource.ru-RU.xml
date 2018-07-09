@@ -20,7 +20,7 @@
 			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Вернуть в очередь" />
 			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Ошибка возвращения элемента в очередь. Сообщение об ошибке: {0}" />
 			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Обработка" />
-			<Item Name="LocalizableStrings.ProcessingTabCaption.Value" Value="Обработка" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Value" Value="Переписка" />
 			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Страница не связана с элементом очереди единого окна. Действие отменено." />
 			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Ошибка при возвращении элемента в очередь" />
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Элемент успешно возвращен в очередь" />
@@ -37,11 +37,13 @@
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Показать системные сообщения" />
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Value" Value="Показать системные сообщения" />
 			<Item Name="LocalizableStrings.SolutionFieldPlaceholder.Value" Value="Детальное описание решения" />
+			<Item Name="LocalizableStrings.SolutionTabCaption.Value" Value="Изменения" />
 			<Item Name="LocalizableStrings.SolvedOnSupportLevelCaption.Value" Value="Решено на уровне" />
 			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="Уровень поддержки" />
 			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="Описание" />
 			<Item Name="LocalizableStrings.Tab2c83318cTabLabelTabCaption.Value" Value="Причина приостановки" />
-			<Item Name="LocalizableStrings.Tabca6a6731TabLabelTabCaption.Value" Value="Аналитика" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelGroup8b8f2b96GroupCaption.Value" Value="Ключевые даты" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelTabCaption.Value" Value="Хронология" />
 		</Items>
 	</Group>
 </Resources>

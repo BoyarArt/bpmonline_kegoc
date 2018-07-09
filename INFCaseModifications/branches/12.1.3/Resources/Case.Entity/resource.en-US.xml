@@ -4,7 +4,9 @@
 		<Items>
 			<Item Name="Columns.ArchiveDate.Caption" Value="Дата и время архивирования" />
 			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
+			<Item Name="Columns.ClosureCode.Caption" Value="Код выполнения" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Дата регистрации" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
 			<Item Name="Columns.INFLastTimeInGroup.Caption" Value="Дата и время последнего направления в группу" />
 			<Item Name="Columns.INFLastWorkMin.Caption" Value="Минут последнего выполнения" />
@@ -12,7 +14,10 @@
 			<Item Name="Columns.INFPauseMin.Caption" Value="Длительность паузы в минутах" />
 			<Item Name="Columns.INFPauseTime.Caption" Value="Дата и время последней приостановки" />
 			<Item Name="Columns.INFPauseTimeOut.Caption" Value="Дата и время выхода из приостановки" />
+			<Item Name="Columns.INFReGroup.Caption" Value="Переназначений Группы" />
+			<Item Name="Columns.INFReInit.Caption" Value="Переоткрытий Инициатором" />
 			<Item Name="Columns.INFReopened.Caption" Value="Время переоткрытия инициатором" />
+			<Item Name="Columns.INFReResponce.Caption" Value="Переназначений Исполнителя" />
 			<Item Name="Columns.INFTimeBeforeLastWork.Caption" Value="Времени до последнего принятия в работу" />
 			<Item Name="Columns.INFTimeBeforeWork.Caption" Value="Времени до первого принятия в работу" />
 			<Item Name="Columns.INFTimeBeforeWorkMin.Caption" Value="Минут до первого принятия в работу" />

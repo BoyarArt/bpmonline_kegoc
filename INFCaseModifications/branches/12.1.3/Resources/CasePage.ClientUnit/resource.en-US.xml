@@ -39,10 +39,12 @@
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Show system messages" />
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Value" Value="Show system messages" />
 			<Item Name="LocalizableStrings.SolutionFieldPlaceholder.Value" Value="Resolution description" />
+			<Item Name="LocalizableStrings.SolutionTabCaption.Value" Value="Изменения" />
 			<Item Name="LocalizableStrings.SolvedOnSupportLevelCaption.Value" Value="Support level" />
 			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="Support level" />
 			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="Symptoms" />
 			<Item Name="LocalizableStrings.Tab2c83318cTabLabelTabCaption.Value" Value="Причина приостановки" />
+			<Item Name="LocalizableStrings.Tabca6a6731TabLabelGroup8b8f2b96GroupCaption.Value" Value="Ключевые даты" />
 			<Item Name="LocalizableStrings.Tabca6a6731TabLabelTabCaption.Value" Value="Аналитика" />
 		</Items>
 	</Group>

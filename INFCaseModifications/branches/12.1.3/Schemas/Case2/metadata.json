@@ -88,34 +88,7 @@
         }
       ],
       "Transitions": [],
-      "StageConnections": {
-        "Connections": [
-          {
-            "Source": "e12ea19d-a16a-4c51-910e-5595424465d1",
-            "Target": "121c1f95-d6f0-4543-b744-33bbb34852fb"
-          },
-          {
-            "Source": "121c1f95-d6f0-4543-b744-33bbb34852fb",
-            "Target": "099deb9b-ead6-4f50-a0b8-4a5eca43f770"
-          },
-          {
-            "Source": "121c1f95-d6f0-4543-b744-33bbb34852fb",
-            "Target": "e12ea19d-a16a-4c51-910e-5595424465d1"
-          },
-          {
-            "Source": "099deb9b-ead6-4f50-a0b8-4a5eca43f770",
-            "Target": "e12ea19d-a16a-4c51-910e-5595424465d1"
-          },
-          {
-            "Source": "121c1f95-d6f0-4543-b744-33bbb34852fb",
-            "Target": "ed51478b-a2f2-4aa4-bd01-9346dbb90782"
-          },
-          {
-            "Source": "ed51478b-a2f2-4aa4-bd01-9346dbb90782",
-            "Target": "71da6273-0096-422f-9e41-7efbcc7f7d9c"
-          }
-        ]
-      },
+      "StageConnections": {},
       "StageColumnUId": "a71adaea-3464-4dee-bb4f-c7a535450ad7",
       "SystemElements": []
     }
