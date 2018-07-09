@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "d22f3fed-2c95-4645-ae7c-dad93db1ae0b",
+    "Name": "SysModuleEntityInPortal",
+    "ModifiedOnUtc": "\/Date(1531134360000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "0933e2c4-342c-41e0-adce-7dbc2c8860bf",
+      "Name": "SysModuleEntityInPortal"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "a9afe7de-15cf-48a6-b6fb-249b1883c032",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "SysModuleEntity",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "c86fd533-a630-42fa-8042-c604384abe1f",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "SysPortal",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

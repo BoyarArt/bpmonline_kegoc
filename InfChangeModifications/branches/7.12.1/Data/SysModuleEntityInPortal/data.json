@@ -1,0 +1,22 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6f15188e-f3e8-4b87-820a-a40642baa9a3"
+        },
+        {
+          "SchemaColumnUId": "a9afe7de-15cf-48a6-b6fb-249b1883c032",
+          "Value": "f85ca133-bec5-47c7-88f1-211aea8e7c00",
+          "DisplayValue": "null"
+        },
+        {
+          "SchemaColumnUId": "c86fd533-a630-42fa-8042-c604384abe1f",
+          "Value": "c8565240-1da3-4a68-bd4e-280f17b0d32e",
+          "DisplayValue": "ServicePortal"
+        }
+      ]
+    }
+  ]
+}

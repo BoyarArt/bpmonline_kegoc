@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "695ffa68-2e31-4a9d-b2f2-11d82e76bbcd",
+    "Name": "deleteKnowledgeFromPortal",
+    "DBEngineType": 0,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1531134724000)\/",
+    "DependsOn": []
+  }
+}
