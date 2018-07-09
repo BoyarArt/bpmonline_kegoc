@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e204b097-b030-4b1f-a2ff-a8fb1ad0013d",
+    "Name": "Process2",
+    "ModifiedOnUtc": "\/Date(1531130907000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Установка группы по умолчанию",
+    "DependsOn": []
+  }
+}
