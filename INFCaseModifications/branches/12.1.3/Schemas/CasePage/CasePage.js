@@ -1,7 +1,8 @@
 define("CasePage", ["BusinessRuleModule", "ConfigurationConstants",
-"ProcessModuleUtilities", "CaseServiceUtility", "ServiceHelper", "CasesEstimateLabel", "ServiceDeskConstants"],
+"ProcessModuleUtilities", "CaseServiceUtility", "ServiceHelper",
+"CasesEstimateLabel", "ServiceDeskConstants", "CasePageResources"],
 function(BusinessRuleModule, ConfigurationConstants, ProcessModuleUtilities,
-CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
+CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, resourses) {
 	return {
 		entitySchemaName: "Case",
 		messages: {
@@ -209,6 +210,43 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 						"methodName": "CaseTermByTechService"
 					}
 				]
+			},
+			"Group": {
+				//columns: ["Group", "Id"],
+				lookupListConfig: {
+					filter: function() {
+						var filterGroup = new this.Terrasoft.createFilterGroup();
+						if (this.get("ServiceItem") == null) {
+							filterGroup.add(
+							"GroupFilterByServiceItem",
+							this.Terrasoft.createColumnFilterWithParameter(
+							Terrasoft.ComparisonType.EQUAL,
+							"Id",
+							this.get("DefaultGroup").value
+							)
+							);
+							return filterGroup;
+						}
+						filterGroup.logicalOperation = this.Terrasoft.LogicalOperatorType.OR;
+						filterGroup.add(
+							"GroupFilterByServiceItem",
+							this.Terrasoft.createColumnFilterWithParameter(
+							Terrasoft.ComparisonType.EQUAL,
+							"[ServiceEngineer:Engineer].ServiceItem",
+							this.get("ServiceItem").value
+							)
+						);
+						filterGroup.add(
+							"GroupFilterByServiceItemDef",
+							this.Terrasoft.createColumnFilterWithParameter(
+							Terrasoft.ComparisonType.EQUAL,
+							"Id",
+							this.get("DefaultGroup").value
+							)
+						);
+						return filterGroup;
+					}
+				}
 			}
 		},
 		details: /**SCHEMA_DETAILS*/{
@@ -1529,6 +1567,20 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants) {
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			getActions: function() {
+				var menuItems = this.callParent(arguments);
+				var newMenuItems = menuItems.filterByFn(function(item, key) {
+					if (item.values.Tag === "runEscalation" ||
+					item.values.Tag === "runReclassification" ||
+					item.values.Tag === "runSearchForSimilarCases" ||
+					item.values.Tag === "editRights") {
+						return false;
+					} else {
+						return true;
+					}
+				});
+				return newMenuItems;
+			},
 			getDefaultGroup: function() {
 				this.Terrasoft.SysSettings.querySysSettingsItem("DefaultGroup",
 				function(value) {
