@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a8259af4-2de7-46e9-afb3-fb96ca0a0c6b",
+    "Name": "ReGroupProcess",
+    "ModifiedOnUtc": "\/Date(1531229623000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Направлять в группу при смене текущей группы",
+    "DependsOn": []
+  }
+}

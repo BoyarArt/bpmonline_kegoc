@@ -24,7 +24,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Запись для формирования макросов" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Письмо по шаблону" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Уведомление при каждом поступлении обращения в группу (US)" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="На группу назначено обращение (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Контекст выполнения" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Игнорировать ошибки отправки" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />
@@ -68,8 +68,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.StartInPeriod.Caption" Value="Через сколько начать выполнение (период)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.StartInPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.Caption" Value="Тема" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.DisplayValue" Value="Обращение назначено в группу" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.Value" Value="Обращение назначено в группу" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.DisplayValue" Value="На вашу группу назначено обращение №[#Number#] &quot;[#Subject#]&quot;." />
 			<Item Name="Caption" Value="Подпроцесс отправки уведомления при назначении в группу (INF)" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />

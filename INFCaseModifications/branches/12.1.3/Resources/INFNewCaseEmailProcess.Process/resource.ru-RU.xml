@@ -23,11 +23,12 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.Caption" Value="Длительность (период)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Запись для формирования макросов" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.DisplayValue" Value="[#Создано Обращение.Уникальный идентификатор записи#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Письмо по шаблону" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="При регистрации нового обращения (INF) (US)" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Сообщение о регистрации обращения (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Контекст выполнения" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Игнорировать ошибки отправки" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="false" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Importance.Caption" Value="Важность" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Importance.DisplayValue" Value="Средняя" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Incident.Caption" Value="Инцидент" />
@@ -58,7 +59,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.SendEmailType.Caption" Value="Как выполняется отправка?" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.SendEmailType.DisplayValue" Value="Отправить email автоматически" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.Caption" Value="От кого" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.DisplayValue" Value="[#Системная настройка.Mailbox for sending registration confirmation letter#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.DisplayValue" Value="[#Справочник.Настройки синхронизации с почтовым ящиком.corp\itsmtest#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowExecutionPage.Caption" Value="Показывать страницу выполнения автоматически" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowExecutionPage.DisplayValue" Value="true" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowInScheduler.Caption" Value="Отображать в расписании" />
@@ -68,7 +69,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.StartInPeriod.Caption" Value="Через сколько начать выполнение (период)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.StartInPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.Caption" Value="Тема" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.DisplayValue" Value="Создано новое обращение" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.DisplayValue" Value="Ваше обращение зарегистрировано #[#Number#]" />
 			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="Читать Обращение" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Имя колонки для агрегирующей функции" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.Caption" Value="Выполнять &quot;грязное чтение&quot;" />

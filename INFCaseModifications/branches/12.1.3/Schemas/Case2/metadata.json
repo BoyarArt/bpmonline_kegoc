@@ -30,15 +30,14 @@
       "Stages": [
         {
           "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
-          "UId": "e12ea19d-a16a-4c51-910e-5595424465d1",
+          "UId": "a97fe97e-4214-43a2-924e-987b2c936b57",
           "A2": "Stage1",
           "A3": "a8a5525f-4b95-4e4c-ad66-70d0fe6690ac",
           "A4": "a8a5525f-4b95-4e4c-ad66-70d0fe6690ac",
           "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
           "Color": "#8ecb60",
           "StageRecordId": "ae5f2f10-f46b-1410-fd9a-0050ba5d6c38",
-          "Elements": [],
-          "IsSuccessful": false
+          "Elements": []
         },
         {
           "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",

@@ -23,8 +23,9 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.Caption" Value="Duration (period)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Record for macros" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.DisplayValue" Value="[#Создано Обращение.Уникальный идентификатор записи#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Template message" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="При регистрации нового обращения (INF) (US)" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Сообщение о регистрации обращения (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Execution context" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Ignore email errors" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />

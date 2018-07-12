@@ -23,8 +23,9 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.Caption" Value="Duration (period)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Record for macros" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.DisplayValue" Value="[#Обращение в работе.Уникальный идентификатор записи#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Template message" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Уведомление при возврате Инициатором на доработку (INF) (US)" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Письмо о переоткрытии обращения (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Execution context" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Ignore email errors" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />
@@ -49,7 +50,9 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.Caption" Value="Кому 2" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.DisplayValue" Value="[#Подпроцесс поиска непосредственного руководителя (INF) 1.Руководитель#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient3.Caption" Value="Кому 3" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient3.DisplayValue" Value="[#Найти менеджер процесса.Первый элемент результирующей коллекции.Контакт#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient3.DisplayValue" Value="[#Читать Обращение.Первый элемент результирующей коллекции.Контакт#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient4.Caption" Value="Кому 4" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient4.DisplayValue" Value="[#PMList#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Caption" Value="Recommendation" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.DisplayValue" Value="Отправить email 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Value" Value="Отправить email 1" />
@@ -73,7 +76,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.StartInPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.Caption" Value="Subject" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.DisplayValue" Value="Обращение опять в работе" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Subject.Value" Value="Обращение опять в работе" />
+			<Item Name="BaseElements.FormulaTask1.Caption" Value="Установить название группы координаторов" />
 			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="Читать Обращение" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
@@ -110,37 +113,23 @@
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultType.Caption" Value="Type of result" />
-			<Item Name="BaseElements.ReadDataUserTask3.Caption" Value="Читать вхождение в роль" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.FunctionType.Caption" Value="Aggregate function type" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.OrderInfo.Caption" Value="Columns order" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultCount.Caption" Value="Number of records" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultDateTimeFunction.Caption" Value="Function result" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultFloatFunction.Caption" Value="Function result" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
-			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Поиск всех ящиков группы координаторов" />
+			<Item Name="BaseElements.ScriptTask2.Caption" Value="Поиск всех ящиков process managers" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="Обращение в работе" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
-			<Item Name="BaseElements.SubProcess1.Caption" Value="Подпроцесс поиска непосредственного руководителя (INF) 1" />
-			<Item Name="BaseElements.SubProcess1.Parameters.Group.Caption" Value="Группа" />
-			<Item Name="BaseElements.SubProcess1.Parameters.Group.DisplayValue" Value="[#Читать Обращение.Первый элемент результирующей коллекции.Группа ответственных#]" />
-			<Item Name="BaseElements.SubProcess1.Parameters.SupervisorId.Caption" Value="Руководитель" />
 			<Item Name="Caption" Value="Обращения: отправка email при возврате Инициатором на доработку (INF)" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.GroupName.Caption" Value="Название группы Координаторов" />
 			<Item Name="Parameters.ManagerRole.Caption" Value="Роль менеджера" />
 			<Item Name="Parameters.ManagerRole.DisplayValue" Value="[#Системная настройка.Группа менеджеров процесса управления инцидентами и запросами#]" />
+			<Item Name="Parameters.PMList.Caption" Value="PMList" />
+			<Item Name="Parameters.ProcessManagers.Caption" Value="Process Managers" />
+			<Item Name="Parameters.ProcessManagers.DisplayValue" Value="Process Managers" />
+			<Item Name="Parameters.ProcessManagers.Value" Value="Process Managers" />
+			<Item Name="Parameters.Recepients.Caption" Value="Получатели" />
 		</Items>
 	</Group>
 </Resources>

@@ -25,6 +25,7 @@
 			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Ошибка при возвращении элемента в очередь" />
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Элемент успешно возвращен в очередь" />
 			<Item Name="LocalizableStrings.ReclassificationTitle.Value" Value="Реклассифицировать обращения" />
+			<Item Name="LocalizableStrings.Schema1Detaild2262c3eDetailCaptionOnPage.Value" Value="Журнал приостановок" />
 			<Item Name="LocalizableStrings.Schema2Detailb9e8651dDetailCaptionOnPage.Value" Value="Изменения" />
 			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Message to user 1" />
 			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Поиск аналогичных обращений" />

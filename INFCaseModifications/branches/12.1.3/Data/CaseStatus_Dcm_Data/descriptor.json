@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "92ffbf2f-3090-4f2f-872a-af0da3179478",
     "Name": "CaseStatus_Dcm_Data",
-    "ModifiedOnUtc": "\/Date(1530276409000)\/",
+    "ModifiedOnUtc": "\/Date(1531201768000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "99f35013-6b7a-47d6-b440-e3f1a0ba991c",
@@ -10,25 +10,18 @@
     },
     "Columns": [
       {
-        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "ColumnUId": "b78647f6-76db-4d25-b665-00fce475324e",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "Name",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-      },
-      {
-        "ColumnUId": "98771b3f-7dbe-4b12-a017-0ab8d406a02a",
-        "IsForceUpdate": false,
-        "IsKey": false,
-        "ColumnName": "IsResolved",
+        "ColumnName": "IsFinal",
         "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       },
       {
-        "ColumnUId": "ae2d9da9-d348-4102-b873-3cfee70fa119",
+        "ColumnUId": "6c9aee5b-b638-4271-adcc-ed4725905bf8",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "Color",
-        "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
+        "ColumnName": "ClosureCode",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
       },
       {
         "ColumnUId": "bf194ba2-93db-48f8-9bb6-5cb160bf8869",
@@ -45,18 +38,11 @@
         "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
       },
       {
-        "ColumnUId": "6c9aee5b-b638-4271-adcc-ed4725905bf8",
+        "ColumnUId": "5cafa2ad-ff58-42a8-964a-d500c00a5387",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "ClosureCode",
-        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
-      },
-      {
-        "ColumnUId": "88e06ee3-f590-4e50-bc54-565b2958a71a",
-        "IsForceUpdate": false,
-        "IsKey": false,
-        "ColumnName": "Image",
-        "DataTypeValueUId": "b039feb0-ee7c-4884-8aa6-d6d45d84316f"
+        "ColumnName": "IsDisplayed",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       },
       {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
@@ -66,17 +52,24 @@
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
       },
       {
-        "ColumnUId": "b78647f6-76db-4d25-b665-00fce475324e",
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "IsFinal",
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "c2180cbe-13ad-4ad0-bbc5-ae229f8c1526",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "IsCloseOnSave",
         "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       },
       {
-        "ColumnUId": "5cafa2ad-ff58-42a8-964a-d500c00a5387",
+        "ColumnUId": "98771b3f-7dbe-4b12-a017-0ab8d406a02a",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "IsDisplayed",
+        "ColumnName": "IsResolved",
         "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       },
       {
@@ -87,11 +80,18 @@
         "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       },
       {
-        "ColumnUId": "c2180cbe-13ad-4ad0-bbc5-ae229f8c1526",
+        "ColumnUId": "ae2d9da9-d348-4102-b873-3cfee70fa119",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "IsCloseOnSave",
-        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+        "ColumnName": "Color",
+        "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
+      },
+      {
+        "ColumnUId": "88e06ee3-f590-4e50-bc54-565b2958a71a",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Image",
+        "DataTypeValueUId": "b039feb0-ee7c-4884-8aa6-d6d45d84316f"
       },
       {
         "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",

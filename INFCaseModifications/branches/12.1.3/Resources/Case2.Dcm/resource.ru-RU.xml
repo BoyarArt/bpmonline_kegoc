@@ -5,7 +5,7 @@
 			<Item Name="Caption" Value="Переход по фазам" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
-			<Item Name="Stages.Stage1.Caption" Value="Новое" />
+			<Item Name="Stages.Stage1.Caption" Value="Направлено в группу" />
 			<Item Name="Stages.Stage2.Caption" Value="В работе" />
 			<Item Name="Stages.Stage3.Caption" Value="Приостановлено" />
 			<Item Name="Stages.Stage4.Caption" Value="Выполнено" />

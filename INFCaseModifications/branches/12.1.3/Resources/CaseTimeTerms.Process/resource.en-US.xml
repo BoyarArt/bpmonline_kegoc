@@ -2,12 +2,6 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="BaseElements.ChangeDataUserTask1.Caption" Value="Время реакции" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.EntitySchemaUId.Caption" Value="Объект" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.Caption" Value="Если объект соответствует условиям" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.DisplayValue" Value="true" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Caption" Value="Изменить даты в обращении - Копия" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.EntitySchemaUId.Caption" Value="Объект" />
@@ -15,7 +9,6 @@
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.DisplayValue" Value="true" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
 			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Если ИТ услуга" />
-			<Item Name="BaseElements.ConditionalSequenceFlow2.Caption" Value="Если нет времени реакции" />
 			<Item Name="BaseElements.DefaultSequenceFlow1.Caption" Value="Если тех услуга" />
 			<Item Name="BaseElements.FormulaTask1.Caption" Value="Передать ID" />
 			<Item Name="BaseElements.FormulaTask2.Caption" Value="Передать ID" />

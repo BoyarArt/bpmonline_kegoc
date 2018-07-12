@@ -26,7 +26,12 @@
 			<Item Name="Columns.IsPaused.Caption" Value="Находится в паузе" />
 			<Item Name="Columns.isReassigned.Caption" Value="Наличие переназначения исполнителя" />
 			<Item Name="Columns.isRegrouped.Caption" Value="Наличие переназначения группы" />
+			<Item Name="Columns.isResolved.Caption" Value="Было выполнено" />
+			<Item Name="Columns.PercentNotify50.Caption" Value="Было отправлено уведомление о 50%" />
+			<Item Name="Columns.PercentNotify70.Caption" Value="Было отправлено уведомление о 70%" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
+			<Item Name="Columns.ResolutionTime50.Caption" Value="50% от срока разрешения" />
+			<Item Name="Columns.ResolutionTime70.Caption" Value="70% от срока разрешения" />
 			<Item Name="Columns.ServiceItem.Caption" Value="ИТ сервис" />
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
 			<Item Name="Columns.TechService.Caption" Value="Технический сервис" />

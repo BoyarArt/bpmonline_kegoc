@@ -2,12 +2,6 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
-			<Item Name="BaseElements.ChangeDataUserTask1.Caption" Value="Время реакции" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.EntitySchemaUId.Caption" Value="Объект" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.Caption" Value="Если объект соответствует условиям" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.DisplayValue" Value="true" />
-			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Caption" Value="Время реакции + время разрешения" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.EntitySchemaUId.Caption" Value="Объект" />
@@ -15,7 +9,6 @@
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.IsMatchConditions.DisplayValue" Value="true" />
 			<Item Name="BaseElements.ChangeDataUserTask2.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
 			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Если ИТ услуга" />
-			<Item Name="BaseElements.ConditionalSequenceFlow2.Caption" Value="Если нет времени реакции" />
 			<Item Name="BaseElements.DefaultSequenceFlow1.Caption" Value="Если тех услуга" />
 			<Item Name="BaseElements.FormulaTask1.Caption" Value="Передать ID" />
 			<Item Name="BaseElements.FormulaTask2.Caption" Value="Передать ID" />
@@ -73,7 +66,7 @@
 			<Item Name="BaseElements.StartSignal3.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
 			<Item Name="BaseElements.StartSignal4.Caption" Value="Изменен тех сервис" />
 			<Item Name="BaseElements.StartSignal4.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
-			<Item Name="Caption" Value="Расчет плановых сроков" />
+			<Item Name="Caption" Value="Расчет 50% и 70% от планового срока выполнения" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
@@ -93,7 +86,7 @@
 			<Item Name="Parameters.Solution.Caption" Value="Solution" />
 			<Item Name="Parameters.str.Caption" Value="str" />
 			<Item Name="Parameters.TimeInPause.Caption" Value="TimeInPause" />
-			<Item Name="Parameters.TimeInPause.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Длительность паузы в минутах#]" />
+			<Item Name="Parameters.TimeInPause.DisplayValue" Value="[#Читать обращение.Первый элемент результирующей коллекции.Длительность приостановки в минутах#]" />
 		</Items>
 	</Group>
 </Resources>

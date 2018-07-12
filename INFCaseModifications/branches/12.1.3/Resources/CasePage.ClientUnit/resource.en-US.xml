@@ -27,6 +27,7 @@
 			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Unable to re-queue item" />
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Successfully re-queued" />
 			<Item Name="LocalizableStrings.ReclassificationTitle.Value" Value="Reclassify" />
+			<Item Name="LocalizableStrings.Schema1Detaild2262c3eDetailCaptionOnPage.Value" Value="Попытки приостановки" />
 			<Item Name="LocalizableStrings.Schema2Detailb9e8651dDetailCaptionOnPage.Value" Value="Изменения (в Обращении)" />
 			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Message to user 1" />
 			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Search for similar cases" />

@@ -361,6 +361,67 @@ namespace Terrasoft.Configuration.Calendars
 			return json;
 		}
 		
+		public string PercentDiff(string ITServiceId, string GroupId, string dateInput, int timeinpause, string categoryname, int indx) {
+
+			DateTime RegTime = DateTime.Parse(dateInput);
+			FindCalendar(ITServiceId, indx);
+			
+			if (indx == 0) {
+				FindITService(ITServiceId, categoryname);
+			} else if (indx == 1) {
+				FindTechService(ITServiceId, categoryname);
+			} else {
+				string errormes = "Не найдены сервисы по индексу: " + indx.ToString();
+				return errormes;
+			}
+			TimeTerm timeTerm = new TimeTerm();
+			
+			if (_solutionUnitType == "bdcbb819-9b26-4627-946f-d00645a2d401") {
+				//Для рабочего дня
+				timeTerm.Type = CalendarTimeUnit.WorkingMinute;
+				_solutionUnitValue = _solutionUnitValue * 60 * 24;
+			} else if (_solutionUnitType == "2a608ed7-d118-402a-99c0-2f583291ed2e") {
+				//Для рабочего часа
+				timeTerm.Type = CalendarTimeUnit.WorkingMinute;
+				_solutionUnitValue = _solutionUnitValue * 60;
+			} else if (_solutionUnitType == "3ab432a6-ca84-4315-ba33-f343c758a8f0") {
+				//Для рабочей минуты
+				timeTerm.Type = CalendarTimeUnit.WorkingMinute;
+			} else {
+				string errormes = "Единица времени по категории не найдена: " + categoryname;
+				return errormes;
+			}
+		
+			var calendarUtility = new CalendarUtility(UserConnection);
+			var startDate = DateTime.Now;
+			int _solutionUnitValue50 = _solutionUnitValue/2;
+			timeTerm.Value = _solutionUnitValue50;
+			timeTerm.CalendarId = new Guid(CalendarId);
+			
+			timeinpause = timeinpause;
+			
+			CalculatedDates calculatedDates = new CalculatedDates();
+
+			calculatedDates.SolutionTime = calendarUtility.Add(RegTime, timeTerm, System.TimeZoneInfo.Local);
+			if (timeinpause != 0 && timeinpause != null) {
+				calculatedDates.SolutionTime = AddMinutesInPauseToSolutionDate(calculatedDates.SolutionTime, timeinpause);
+			}
+			
+			int _solutionUnitValue70 = Convert.ToInt16(_solutionUnitValue*0.70);
+			TimeTerm ReactionTimeTerm = new TimeTerm();
+			ReactionTimeTerm.Value = _solutionUnitValue70;
+			ReactionTimeTerm.CalendarId = new Guid(CalendarId);
+			ReactionTimeTerm.Type = CalendarTimeUnit.WorkingMinute;
+
+			calculatedDates.ReactionTime = calendarUtility.Add(RegTime, ReactionTimeTerm, System.TimeZoneInfo.Local);
+			if (timeinpause != 0 && timeinpause != null) {
+				calculatedDates.ReactionTime = AddMinutesInPauseToSolutionDate(calculatedDates.ReactionTime, timeinpause);
+			}
+			string json = JsonConvert.SerializeObject(calculatedDates);
+			return json;
+		}
+		
+		
 		public DateTime _CalculateTermsByGroup(string groupId, string ServiceId, int indx) {
 
 			FindGroup(groupId);
