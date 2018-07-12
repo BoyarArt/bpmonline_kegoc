@@ -127,203 +127,243 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 		diff: /**SCHEMA_DIFF*/[
 			{
 				"operation": "insert",
-				"name": "GanttDiagramDetail",
-				"values": {
-					"itemType": 2,
-					"markerValue": "added-detail"
-				},
-				"parentName": "ClassificationTab",
-				"propertyName": "items"
-			},
-			{
-				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "FirstAnalysis",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Первичный анализ",
-					"click": {bindTo: "onFirstAnalysisButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onFirstAnalysisButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isFirstAnalysisButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isFirstAnalysisButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 9
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Approval",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Утверждение",
-					"click": {bindTo: "onApprovalButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onApprovalButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isApprovalButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isApprovalButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 10
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Scheduled",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Запланировано",
-					"click": {bindTo: "onScheduledButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onScheduledButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isScheduledButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isScheduledButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 11
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Realization",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Реализация",
-					"click": {bindTo: "onRealizationButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onRealizationButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isRealizationButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isRealizationButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 12
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Pending",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "В ожидании",
-					"click": {bindTo: "onPendingButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onPendingButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isPendingButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isPendingButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 13
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Implemented",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Реализовано",
-					"click": {bindTo: "onImplementedButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onImplementedButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isImplementedButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isImplementedButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 14
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "AcceptedByCustomer",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Принято заказчиком",
-					"click": {bindTo: "onAcceptedByCustomerButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onAcceptedByCustomerButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isAcceptedByCustomerButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isAcceptedByCustomerButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 15
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Implantation",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Внедрение",
-					"click": {bindTo: "onImplantationButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onImplantationButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isImplantationButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isImplantationButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 16
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "InOperation",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "В эксплуатации",
-					"click": {bindTo: "onInOperationButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onInOperationButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isInOperationButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isInOperationButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 17
 			},
 			{
 				"operation": "insert",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
 				"name": "Closed",
 				"values": {
-					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"itemType": 5,
 					"caption": "Закрыто",
-					"click": {bindTo: "onClosedButtonClick"},
-					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"click": {
+						"bindTo": "onClosedButtonClick"
+					},
+					"style": "green",
 					"styles": {
 						"textStyle": {
 							"margin-left": "5px",
 							"margin-right": "5px"
 						}
 					},
-					"visible": {bindTo: "isClosedButtonVisible"}
-				}
+					"visible": {
+						"bindTo": "isClosedButtonVisible"
+					}
+				},
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 18
 			},
 			{
 				"operation": "merge",
@@ -353,7 +393,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 6
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -419,20 +459,19 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"index": 3
 			},
 			{
-				"operation": "merge",
-				"name": "PlannedLabor",
+				"operation": "insert",
+				"name": "DATE23ce736c-8e30-4778-a51d-337dc7700b21",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 2
-					}
-				}
-			},
-			{
-				"operation": "move",
-				"name": "PlannedLabor",
+						"row": 2,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PlannedDateCoordinationOfChange",
+					"enabled": true
+				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
 				"index": 4
@@ -462,8 +501,15 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				}
 			},
 			{
+				"operation": "move",
+				"name": "ActualLabor",
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
 				"operation": "merge",
-				"name": "ParentChange",
+				"name": "PlannedLabor",
 				"values": {
 					"layout": {
 						"colSpan": 12,
@@ -472,6 +518,67 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"row": 3
 					}
 				}
+			},
+			{
+				"operation": "merge",
+				"name": "ParentChange",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 4
+					}
+				}
+			},
+			{
+				"operation": "insert",
+				"name": "STRINGe4ac03b9-dc87-44f5-8f22-d3e20c3a1013",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "ChangeRealizationPurpose",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "STRING36969dd7-d1bb-4e91-b389-ed16e3e2f1be",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 6,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PlannedEffectOfChangeRealization",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "GanttDiagramDetail",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "ClassificationTab",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -506,6 +613,13 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"name": "Number",
 				"parentName": "Header",
 				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "move",
+				"name": "ExecutionTab",
+				"parentName": "Tabs",
+				"propertyName": "tabs",
 				"index": 0
 			},
 			{
