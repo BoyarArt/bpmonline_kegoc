@@ -2,6 +2,11 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 	return {
 		entitySchemaName: "Change",
 		attributes: {
+			"Case": {
+				lookupListConfig: {
+					columns: ["Owner", "Group"]
+				}
+			},
 			"Owner": {
 				lookupListConfig: {
 					filter: function() {
@@ -823,6 +828,14 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					}.bind(this),
 					["ButtonClickMessageKey_Change"]
 				);
+				
+				var _case = this.get("Case");
+				if (_case !== undefined) {
+					if (this.isAddMode() === true) {
+						this.set("Owner", _case.Owner);
+						this.set("Group", _case.Group);
+					}
+				}
 			},
 			getActions: function() {
 				var actionMenuItems = this.callParent(arguments);
