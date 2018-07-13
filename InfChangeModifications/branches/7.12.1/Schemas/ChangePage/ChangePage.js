@@ -518,6 +518,42 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				}
 			},
 			{
+				"operation": "insert",
+				"name": "DATE621a1bb3-a81d-40df-a540-667deb2c78c0",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "ExpirationDateAnalysisIntroduction",
+					"enabled": true
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "INTEGER99830b74-e1e1-4641-9b4e-68939038043f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "NumberReturnsFromAcceptance",
+					"enabled": true
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
 				"operation": "merge",
 				"name": "ActualLabor",
 				"values": {
@@ -534,7 +570,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"name": "ActualLabor",
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
-				"index": 6
+				"index": 8
 			},
 			{
 				"operation": "merge",
@@ -559,44 +595,6 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"row": 5
 					}
 				}
-			},
-			{
-				"operation": "insert",
-				"name": "STRINGe4ac03b9-dc87-44f5-8f22-d3e20c3a1013",
-				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 7,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "ChangeRealizationPurpose",
-					"enabled": true,
-					"contentType": 0
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 9
-			},
-			{
-				"operation": "insert",
-				"name": "STRING36969dd7-d1bb-4e91-b389-ed16e3e2f1be",
-				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 8,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "PlannedEffectOfChangeRealization",
-					"enabled": true,
-					"contentType": 0
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 10
 			},
 			{
 				"operation": "insert",
@@ -655,6 +653,44 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			},
 			{
 				"operation": "insert",
+				"name": "STRINGe4ac03b9-dc87-44f5-8f22-d3e20c3a1013",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 7,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "ChangeRealizationPurpose",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 14
+			},
+			{
+				"operation": "insert",
+				"name": "STRING36969dd7-d1bb-4e91-b389-ed16e3e2f1be",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 8,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PlannedEffectOfChangeRealization",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 15
+			},
+			{
+				"operation": "insert",
 				"name": "STRINGad7bcb1d-6d32-47d6-934d-94b07804d147",
 				"values": {
 					"layout": {
@@ -670,7 +706,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
-				"index": 14
+				"index": 16
 			},
 			{
 				"operation": "insert",
@@ -689,7 +725,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
-				"index": 15
+				"index": 17
 			},
 			{
 				"operation": "insert",
@@ -705,42 +741,6 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					"bindTo": "SpecialConditionsOfIntroduction",
 					"enabled": true,
 					"contentType": 0
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 16
-			},
-			{
-				"operation": "insert",
-				"name": "DATE621a1bb3-a81d-40df-a540-667deb2c78c0",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "ExpirationDateAnalysisIntroduction",
-					"enabled": true
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 17
-			},
-			{
-				"operation": "insert",
-				"name": "INTEGER99830b74-e1e1-4641-9b4e-68939038043f",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 3,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "NumberReturnsFromAcceptance",
-					"enabled": true
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
@@ -1281,6 +1281,31 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			}
 		},
 		rules: {},
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{
+			"PerformanceCode": {
+				"364a0f06-1257-47a2-82d3-8125ce9a6c1b": {
+					"uId": "364a0f06-1257-47a2-82d3-8125ce9a6c1b",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "6fc17cb3-9e85-47ec-9154-de1052c11789",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			}
+		}/**SCHEMA_BUSINESS_RULES*/
 	};
 });

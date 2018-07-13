@@ -79,6 +79,7 @@
           "A5": "58ec2dbe-dbef-4791-8d2d-4e166c4836b1",
           "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
           "BL8": "d8fba043-9444-4758-a268-be0146915b10",
+          "BM1": 0,
           "BM4": [
             {
               "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
@@ -113,7 +114,8 @@
           "BL8": "d8fba043-9444-4758-a268-be0146915b10",
           "BN2": "27;27",
           "BO3": true,
-          "FC1": []
+          "FC1": [],
+          "ED1": false
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
@@ -145,7 +147,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "//Удаление задачи и связвнных тригеров если они ранее существовали\nAppScheduler.RemoveJob(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\");\n// Создание задания для запуска процесса.\nIJobDetail job = AppScheduler.CreateProcessJob(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\", \"InfFindPlannedViolationsProcess\",\n    UserConnection.Workspace.Name, UserConnection.CurrentUser.Name);\n// Создание Cron-триггера, соответствующего графику запуска задания.\nITrigger trigger = new CronTriggerImpl(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\", \"0 0 9 ? * MON-FRI *\");\n// Добавление задания и триггера в планировщик.\nAppScheduler.Instance.ScheduleJob(job, trigger); \nreturn true;"
+          "CH1": "//Удаление задачи и связвнных тригеров если они ранее существовали\nAppScheduler.RemoveJob(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\");\n// Создание задания для запуска процесса.\nIJobDetail job = AppScheduler.CreateProcessJob(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\", \"InfFindPlannedViolationsProcess\",\n    UserConnection.Workspace.Name, UserConnection.CurrentUser.Name);\n// Создание Cron-триггера, соответствующего графику запуска задания.\n//ITrigger trigger = new CronTriggerImpl(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\", \"0 0 9 ? * MON-FRI *\");\nITrigger trigger = new CronTriggerImpl(\"InfFindPlannedViolationsProcessJob\", \"InfFindPlannedViolationsProcessGroup\", \"0 0/10 * 1/1 * ? * MON-FRI *\");\n// Добавление задания и триггера в планировщик.\nAppScheduler.Instance.ScheduleJob(job, trigger); \nreturn true;"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",

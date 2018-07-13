@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "d8fba043-9444-4758-a268-be0146915b10",
     "Name": "EmailChangeSchedulerProcess",
-    "ModifiedOnUtc": "\/Date(1529358216000)\/",
+    "ModifiedOnUtc": "\/Date(1531461349000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Планировщик: email просрочка изменений",
     "DependsOn": []
