@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "604a49ed-18de-4cb1-a639-d5b2bbbb127b",
+    "Name": "InfPerformanceCode",
+    "ModifiedOnUtc": "\/Date(1531425745000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}

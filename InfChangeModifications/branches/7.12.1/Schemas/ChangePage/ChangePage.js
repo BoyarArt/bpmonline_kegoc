@@ -2,37 +2,66 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 	return {
 		entitySchemaName: "Change",
 		attributes: {
+			"Customer": {
+				"lookupListConfig": {
+					"columns": ["Account"],
+					"filters": [
+						function() {
+							var filterGroup = Ext.create("Terrasoft.FilterGroup");
+							var account = this.get("Account");
+							if (account !== undefined && account !== null) {
+								filterGroup.add("accountFilter",
+								Terrasoft.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL,
+								"Account",
+								account.value));
+							}
+							return filterGroup;
+						}
+					]
+				},
+				"dependencies": [
+					{
+						"columns": ["Customer"],
+						"methodName": "onCustomerChanged"
+					}
+				]
+			},
+			"Account": {
+				"dependencies": [
+					{
+						"columns": ["Account"],
+						"methodName": "onAccountChanged"
+					}
+				]
+			},
 			"Case": {
 				lookupListConfig: {
-					columns: ["Owner", "Group"]
+					columns: ["Owner", "Group", "Contact", "Account"]
 				}
 			},
 			"Owner": {
-				lookupListConfig: {
-					filter: function() {
-						var filterGroup = new this.Terrasoft.createFilterGroup();
-						if (this.get("Group") == null) {
-							filterGroup.add(
-								"OwnerFilterByGroup",
-								this.Terrasoft.createColumnFilterWithParameter(
-									Terrasoft.ComparisonType.EQUAL,
-									"Id",
-									Terrasoft.GUID_EMPTY
-								)
-							);
+				"lookupListConfig": {
+					"filters": [
+						function() {
+							var filterGroup = Ext.create("Terrasoft.FilterGroup");
+							var group = " ";
+							if (this.get("Group") !== undefined) {
+								group = this.get("Group").displayValue;
+							}
+							filterGroup.add("IsUser",
+							Terrasoft.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL,
+							"[SysAdminUnit:Contact:Id].[SysUserInRole:SysUser:Id].[SysAdminUnit:Id:SysRole].Name",
+							group));
 							return filterGroup;
 						}
-						filterGroup.add(
-							"OwnerFilter",
-							this.Terrasoft.createColumnFilterWithParameter(
-								Terrasoft.ComparisonType.EQUAL,
-								"[SysAdminUnit:Contact:Id].[SysUserInRole:SysUser:Id].[SysAdminUnit:Id:SysRole].Id",
-								this.get("Group").value
-							)
-						);
-						return filterGroup;
+					]
+				},
+				"dependencies": [
+					{
+						"columns": ["Group"],
+						"methodName": "onGroupChanged"
 					}
-				}
+				]
 			},
 			"isFirstAnalysisButtonVisible": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
@@ -496,7 +525,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 3
+						"row": 4
 					}
 				}
 			},
@@ -515,7 +544,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 3
+						"row": 4
 					}
 				}
 			},
@@ -527,7 +556,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 4
+						"row": 5
 					}
 				}
 			},
@@ -539,7 +568,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 5,
+						"row": 7,
 						"layoutName": "Execution_GridLayout"
 					},
 					"bindTo": "ChangeRealizationPurpose",
@@ -558,7 +587,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 6,
+						"row": 8,
 						"layoutName": "Execution_GridLayout"
 					},
 					"bindTo": "PlannedEffectOfChangeRealization",
@@ -568,6 +597,154 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
 				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 5,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PerformanceCode"
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 11
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUP2db80a45-f709-455a-9da2-09abbdec982d",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 6,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "Customer",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 12
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUP18f63dbf-d0de-48f8-93ac-94d65c9fc400",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 6,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "Account",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 13
+			},
+			{
+				"operation": "insert",
+				"name": "STRINGad7bcb1d-6d32-47d6-934d-94b07804d147",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 9,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PlanOfReturnToPreviousState",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 14
+			},
+			{
+				"operation": "insert",
+				"name": "STRING95936904-a8f0-4be4-9016-55bb3de1dfb9",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 10,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "CommentsOnExpansion",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 15
+			},
+			{
+				"operation": "insert",
+				"name": "STRING60bbc653-e43b-4440-bca8-7a0744e80d1a",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 11,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "SpecialConditionsOfIntroduction",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 16
+			},
+			{
+				"operation": "insert",
+				"name": "DATE621a1bb3-a81d-40df-a540-667deb2c78c0",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "ExpirationDateAnalysisIntroduction",
+					"enabled": true
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 17
+			},
+			{
+				"operation": "insert",
+				"name": "INTEGER99830b74-e1e1-4641-9b4e-68939038043f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "NumberReturnsFromAcceptance",
+					"enabled": true
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 18
 			},
 			{
 				"operation": "insert",
@@ -631,6 +808,21 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			onCustomerChanged: function() {
+				if (this.get("Customer") !== undefined && this.get("Customer") !== null) {
+					this.set("Account", this.get("Customer").Account);
+				}
+			},
+			onAccountChanged: function() {
+				if (this.get("Account") === undefined || this.get("Account") === null) {
+					this.set("Customer", null);
+				}
+			},
+			onGroupChanged: function() {
+				if (this.get("Group") === undefined || this.get("Group") === null) {
+					this.set("Owner", null);
+				}
+			},
 			setButtonsVisible: function() {
 				var status = this.get("InfStatus");
 				var visibleButtons = {};
@@ -672,7 +864,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						isAcceptedByCustomerButtonVisible: false,
 						isImplantationButtonVisible: false,
 						isInOperationButtonVisible: false,
-						isClosedButtonVisible: false
+						isClosedButtonVisible: true
 					};
 				} else if (status.displayValue === "Запланировано") {
 					visibleButtons = {
@@ -718,7 +910,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
-						isRealizationButtonVisible: false,
+						isRealizationButtonVisible: true,
 						isPendingButtonVisible: false,
 						isImplementedButtonVisible: false,
 						isAcceptedByCustomerButtonVisible: true,
@@ -842,6 +1034,13 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					primaryImageValue: "",
 					value: "044c2fe7-c46b-440c-ae2c-5f2faf9c6521"
 				});
+				if (document.prevStatus !== undefined) {
+					var NumberReturnsFromAcceptance = this.get("NumberReturnsFromAcceptance");
+					this.set("NumberReturnsFromAcceptance", ++NumberReturnsFromAcceptance);
+					document.prevStatus = undefined;
+				}
+				
+				
 				this.save();
 			},
 			//В ожидании
@@ -860,6 +1059,11 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			},
 			//Реализовано
 			onImplementedButtonClick: function() {
+				document.prevStatus = {
+					displayValue: "Реализовано",
+					primaryImageValue: "",
+					value: "1113ecc1-1a83-40ab-af56-329e417a469c"
+				};
 				this.set("InfStatus", {
 					displayValue: "Реализовано",
 					primaryImageValue: "",
@@ -948,6 +1152,8 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					if (this.isAddMode() === true) {
 						this.set("Owner", _case.Owner);
 						this.set("Group", _case.Group);
+						this.set("Customer", _case.Contact);
+						this.set("Account", _case.Account);
 					}
 				}
 			},
