@@ -508,12 +508,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"operation": "merge",
 				"name": "ServiceItem",
 				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 5
-					},
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
 					},
@@ -535,7 +529,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 6,
+						"row": 7,
 						"layoutName": "ProfileContainer"
 					},
 					"bindTo": "TechService",
@@ -552,12 +546,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"operation": "merge",
 				"name": "CaseCategory",
 				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 7
-					},
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
 					}
@@ -619,6 +607,15 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 			},
 			{
 				"operation": "merge",
+				"name": "Subject",
+				"values": {
+					"enabled": {
+						"bindTo": "isFieldsEnabled"
+					}
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Symptoms",
 				"values": {
 					"layout": {
@@ -643,15 +640,6 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"column": 0,
 						"row": 3
 					},
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					}
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "Subject",
-				"values": {
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
 					}
@@ -1804,7 +1792,8 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				this.set("Owner", null);
 			},
 			CaseTermByITService: function() {
-				if (this.get("ServiceItem") && this.get("Category")) {
+				if (this.get("ServiceItem") && this.get("Category") &&
+				this.get("Category").displayValue !== "Запрос на изменение") {
 					var dx = 0;
 					ServiceHelper.callService({
 						serviceName: "InfCaseTermCalculationService",
@@ -1828,7 +1817,8 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 			},
 			
 			CaseTermByTechService: function() {
-				if (this.get("TechService") && this.get("Category")) {
+				if (this.get("TechService") && this.get("Category") &&
+				this.get("Category").displayValue !== "Запрос на изменение") {
 					var dx = 1;
 					ServiceHelper.callService({
 						serviceName: "InfCaseTermCalculationService",

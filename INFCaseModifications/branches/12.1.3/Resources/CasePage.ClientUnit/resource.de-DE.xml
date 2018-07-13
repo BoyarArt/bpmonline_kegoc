@@ -3,6 +3,17 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="Antwort Fall" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Systemnachrichten verbergen" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Historie" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Fall-Profil" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="In Bearbeitung" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Nachricht an Nutzer 1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Nach ähnlichen Fällen suchen" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Systemnachrichten zeigen" />
 		</Items>
 	</Group>
 </Resources>
