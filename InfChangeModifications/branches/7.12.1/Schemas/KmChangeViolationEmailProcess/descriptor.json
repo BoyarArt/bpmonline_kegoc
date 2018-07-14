@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "04000cff-eced-4a96-b62d-ddb358d15263",
     "Name": "KmChangeViolationEmailProcess",
-    "ModifiedOnUtc": "\/Date(1529357804000)\/",
+    "ModifiedOnUtc": "\/Date(1531472605000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Email: уведомление о просрочке Изменения",
     "DependsOn": []

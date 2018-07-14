@@ -426,163 +426,37 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			},
 			{
 				"operation": "insert",
-				"name": "ScheduledStartDatecdb3555c-e322-4ace-99b0-923bff5f1be8",
+				"name": "Customer8c294ba0-1039-4dcb-9ca7-77a878cd8882",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 0,
-						"layoutName": "Execution_GridLayout"
+						"row": 5,
+						"layoutName": "Header"
 					},
-					"bindTo": "ScheduledStartDate"
+					"bindTo": "Customer"
 				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "merge",
-				"name": "ScheduledClosureDate",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 0
-					}
-				}
-			},
-			{
-				"operation": "insert",
-				"name": "ScheduledImplantationDate2499156d-5cac-4c94-8b8c-c55c58e1bdb0",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 1,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "ScheduledImplantationDate"
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "ScheduledCustomerDate383fbb3e-ebf4-42ba-934e-58c8c1134d4f",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 1,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "ScheduledCustomerDate"
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "DATE23ce736c-8e30-4778-a51d-337dc7700b21",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 2,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "PlannedDateCoordinationOfChange",
-					"enabled": true
-				},
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "merge",
-				"name": "ClosureDate",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 2
-					}
-				}
-			},
-			{
-				"operation": "insert",
-				"name": "DATE621a1bb3-a81d-40df-a540-667deb2c78c0",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "Execution_GridLayout"
-					},
-					"bindTo": "ExpirationDateAnalysisIntroduction",
-					"enabled": true
-				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "Header",
 				"propertyName": "items",
 				"index": 6
 			},
 			{
 				"operation": "insert",
-				"name": "INTEGER99830b74-e1e1-4641-9b4e-68939038043f",
+				"name": "Accountb4ece46b-9edf-48be-b645-24dba2f8bb7a",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 3,
-						"layoutName": "Execution_GridLayout"
+						"row": 5,
+						"layoutName": "Header"
 					},
-					"bindTo": "NumberReturnsFromAcceptance",
-					"enabled": true
+					"bindTo": "Account"
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "Header",
 				"propertyName": "items",
 				"index": 7
-			},
-			{
-				"operation": "merge",
-				"name": "ActualLabor",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 4
-					}
-				}
-			},
-			{
-				"operation": "move",
-				"name": "ActualLabor",
-				"parentName": "Execution_GridLayout",
-				"propertyName": "items",
-				"index": 8
-			},
-			{
-				"operation": "merge",
-				"name": "PlannedLabor",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 4
-					}
-				}
 			},
 			{
 				"operation": "merge",
@@ -592,7 +466,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 5
+						"row": 0
 					}
 				}
 			},
@@ -604,147 +478,400 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 5,
+						"row": 0,
 						"layoutName": "Execution_GridLayout"
 					},
 					"bindTo": "PerformanceCode"
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
-				"index": 11
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "LOOKUP2db80a45-f709-455a-9da2-09abbdec982d",
+				"name": "ExecutionTabGroupfe7e8f47",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.ExecutionTabGroupfe7e8f47GroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "ExecutionTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGridLayout7988c9f9",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "ExecutionTabGroupfe7e8f47",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ScheduledStartDate74e31858-f7f0-4686-95e7-a0c53ce46ba9",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 6,
-						"layoutName": "Execution_GridLayout"
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
 					},
-					"bindTo": "Customer",
-					"enabled": true,
-					"contentType": 5
+					"bindTo": "ScheduledStartDate"
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout7988c9f9",
 				"propertyName": "items",
-				"index": 12
+				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "LOOKUP18f63dbf-d0de-48f8-93ac-94d65c9fc400",
+				"name": "ScheduledClosureDate695d204c-2249-4690-8b09-4b634186fec8",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 6,
-						"layoutName": "Execution_GridLayout"
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
 					},
-					"bindTo": "Account",
-					"enabled": true,
-					"contentType": 5
+					"bindTo": "ScheduledClosureDate"
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout7988c9f9",
 				"propertyName": "items",
-				"index": 13
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "STRINGe4ac03b9-dc87-44f5-8f22-d3e20c3a1013",
+				"name": "ScheduledImplantationDated5f11815-f974-47db-9af0-fe161ab7b812",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
+					},
+					"bindTo": "ScheduledImplantationDate"
+				},
+				"parentName": "ExecutionTabGridLayout7988c9f9",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ScheduledCustomerDate4f8fd35f-6ec2-4000-91bd-55291c24e386",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 1,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
+					},
+					"bindTo": "ScheduledCustomerDate"
+				},
+				"parentName": "ExecutionTabGridLayout7988c9f9",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PlannedDateCoordinationOfChangea23b4b50-5282-4efa-9544-9f6596e1b04f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 2,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
+					},
+					"bindTo": "PlannedDateCoordinationOfChange"
+				},
+				"parentName": "ExecutionTabGridLayout7988c9f9",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "ClosureDateafd07c76-fed2-40e6-b73e-ec38f3e9c414",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 2,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
+					},
+					"bindTo": "ClosureDate"
+				},
+				"parentName": "ExecutionTabGridLayout7988c9f9",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "ExpirationDateAnalysisIntroduction59ac467c-bc18-4f50-a4c2-a9ea6a634cfd",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ExecutionTabGridLayout7988c9f9"
+					},
+					"bindTo": "ExpirationDateAnalysisIntroduction"
+				},
+				"parentName": "ExecutionTabGridLayout7988c9f9",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGroupd4cb3017",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.ExecutionTabGroupd4cb3017GroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "ExecutionTab",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGridLayoutc2377b46",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "ExecutionTabGroupd4cb3017",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ActualLabor3ac36a25-23b6-454b-81e7-91016901f751",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayoutc2377b46"
+					},
+					"bindTo": "ActualLabor"
+				},
+				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberReturnsFromAcceptanceda558302-44a9-4743-bac1-b66665c27b65",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayoutc2377b46"
+					},
+					"bindTo": "NumberReturnsFromAcceptance"
+				},
+				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "PlannedLabor6370182b-74c7-4f27-b373-2a75ae0830b0",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 1,
+						"layoutName": "ExecutionTabGridLayoutc2377b46"
+					},
+					"bindTo": "PlannedLabor"
+				},
+				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGroup4e8dd99a",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.ExecutionTabGroup4e8dd99aGroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "ExecutionTab",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGridLayout385ceff2",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "ExecutionTabGroup4e8dd99a",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ChangeRealizationPurposee4df274a-b190-4ded-9e9b-371cfea9840c",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 7,
-						"layoutName": "Execution_GridLayout"
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayout385ceff2"
 					},
 					"bindTo": "ChangeRealizationPurpose",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout385ceff2",
 				"propertyName": "items",
-				"index": 14
+				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "STRING36969dd7-d1bb-4e91-b389-ed16e3e2f1be",
+				"name": "PlannedEffectOfChangeRealization77dfd7a4-dc92-459e-a290-7344192b4365",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 8,
-						"layoutName": "Execution_GridLayout"
+						"row": 1,
+						"layoutName": "ExecutionTabGridLayout385ceff2"
 					},
 					"bindTo": "PlannedEffectOfChangeRealization",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout385ceff2",
 				"propertyName": "items",
-				"index": 15
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "STRINGad7bcb1d-6d32-47d6-934d-94b07804d147",
+				"name": "PlanOfReturnToPreviousState19f2f869-0ace-4db9-907f-dec808571eef",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 9,
-						"layoutName": "Execution_GridLayout"
+						"row": 2,
+						"layoutName": "ExecutionTabGridLayout385ceff2"
 					},
 					"bindTo": "PlanOfReturnToPreviousState",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout385ceff2",
 				"propertyName": "items",
-				"index": 16
+				"index": 2
 			},
 			{
 				"operation": "insert",
-				"name": "STRING95936904-a8f0-4be4-9016-55bb3de1dfb9",
+				"name": "CommentsOnExpansion4a89f53a-1260-40da-aefe-367549606140",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 10,
-						"layoutName": "Execution_GridLayout"
+						"row": 3,
+						"layoutName": "ExecutionTabGridLayout385ceff2"
 					},
 					"bindTo": "CommentsOnExpansion",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout385ceff2",
 				"propertyName": "items",
-				"index": 17
+				"index": 3
 			},
 			{
 				"operation": "insert",
-				"name": "STRING60bbc653-e43b-4440-bca8-7a0744e80d1a",
+				"name": "SpecialConditionsOfIntroduction12f63d8e-fc43-414e-8f58-d7db9022b143",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 11,
-						"layoutName": "Execution_GridLayout"
+						"row": 4,
+						"layoutName": "ExecutionTabGridLayout385ceff2"
 					},
 					"bindTo": "SpecialConditionsOfIntroduction",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "Execution_GridLayout",
+				"parentName": "ExecutionTabGridLayout385ceff2",
 				"propertyName": "items",
-				"index": 18
+				"index": 4
+			},
+			{
+				"operation": "merge",
+				"name": "Author",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 0
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Release",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0
+					}
+				}
+			},
+			{
+				"operation": "move",
+				"name": "Release",
+				"parentName": "Classification_GridLayout",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "merge",
+				"name": "RegisteredOn",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 1
+					}
+				}
 			},
 			{
 				"operation": "insert",
@@ -786,6 +913,38 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"name": "Status"
 			},
 			{
+				"operation": "remove",
+				"name": "Priority"
+			},
+			{
+				"operation": "remove",
+				"name": "Purpose"
+			},
+			{
+				"operation": "remove",
+				"name": "Source"
+			},
+			{
+				"operation": "remove",
+				"name": "Category"
+			},
+			{
+				"operation": "remove",
+				"name": "ScheduledClosureDate"
+			},
+			{
+				"operation": "remove",
+				"name": "ClosureDate"
+			},
+			{
+				"operation": "remove",
+				"name": "PlannedLabor"
+			},
+			{
+				"operation": "remove",
+				"name": "ActualLabor"
+			},
+			{
 				"operation": "move",
 				"name": "Number",
 				"parentName": "Header",
@@ -798,13 +957,6 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"parentName": "Tabs",
 				"propertyName": "tabs",
 				"index": 0
-			},
-			{
-				"operation": "move",
-				"name": "Release",
-				"parentName": "Classification_GridLayout",
-				"propertyName": "items",
-				"index": 4
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {

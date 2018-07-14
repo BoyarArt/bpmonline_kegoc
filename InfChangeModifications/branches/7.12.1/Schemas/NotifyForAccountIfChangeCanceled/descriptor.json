@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "56d24ae4-0894-4ea3-9eab-108e2a832abf",
+    "Name": "NotifyForAccountIfChangeCanceled",
+    "ModifiedOnUtc": "\/Date(1531473433000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Изменения: оповещение заказчика об отклоненном изменении",
+    "DependsOn": []
+  }
+}

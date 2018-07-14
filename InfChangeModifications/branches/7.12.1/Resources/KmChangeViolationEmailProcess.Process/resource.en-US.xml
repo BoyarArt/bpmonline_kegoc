@@ -11,6 +11,12 @@
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordDefValues.Value.cd833431-d8b3-4606-9ad7-0c1d43689a7a.displayValue" Value="Просрочено изменение" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordDefValues.Value.cd833431-d8b3-4606-9ad7-0c1d43689a7a.value" Value="Просрочено изменение" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Caption" Value="Проставить флаги" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.EntitySchemaUId.Caption" Value="Object" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.Caption" Value="If object meets the following conditions" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.RecordColumnValues.Caption" Value="Set column values" />
 			<Item Name="BaseElements.FormulaTask1.Caption" Value="Формула 1" />
 			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="Читать контакт отправителя" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
@@ -37,7 +43,13 @@
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.a1.Caption" Value="a1" />
+			<Item Name="Parameters.a2.Caption" Value="a2" />
+			<Item Name="Parameters.a3.Caption" Value="a3" />
+			<Item Name="Parameters.a4.Caption" Value="a4" />
+			<Item Name="Parameters.a5.Caption" Value="a5" />
 			<Item Name="Parameters.ChangeId.Caption" Value="Change" />
+			<Item Name="Parameters.ChangeNumber.Caption" Value="ChangeNumber" />
 			<Item Name="Parameters.CurrentContact.Caption" Value="Текущий контакт" />
 			<Item Name="Parameters.CurrentContact.DisplayValue" Value="[#Системная переменная.Контакт текущего пользователя#]" />
 			<Item Name="Parameters.MailId.Caption" Value="MailId" />

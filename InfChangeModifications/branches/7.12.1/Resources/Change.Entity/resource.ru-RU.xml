@@ -4,9 +4,13 @@
 		<Items>
 			<Item Name="Columns.Account.Caption" Value="Контрагент" />
 			<Item Name="Columns.ChangeRealizationPurpose.Caption" Value="Цель реализации изменения" />
+			<Item Name="Columns.ClosureDateFlag.Caption" Value="Флаг ПС завершения реализации" />
 			<Item Name="Columns.CommentsOnExpansion.Caption" Value="Комментарии по развертыванию" />
+			<Item Name="Columns.CoordinationOfChangeFlag.Caption" Value="Флаг ПС согласования изменения" />
 			<Item Name="Columns.Customer.Caption" Value="Заказчик" />
+			<Item Name="Columns.CustomerDateFlag.Caption" Value="Флаг ПС приемки заказчиком" />
 			<Item Name="Columns.ExpirationDateAnalysisIntroduction.Caption" Value="Дата окончания анализа внедрения" />
+			<Item Name="Columns.ImplantationDateFlag.Caption" Value="Флаг ПС внедрения" />
 			<Item Name="Columns.InfStatus.Caption" Value="Статус" />
 			<Item Name="Columns.NumberReturnsFromAcceptance.Caption" Value="Количество возвратов из приемки" />
 			<Item Name="Columns.PerformanceCode.Caption" Value="Код выполнения" />
@@ -20,6 +24,7 @@
 			<Item Name="Columns.ScheduledStartDate.Caption" Value="Плановый срок начала реализации" />
 			<Item Name="Columns.SpecialConditionsOfIntroduction.Caption" Value="Особые условия внедрения" />
 			<Item Name="Columns.StageNumber.Caption" Value="Этап" />
+			<Item Name="Columns.StartDateFlag.Caption" Value="Флаг ПС начала реализации" />
 		</Items>
 	</Group>
 </Resources>

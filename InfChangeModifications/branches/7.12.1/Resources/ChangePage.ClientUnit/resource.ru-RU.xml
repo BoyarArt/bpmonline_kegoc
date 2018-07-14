@@ -5,6 +5,9 @@
 			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Запланировать на дату" />
 			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
 			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="История изменений" />
+			<Item Name="LocalizableStrings.ExecutionTabGroup4e8dd99aGroupCaption.Value" Value="Информация по изменению" />
+			<Item Name="LocalizableStrings.ExecutionTabGroupd4cb3017GroupCaption.Value" Value=" Трудозатраты" />
+			<Item Name="LocalizableStrings.ExecutionTabGroupfe7e8f47GroupCaption.Value" Value="Сроки" />
 			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Найдено более одного элементов очереди связанных с процессом. Идентификатор процесса: {0}" />
 			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Вернуть в очередь" />
 			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Ошибка возвращения элемента в очередь. Сообщение об ошибке: {0}" />
