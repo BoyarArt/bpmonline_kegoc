@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ebc389a1-1684-42f4-bd43-fb5be5c9259f",
+    "Name": "InfCreateActivityFlowProcess",
+    "ModifiedOnUtc": "\/Date(1531662827000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Создание потоков активностей",
+    "DependsOn": []
+  }
+}

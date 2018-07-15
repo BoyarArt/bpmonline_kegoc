@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "5bee21dd-6c2b-49e6-a576-9f34ef301d75",
+    "Name": "InfActivityFlowType",
+    "ModifiedOnUtc": "\/Date(1531579285000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип потока активности (inf)",
+    "DependsOn": []
+  }
+}

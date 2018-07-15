@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "b7db1d53-6770-4bae-8205-fc6df39c0f37",
+    "Name": "InfNextActivities",
+    "ModifiedOnUtc": "\/Date(1531667194000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Следующие активности",
+    "DependsOn": []
+  }
+}

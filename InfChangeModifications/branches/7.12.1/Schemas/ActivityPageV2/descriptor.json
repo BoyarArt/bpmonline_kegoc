@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "b086ffd6-490a-455a-8002-1920ea223b3a",
+    "Name": "ActivityPageV2",
+    "ModifiedOnUtc": "\/Date(1531667697000)\/",
+    "Parent": {
+      "UId": "6e5551de-a0fa-48af-8d1b-7dc896060a1e",
+      "Name": "ActivityPageV2"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Activity edit page",
+    "DependsOn": []
+  }
+}

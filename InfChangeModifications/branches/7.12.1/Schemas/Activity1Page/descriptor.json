@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "edb89816-4c4a-4d07-9560-b346bef9e94b",
+    "Name": "Activity1Page",
+    "ModifiedOnUtc": "\/Date(1531665883000)\/",
+    "Parent": {
+      "UId": "d62293c0-7f14-44b1-b547-735fb40499cd",
+      "Name": "BaseModulePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Card schema: \"Активность\"",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "83d3980b-85b7-4d9e-ab0d-f22f8635b4f9",
+    "Name": "InfNextActivityAddProcess",
+    "ModifiedOnUtc": "\/Date(1531674757000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Автодополнение следующей активности",
+    "DependsOn": []
+  }
+}

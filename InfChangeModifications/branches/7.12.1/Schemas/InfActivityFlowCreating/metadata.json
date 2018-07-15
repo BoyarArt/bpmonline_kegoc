@@ -1,0 +1,115 @@
+= MetaData.Schema.UId "cce9c3c0-0af4-49fc-b106-a2e6af8ef046"
+= MetaData.Schema.A2 "InfActivityFlowCreating"
+= MetaData.Schema.A5 "4d908a76-a441-4cbd-927a-2d97c55e901f"
+= MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
+= MetaData.Schema.B8 "7.12.1.924"
+= MetaData.Schema.EG1.UId "6d801dbe-c00f-417c-b753-87004ea0e52e"
+= MetaData.Schema.EG1.A2 "InfActivityFlowCreatingEventsProcess"
+= MetaData.Schema.EG1.A5 "4d908a76-a441-4cbd-927a-2d97c55e901f"
+- MetaData.Schema.EG1.B1.["fe742d1c-4346-4cc5-894e-217df991856c"].C2
++ MetaData.Schema.EG1.B8 "7.12.1.924"
+= MetaData.Schema.EG1.BK8 "0ac85496-05fc-40de-b2d5-09b365636472"
++ MetaData.Schema.EG1.BK37 {"BL1":"Terrasoft.Core.Process.ProcessSchemaParameter","UId":"cdd58be7-2dba-4a5e-869b-1ad5d6d7513a","A2":"NotificationCaption","A3":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","A4":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","L1":"8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2","L8":{"GS1":3,"GS2":"[#[PropertyValue:Caption]#]"}}
++ MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].IL2 "079c1a2b-96d1-4935-9764-180b73ed11ac"
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL4
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL9
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BL9
+- MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
+- MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
+- MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
+- MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16
+- MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
+- MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
++ MetaData.Schema.D2 {
+  "UId": "52001976-a6bd-4230-b24d-c49b81a339ca",
+  "A2": "ActivityTitle",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+}
++ MetaData.Schema.D2 {
+  "UId": "6c2a1485-1864-4ba5-8ec7-7ecc4cd609ea",
+  "A2": "ActivityStartDate",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+}
++ MetaData.Schema.D2 {
+  "UId": "f5bb141f-b430-4949-b6fe-70a926b989c1",
+  "A2": "ActivityDueDate",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+}
++ MetaData.Schema.D2 {
+  "UId": "c5b7d203-b910-49ec-a04f-419a3d6f0c06",
+  "A2": "ActivityFlowType",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "5bee21dd-6c2b-49e6-a576-9f34ef301d75",
+  "E6": true,
+  "E17": "ActivityFlowTypeId",
+  "E18": "ActivityFlowTypeName"
+}
++ MetaData.Schema.D2 {
+  "UId": "0d194a3b-d816-4954-bc47-0495178ccfa3",
+  "A2": "PreviousActivity",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
+}
++ MetaData.Schema.D2 {
+  "UId": "c7ad1541-8e9d-41dc-b404-6390fdfeb8e1",
+  "A2": "ParentChange",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "de5c8d59-d372-407d-8c09-f0523e057e40",
+  "E6": true,
+  "E17": "ParentChangeId",
+  "E18": "ParentChangeNumber"
+}
++ MetaData.Schema.D2 {
+  "UId": "c26478b4-3527-4f79-8a58-f8984b6b2025",
+  "A2": "ActivityOwner",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "16be3651-8fe2-4159-8dd0-a803d4683dd3",
+  "E6": true,
+  "E17": "ActivityOwnerId",
+  "E18": "ActivityOwnerName"
+}
++ MetaData.Schema.D2 {
+  "UId": "0291c1cf-fd78-438f-870e-9d12b9b978b0",
+  "A2": "ActivityFlowStatus",
+  "A3": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A4": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "e3c7dd3e-ad0b-4215-b095-834f125c84f2",
+  "E6": true,
+  "E17": "ActivityFlowStatusId",
+  "E18": "ActivityFlowStatusName"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","52001976-a6bd-4230-b24d-c49b81a339ca","6c2a1485-1864-4ba5-8ec7-7ecc4cd609ea","f5bb141f-b430-4949-b6fe-70a926b989c1","c5b7d203-b910-49ec-a04f-419a3d6f0c06","0d194a3b-d816-4954-bc47-0495178ccfa3","c7ad1541-8e9d-41dc-b404-6390fdfeb8e1","c26478b4-3527-4f79-8a58-f8984b6b2025","0291c1cf-fd78-438f-870e-9d12b9b978b0"]
+= MetaData.Schema.D20.A2 "InfActivityFlowCreatingEvents"
+- MetaData.Schema.EG1.BK29
+- MetaData.Schema.EG1.BK30
+- MetaData.Schema.D1
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false

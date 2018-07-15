@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="fa-IR">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Activities section" />
+			<Item Name="LocalizableStrings.LoadingMessagesComplete.Value" Value="ایمیل ها دریافت شد" />
+			<Item Name="LocalizableStrings.SetUpSynchronization.Caption" Value="SetUpSynchronization" />
+			<Item Name="LocalizableStrings.SetUpSynchronization.Value" Value="نصب همگام سازی فعالیت" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="خوراک را دنبال کنید" />
+			<Item Name="LocalizableStrings.SynchronizeWithExchangeStart.Value" Value="همگام سازی شروع شده است. پس از کامل شدن آن، به شما اعلام می گردد." />
+			<Item Name="LocalizableStrings.SyncSettingsSetTipCaption.Caption" Value="SyncSettingsSetTipCaption" />
+			<Item Name="LocalizableStrings.SyncSettingsSetTipCaption.Value" Value="Now your meetings and tasks will always be up-to-date!&lt;br&gt;If needed, &lt;a href=&quot;#&quot;&gt;change the settings&lt;/a&gt;" />
+			<Item Name="LocalizableStrings.SyncWithExchangeCaption.Value" Value="همگام سازی در تبادل با وظایف و جلسات" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="عدم پیگیری فید" />
+		</Items>
+	</Group>
+</Resources>

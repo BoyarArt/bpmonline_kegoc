@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="InfActivityPage" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Запланировать на дату" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="История изменений" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Лента" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Найдено более одного элементов очереди связанных с процессом. Идентификатор процесса: {0}" />
+			<Item Name="LocalizableStrings.NotesAndFilesTabCaption.Value" Value="Файлы и примечания" />
+			<Item Name="LocalizableStrings.NotesGroupCaption.Value" Value="Примечания" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Вернуть в очередь" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Ошибка возвращения элемента в очередь. Сообщение об ошибке: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Страница не связана с элементом очереди единого окна. Действие отменено." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Ошибка при возвращении элемента в очередь" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Элемент успешно возвращен в очередь" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Подписаться на обновление ленты" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="Вы подписаны на обновление ленты: {0}" />
+			<Item Name="LocalizableStrings.TabVisaCaption.Value" Value="Визы" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Хронология" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Отписаться от обновлений ленты" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="Вы отписаны от обновлений ленты: {0}" />
+			<Item Name="Parameters.0c0906d1-53fc-4276-abdc-9370656bd890.Caption" Value="Номер этапа" />
+			<Item Name="Parameters.265cfd14-f9d5-4917-aa0f-859ec52f8802.Caption" Value="Дата начала" />
+			<Item Name="Parameters.3e98d822-b4d1-436d-a76f-6ba85284138e.Caption" Value="Описание" />
+			<Item Name="Parameters.42e3766e-a0dc-4e57-8b5b-a2bf07288bad.Caption" Value="Тип потока" />
+			<Item Name="Parameters.4b9b2c07-27f5-48ef-8627-1804fe8c25f9.Caption" Value="Изменение" />
+			<Item Name="Parameters.4f911768-abf7-43a6-bb04-cf9c634f1d6d.Caption" Value="Дата завершения" />
+			<Item Name="Parameters.4fc8c2e3-c19b-474c-bec8-3864115381d5.Caption" Value="Заголовок" />
+			<Item Name="Parameters.5859731a-c5a6-453a-9e39-da3722f929cf.Caption" Value="Предшествующая активность" />
+			<Item Name="Parameters.ff7c4615-a1e5-4e5e-bde4-e96678ca0ca2.Caption" Value="Ответственный" />
+		</Items>
+	</Group>
+</Resources>

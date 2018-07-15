@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "545cd6b4-f76e-4c8c-9074-e177d288c095",
+    "Name": "InfPrevActivities",
+    "ModifiedOnUtc": "\/Date(1531663966000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Предшествующие активности",
+    "DependsOn": []
+  }
+}

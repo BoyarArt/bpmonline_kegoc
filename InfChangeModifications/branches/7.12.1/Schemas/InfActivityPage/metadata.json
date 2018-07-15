@@ -1,0 +1,98 @@
+= MetaData.Schema.UId "48043df2-7975-417c-a31a-1fc90d5f08da"
+= MetaData.Schema.A2 "InfActivityPage"
+= MetaData.Schema.A5 "4d908a76-a441-4cbd-927a-2d97c55e901f"
+= MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
+= MetaData.Schema.B8 "7.12.1.924"
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "4fc8c2e3-c19b-474c-bec8-3864115381d5",
+  "A2": "ActivityTitle",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+  "L8": {},
+  "L6": true
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "3e98d822-b4d1-436d-a76f-6ba85284138e",
+  "A2": "ActivityDescription",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+  "L8": {},
+  "L6": true
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "265cfd14-f9d5-4917-aa0f-859ec52f8802",
+  "A2": "ActivityStartDate",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "L8": {}
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "4f911768-abf7-43a6-bb04-cf9c634f1d6d",
+  "A2": "ActivityDueDate",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "L8": {},
+  "L6": true
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "ff7c4615-a1e5-4e5e-bde4-e96678ca0ca2",
+  "A2": "ActivityOwner",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "L8": {},
+  "L6": true,
+  "L9": "16be3651-8fe2-4159-8dd0-a803d4683dd3"
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "5859731a-c5a6-453a-9e39-da3722f929cf",
+  "A2": "PrevActivity",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "L8": {},
+  "L9": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89"
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "42e3766e-a0dc-4e57-8b5b-a2bf07288bad",
+  "A2": "ActivityFlowType",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "L8": {},
+  "L9": "5bee21dd-6c2b-49e6-a576-9f34ef301d75"
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "0c0906d1-53fc-4276-abdc-9370656bd890",
+  "A2": "StageNumber",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+  "L8": {}
+}
++ MetaData.Schema.HD11 {
+  "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
+  "UId": "4b9b2c07-27f5-48ef-8627-1804fe8c25f9",
+  "A2": "Change",
+  "A3": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "A4": "48043df2-7975-417c-a31a-1fc90d5f08da",
+  "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "L8": {},
+  "L6": true,
+  "L9": "de5c8d59-d372-407d-8c09-f0523e057e40"
+}
+~ MetaData.Schema.HD11 ["4fc8c2e3-c19b-474c-bec8-3864115381d5","3e98d822-b4d1-436d-a76f-6ba85284138e","265cfd14-f9d5-4917-aa0f-859ec52f8802","4f911768-abf7-43a6-bb04-cf9c634f1d6d","ff7c4615-a1e5-4e5e-bde4-e96678ca0ca2","5859731a-c5a6-453a-9e39-da3722f929cf","42e3766e-a0dc-4e57-8b5b-a2bf07288bad","0c0906d1-53fc-4276-abdc-9370656bd890","4b9b2c07-27f5-48ef-8627-1804fe8c25f9"]
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false

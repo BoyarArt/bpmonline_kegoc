@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Потоки создания активностей" />
+			<Item Name="Columns.ActivityDueDate.Caption" Value="Дата окончания активности" />
+			<Item Name="Columns.ActivityFlowStatus.Caption" Value="Состояние потока" />
+			<Item Name="Columns.ActivityFlowType.Caption" Value="Тип потока активности" />
+			<Item Name="Columns.ActivityOwner.Caption" Value="Ответственный за активность" />
+			<Item Name="Columns.ActivityStartDate.Caption" Value="Дата начала активности" />
+			<Item Name="Columns.ActivityTitle.Caption" Value="Заголовок активности" />
+			<Item Name="Columns.ParentChange.Caption" Value="Родительское изменение" />
+			<Item Name="Columns.PreviousActivity.Caption" Value="Предыдущая активность" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

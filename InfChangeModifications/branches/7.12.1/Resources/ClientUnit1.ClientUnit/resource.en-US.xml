@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Заполнение данных для создания активности" />
+			<Item Name="Parameters.1f320d5c-5122-476c-b40b-97791eaab969.Caption" Value="Номер этапа" />
+			<Item Name="Parameters.4d3b6fc4-7808-48b3-8bfe-83754f71736f.Caption" Value="Дата начала" />
+			<Item Name="Parameters.56b61761-7b56-4f6e-bf74-9dbf13fc3aee.Caption" Value="Тип" />
+			<Item Name="Parameters.5bf37c3c-96b6-4ad6-a283-f6f17936a4bc.Caption" Value="Описание" />
+			<Item Name="Parameters.6906f903-2b63-4b09-8454-dd6df02493f7.Caption" Value="Заголовок" />
+			<Item Name="Parameters.6ab21c52-bc7d-4392-a2c5-27ccdfcceb18.Caption" Value="Предшествующая активность" />
+			<Item Name="Parameters.707665b3-3f14-4f08-ad38-dcd917acab76.Caption" Value="Изменение" />
+			<Item Name="Parameters.798b1cf5-1618-42bd-8c9d-94ab9e36b265.Caption" Value="Ответственный" />
+			<Item Name="Parameters.aa1856b6-14f5-4c77-9f97-0bf81d1409a1.Caption" Value="Дата завершения" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.c4841740-ff8c-406f-8626-1c78f78608bf.Caption" Value="Закрыть" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.f073e66a-36ec-47d7-9c6a-e5952dbf05a3.Caption" Value="Сохранить" />
+		</Items>
+	</Group>
+</Resources>

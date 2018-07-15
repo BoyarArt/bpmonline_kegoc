@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="nl-NL">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Activities section" />
+			<Item Name="LocalizableStrings.LoadingMessagesComplete.Value" Value="E-mails ontvangen" />
+			<Item Name="LocalizableStrings.SetUpSynchronization.Caption" Value="SetUpSynchronization" />
+			<Item Name="LocalizableStrings.SetUpSynchronization.Value" Value="Instellen Activiteit synchronisatie" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Volg de feed" />
+			<Item Name="LocalizableStrings.SynchronizeWithExchangeStart.Value" Value="Synchronisatie is gestart. Wij zullen u op de hoogte stellen wanneer deze is voltooid." />
+			<Item Name="LocalizableStrings.SyncSettingsSetTipCaption.Caption" Value="SyncSettingsSetTipCaption" />
+			<Item Name="LocalizableStrings.SyncSettingsSetTipCaption.Value" Value="Nu zijn uw vergaderingen en taken altijd up-to-date! &lt;br&gt; U kunt, indien nodig, &lt;a href=&quot;#&quot;&gt; de instellingen te wijzigen &lt;/a&gt;" />
+			<Item Name="LocalizableStrings.SyncWithExchangeCaption.Value" Value="Synchroniseren met taken en meetings in Exchange" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Feed niet meer volgen" />
+		</Items>
+	</Group>
+</Resources>

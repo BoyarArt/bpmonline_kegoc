@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.ActivityFlowStatus.Caption" Value="Состояние потока" />
+			<Item Name="Columns.ActivityFlowType.Caption" Value="Тип потока активности" />
+			<Item Name="Columns.Description.Caption" Value="Описание" />
+			<Item Name="Columns.PreviousActivity.Caption" Value="Предыдущая активность" />
+			<Item Name="Columns.StageNumber.Caption" Value="Номер этапа" />
+		</Items>
+	</Group>
+</Resources>

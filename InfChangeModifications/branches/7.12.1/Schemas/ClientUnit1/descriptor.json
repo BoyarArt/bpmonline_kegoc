@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "14b64ce3-e277-4923-88c4-c3923d6cc887",
+    "Name": "ClientUnit1",
+    "ModifiedOnUtc": "\/Date(1531605993000)\/",
+    "Parent": {
+      "UId": "5826ff24-46c6-4169-9223-2aaad9ec2e18",
+      "Name": "BasePageSimpleProcessTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Заполнение данных для создания активности",
+    "DependsOn": []
+  }
+}

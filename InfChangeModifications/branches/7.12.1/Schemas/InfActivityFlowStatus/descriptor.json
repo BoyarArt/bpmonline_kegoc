@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e3c7dd3e-ad0b-4215-b095-834f125c84f2",
+    "Name": "InfActivityFlowStatus",
+    "ModifiedOnUtc": "\/Date(1531580729000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Состояние потока активности (inf)",
+    "DependsOn": []
+  }
+}

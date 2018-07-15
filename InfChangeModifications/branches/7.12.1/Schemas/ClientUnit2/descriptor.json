@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "ac197c10-c443-41eb-a208-32c4a4fa3811",
+    "Name": "ClientUnit2",
+    "ModifiedOnUtc": "\/Date(1531655975000)\/",
+    "Parent": {
+      "UId": "0fc280ad-cec2-41a2-94f6-bf153a37291f",
+      "Name": "BasePageLeftContainerProcessTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Страница 1",
+    "DependsOn": []
+  }
+}

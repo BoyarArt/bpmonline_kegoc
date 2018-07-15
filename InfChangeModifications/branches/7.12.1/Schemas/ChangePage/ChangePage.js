@@ -115,6 +115,10 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			}
 		},
 		messages: {
+			"msgActivityMenuButtonClick" : {
+				mode: Terrasoft.MessageMode.BROADCAST,
+				direction: Terrasoft.MessageDirectionType.SUBSCRIBE
+			},
 			"msgVisaMenuButtonClick": {
 				mode: Terrasoft.MessageMode.BROADCAST,
 				direction: Terrasoft.MessageDirectionType.SUBSCRIBE
@@ -425,6 +429,25 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"index": 3
 			},
 			{
+				"operation": "merge",
+				"name": "Group",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 2
+					}
+				}
+			},
+			{
+				"operation": "move",
+				"name": "Group",
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
 				"operation": "insert",
 				"name": "Customer8c294ba0-1039-4dcb-9ca7-77a878cd8882",
 				"values": {
@@ -432,14 +455,26 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 5,
+						"row": 3,
 						"layoutName": "Header"
 					},
 					"bindTo": "Customer"
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
+			},
+			{
+				"operation": "merge",
+				"name": "Owner",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3
+					}
+				}
 			},
 			{
 				"operation": "insert",
@@ -448,8 +483,8 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 12,
-						"row": 5,
+						"column": 0,
+						"row": 4,
 						"layoutName": "Header"
 					},
 					"bindTo": "Account"
@@ -459,20 +494,25 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"index": 7
 			},
 			{
-				"operation": "merge",
-				"name": "ParentChange",
+				"operation": "insert",
+				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 0
-					}
-				}
+						"row": 0,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "PerformanceCode"
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
+				"name": "NumberReturnsFromAcceptancecaaf164c-0e4b-4884-954d-a5e9f258c10a",
 				"values": {
 					"layout": {
 						"colSpan": 12,
@@ -481,11 +521,30 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"row": 0,
 						"layoutName": "Execution_GridLayout"
 					},
-					"bindTo": "PerformanceCode"
+					"bindTo": "NumberReturnsFromAcceptance"
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "STRING9a8c7db1-51bb-40d4-a91e-3442513476c6",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1,
+						"layoutName": "Execution_GridLayout"
+					},
+					"bindTo": "ClouseComment",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Execution_GridLayout",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -634,83 +693,6 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			},
 			{
 				"operation": "insert",
-				"name": "ExecutionTabGroupd4cb3017",
-				"values": {
-					"caption": {
-						"bindTo": "Resources.Strings.ExecutionTabGroupd4cb3017GroupCaption"
-					},
-					"itemType": 15,
-					"markerValue": "added-group",
-					"items": []
-				},
-				"parentName": "ExecutionTab",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "ExecutionTabGridLayoutc2377b46",
-				"values": {
-					"itemType": 0,
-					"items": []
-				},
-				"parentName": "ExecutionTabGroupd4cb3017",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ActualLabor3ac36a25-23b6-454b-81e7-91016901f751",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 0,
-						"layoutName": "ExecutionTabGridLayoutc2377b46"
-					},
-					"bindTo": "ActualLabor"
-				},
-				"parentName": "ExecutionTabGridLayoutc2377b46",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "NumberReturnsFromAcceptanceda558302-44a9-4743-bac1-b66665c27b65",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 0,
-						"layoutName": "ExecutionTabGridLayoutc2377b46"
-					},
-					"bindTo": "NumberReturnsFromAcceptance"
-				},
-				"parentName": "ExecutionTabGridLayoutc2377b46",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "PlannedLabor6370182b-74c7-4f27-b373-2a75ae0830b0",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 1,
-						"layoutName": "ExecutionTabGridLayoutc2377b46"
-					},
-					"bindTo": "PlannedLabor"
-				},
-				"parentName": "ExecutionTabGridLayoutc2377b46",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
 				"name": "ExecutionTabGroup4e8dd99a",
 				"values": {
 					"caption": {
@@ -722,7 +704,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				},
 				"parentName": "ExecutionTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -831,16 +813,64 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"index": 4
 			},
 			{
-				"operation": "merge",
-				"name": "Author",
+				"operation": "insert",
+				"name": "ExecutionTabGroupd4cb3017",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.ExecutionTabGroupd4cb3017GroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "ExecutionTab",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "ExecutionTabGridLayoutc2377b46",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "ExecutionTabGroupd4cb3017",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ActualLabor3ac36a25-23b6-454b-81e7-91016901f751",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayoutc2377b46"
+					},
+					"bindTo": "ActualLabor"
+				},
+				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "PlannedLabor6370182b-74c7-4f27-b373-2a75ae0830b0",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 0
-					}
-				}
+						"row": 0,
+						"layoutName": "ExecutionTabGridLayoutc2377b46"
+					},
+					"bindTo": "PlannedLabor"
+				},
+				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "merge",
@@ -859,7 +889,19 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"name": "Release",
 				"parentName": "Classification_GridLayout",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
+			},
+			{
+				"operation": "merge",
+				"name": "Author",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 0
+					}
+				}
 			},
 			{
 				"operation": "merge",
@@ -945,6 +987,10 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				"name": "ActualLabor"
 			},
 			{
+				"operation": "remove",
+				"name": "ParentChange"
+			},
+			{
 				"operation": "move",
 				"name": "Number",
 				"parentName": "Header",
@@ -960,6 +1006,18 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			disabledAllFieldsOfChangePage: function() {
+				Ext.ComponentMgr.all.each(function(c) {
+					var cmp = Ext.ComponentMgr.all.map[c];
+					if (cmp.className) {
+						if (cmp.className.indexOf("Edit") !== -1) {
+							if (cmp.setEnabled) {
+								cmp.setEnabled(false);
+							}
+						}
+					}
+				});
+			},
 			onCustomerChanged: function() {
 				if (this.get("Customer") !== undefined && this.get("Customer") !== null) {
 					this.set("Account", this.get("Customer").Account);
@@ -1292,6 +1350,10 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 				}, this, ["ChangeVisaSandbox"]);
 				this.setButtonsVisible();
 				
+				this.sandbox.subscribe("msgActivityMenuButtonClick", function(arg) {
+					this.createActivityFlow();
+				}, this, ["ActivityMenuSandbox"]);
+				
 				this.sandbox.subscribe("ButtonClickMessage",
 					function(method) {
 						this[method]();
@@ -1308,6 +1370,23 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						this.set("Account", _case.Account);
 					}
 				}
+				
+				var status = this.get("InfStatus");
+				if (status.hasOwnProperty("displayValue") === true) {
+					if (status.displayValue === "Закрыто") {
+						setTimeout(this.disabledAllFieldsOfChangePage, 1000);
+					}
+				}
+			},
+			onRender: function() {
+				this.callParent(arguments);
+				
+				var status = this.get("InfStatus");
+				if (status.hasOwnProperty("displayValue") === true) {
+					if (status.displayValue === "Закрыто") {
+						setTimeout(this.disabledAllFieldsOfChangePage, 1000);
+					}
+				}
 			},
 			getActions: function() {
 				var actionMenuItems = this.callParent(arguments);
@@ -1321,7 +1400,26 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					"Click":  {"bindTo": "getVisaGoal"},
 					"Visible": true
 				}));
+				actionMenuItems.addItem(this.getActionsMenuItem({
+					Type: "Terrasoft.MenuSeparator",
+					Caption: "Активности",
+					"Visible": true
+				}));
+				actionMenuItems.addItem(this.getActionsMenuItem({
+					"Caption": "Создать поток активностей",
+					"Click":  {"bindTo": "createActivityFlow"},
+					"Visible": true
+				}));
 				return actionMenuItems;
+			},
+			createActivityFlow: function() {
+				var args = {
+					sysProcessName: "InfCreateActivityFlowProcess",
+					parameters: {
+						Change: this.get("Id")
+					}
+				};
+				ProcessModuleUtilities.executeProcess(args);
 			},
 			getVisaGoal: function() {
 				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
@@ -1430,6 +1528,13 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			onSaved: function() {
 				this.callParent(arguments);
 				this.setButtonsVisible();
+				
+				var status = this.get("InfStatus");
+				if (status.hasOwnProperty("displayValue") === true) {
+					if (status.displayValue === "Закрыто") {
+						this.disabledAllFieldsOfChangePage();
+					}
+				}
 			}
 		},
 		rules: {},
@@ -1437,6 +1542,30 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			"PerformanceCode": {
 				"364a0f06-1257-47a2-82d3-8125ce9a6c1b": {
 					"uId": "364a0f06-1257-47a2-82d3-8125ce9a6c1b",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "6fc17cb3-9e85-47ec-9154-de1052c11789",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"ClouseComment": {
+				"1cdc12e9-ce0b-4a01-9699-dd4a464ac425": {
+					"uId": "1cdc12e9-ce0b-4a01-9699-dd4a464ac425",
 					"enabled": true,
 					"removed": false,
 					"ruleType": 0,

@@ -5,6 +5,7 @@
 			<Item Name="Columns.Account.Caption" Value="Контрагент" />
 			<Item Name="Columns.ChangeRealizationPurpose.Caption" Value="Цель реализации изменения" />
 			<Item Name="Columns.ClosureDateFlag.Caption" Value="Флаг ПС завершения реализации" />
+			<Item Name="Columns.ClouseComment.Caption" Value="Комментарий к выполнению" />
 			<Item Name="Columns.CommentsOnExpansion.Caption" Value="Комментарии по развертыванию" />
 			<Item Name="Columns.CoordinationOfChangeFlag.Caption" Value="Флаг ПС согласования изменения" />
 			<Item Name="Columns.Customer.Caption" Value="Заказчик" />

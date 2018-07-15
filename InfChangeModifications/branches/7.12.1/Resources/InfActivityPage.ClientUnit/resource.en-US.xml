@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="BaseModulePageV2 (ESN)" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Postpone till" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="History of changes" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="More than one queue element connected to the process. Process Id: {0}" />
+			<Item Name="LocalizableStrings.NotesAndFilesTabCaption.Value" Value="Attachments and notes" />
+			<Item Name="LocalizableStrings.NotesGroupCaption.Value" Value="Notes" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-queue" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Page is not connected to the agent desktop queue element. Action cancelled." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Unable to re-queue item" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Successfully re-queued" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Follow the feed" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="You are now following feed: {0}" />
+			<Item Name="LocalizableStrings.TabVisaCaption.Value" Value="Approvals" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Timeline" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Unfollow the feed" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="You have stopped following feed: {0}" />
+			<Item Name="Parameters.0c0906d1-53fc-4276-abdc-9370656bd890.Caption" Value="Номер этапа" />
+			<Item Name="Parameters.265cfd14-f9d5-4917-aa0f-859ec52f8802.Caption" Value="Дата начала" />
+			<Item Name="Parameters.3e98d822-b4d1-436d-a76f-6ba85284138e.Caption" Value="Описание" />
+			<Item Name="Parameters.42e3766e-a0dc-4e57-8b5b-a2bf07288bad.Caption" Value="Тип потока" />
+			<Item Name="Parameters.4b9b2c07-27f5-48ef-8627-1804fe8c25f9.Caption" Value="Изменение" />
+			<Item Name="Parameters.4f911768-abf7-43a6-bb04-cf9c634f1d6d.Caption" Value="Дата завершения" />
+			<Item Name="Parameters.4fc8c2e3-c19b-474c-bec8-3864115381d5.Caption" Value="Заголовок" />
+			<Item Name="Parameters.5859731a-c5a6-453a-9e39-da3722f929cf.Caption" Value="Предшествующая активность" />
+			<Item Name="Parameters.ff7c4615-a1e5-4e5e-bde4-e96678ca0ca2.Caption" Value="Ответственный" />
+		</Items>
+	</Group>
+</Resources>

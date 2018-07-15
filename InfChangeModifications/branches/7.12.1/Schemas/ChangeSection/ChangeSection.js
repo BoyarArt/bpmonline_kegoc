@@ -54,6 +54,10 @@ define("ChangeSection", [], function() {
 			}
 		},
 		messages: {
+			"msgActivityMenuButtonClick" : {
+				mode: Terrasoft.MessageMode.BROADCAST,
+				direction: Terrasoft.MessageDirectionType.PUBLISH
+			},
 			"msgVisaMenuButtonClick": {
 				mode: Terrasoft.MessageMode.BROADCAST,
 				direction: Terrasoft.MessageDirectionType.PUBLISH
@@ -94,6 +98,9 @@ define("ChangeSection", [], function() {
 				for (var item in items) {
 					this.set(item, items[item]);
 				}
+			},
+			"createActivityFlow": function() {
+				this.sandbox.publish("msgActivityMenuButtonClick", null, ["ActivityMenuSandbox"]);
 			},
 			"getVisaGoal": function() {
 				this.sandbox.publish("msgVisaMenuButtonClick", null, ["ChangeVisaSandbox"]);

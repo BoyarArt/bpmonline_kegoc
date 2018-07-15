@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.CallTabCaption.Value" Value="Calls" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Postpone till" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
+			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="History of changes" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.GeneralInfoTabGroup81558048GroupCaption.Value" Value="Описание" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="More than one queue element connected to the process. Process Id: {0}" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-queue" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Page is not connected to the agent desktop queue element. Action cancelled." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Unable to re-queue item" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Successfully re-queued" />
+			<Item Name="LocalizableStrings.RemindToAuthorDateLabelCaption.Value" Value="Дата напоминания" />
+			<Item Name="LocalizableStrings.RemindToAuthorLabelCaption.Value" Value="Автору" />
+			<Item Name="LocalizableStrings.RemindToOwnerDateLabelCaption.Value" Value="Дата напоминания" />
+			<Item Name="LocalizableStrings.RemindToOwnerLabelCaption.Value" Value="Ответственному" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Follow the feed" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="You are now following feed: {0}" />
+			<Item Name="LocalizableStrings.Tabde91601eTabLabelTabCaption.Value" Value="Зависимые активности" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Timeline" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Unfollow the feed" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="You have stopped following feed: {0}" />
+		</Items>
+	</Group>
+</Resources>

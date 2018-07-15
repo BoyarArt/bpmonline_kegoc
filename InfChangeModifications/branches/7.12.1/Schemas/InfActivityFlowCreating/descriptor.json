@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cce9c3c0-0af4-49fc-b106-a2e6af8ef046",
+    "Name": "InfActivityFlowCreating",
+    "ModifiedOnUtc": "\/Date(1531581181000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Потоки создания активностей",
+    "DependsOn": []
+  }
+}
