@@ -6,6 +6,13 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "Type",
+				"values": {
+					"enabled": true
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "LOOKUP3e7bca76-870b-4d4b-9a78-08e588f0007a",
 				"values": {
@@ -1392,6 +1399,27 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 				"index": 2
 			},
 			{
+				"operation": "merge",
+				"name": "Owner",
+				"values": {
+					"enabled": true
+				}
+			},
+			{
+				"operation": "remove",
+				"name": "Owner",
+				"properties": [
+					"labelConfig"
+				]
+			},
+			{
+				"operation": "move",
+				"name": "Owner",
+				"parentName": "ActualStatusGroup_GridLayout",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
 				"operation": "remove",
 				"name": "Model"
 			},
@@ -1427,16 +1455,27 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 				"parentName": "ActualStatusGroup_GridLayout",
 				"propertyName": "items",
 				"index": 2
-			},
-			{
-				"operation": "move",
-				"name": "Owner",
-				"parentName": "ActualStatusGroup_GridLayout",
-				"propertyName": "items",
-				"index": 0
 			}
 		]/**SCHEMA_DIFF*/,
 		methods: {
+			onStatusChanged: function() {
+				this.callParent(arguments);
+				if (!this.isAddMode() && !this.isCopyMode()) {
+					this.save();
+				}
+			},
+			disabledAllFieldsOfChangePage: function() {
+				Ext.ComponentMgr.all.each(function(c) {
+					var cmp = Ext.ComponentMgr.all.map[c];
+					if (cmp.className) {
+						if (cmp.className.indexOf("Edit") !== -1) {
+							if (cmp.setEnabled) {
+								cmp.setEnabled(false);
+							}
+						}
+					}
+				});
+			},
 			TypeChanged: function() {
 				if (this.get("Type")) {
 					var TypeName = this.get("Type").displayValue;
@@ -1658,6 +1697,39 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				this.TypeChanged();
+				
+				var status = this.get("Status");
+				if (status !== undefined && status !== null) {
+					if (status.hasOwnProperty("displayValue") === true) {
+						if (status.displayValue === "Утилизирован") {
+							setTimeout(this.disabledAllFieldsOfChangePage, 1000);
+						}
+					}
+				}
+			},
+			onRender: function() {
+				this.callParent(arguments);
+				
+				var status = this.get("Status");
+				if (status !== undefined && status !== null) {
+					if (status.hasOwnProperty("displayValue") === true) {
+						if (status.displayValue === "Утилизирован") {
+							setTimeout(this.disabledAllFieldsOfChangePage, 1000);
+						}
+					}
+				}
+			},
+			onSaved: function() {
+				this.callParent(arguments);
+				
+				var status = this.get("Status");
+				if (status !== undefined && status !== null) {
+					if (status.hasOwnProperty("displayValue") === true) {
+						if (status.displayValue === "Утилизирован") {
+							setTimeout(this.disabledAllFieldsOfChangePage, 1000);
+						}
+					}
+				}
 			}
 		},
 		rules: {},

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "560edd80-efbc-4060-a4cd-ef8dd5e1de78",
+    "Name": "InfConfItemNotificationProcess",
+    "ModifiedOnUtc": "\/Date(1531685568000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление конфигурационной единицы",
+    "DependsOn": []
+  }
+}

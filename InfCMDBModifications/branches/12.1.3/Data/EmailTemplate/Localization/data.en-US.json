@@ -1,0 +1,23 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "e5ce41c4-f137-415a-ac5b-84eac2a0d4bb"
+        },
+        {
+          "SchemaColumnUId": "ca53e2c8-0767-4f2c-8a18-2ee5821f134e",
+          "ColumnName": "Name",
+          "Value": "Добавление новой конфигурационной единицы (US)"
+        },
+        {
+          "SchemaColumnUId": "b4972436-c042-4a3b-a025-f04575f10532",
+          "ColumnName": "TemplateConfig",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}
