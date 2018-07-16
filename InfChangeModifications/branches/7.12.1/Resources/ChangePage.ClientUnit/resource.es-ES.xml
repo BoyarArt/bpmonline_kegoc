@@ -3,15 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page schema - Changes section" />
-			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Ver modelo de esquema - Lista de cadena" />
-			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Categoría" />
-			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Elemento de configuración A" />
-			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
-			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Categoría." />
-			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Servicio-Servicio" />
-			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="No seguir el feed" />
 			<Item Name="LocalizableStrings.ReleaseCaption.Caption" Value="Historia" />
-			<Item Name="LocalizableStrings.ReleaseCaption.Value" Value="Historia" />
 		</Items>
 	</Group>
 </Resources>

@@ -1,4 +1,5 @@
-define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities) {
+define("ChangePage", ["ProcessModuleUtilities", "ServiceDeskConstants"],
+function(ProcessModuleUtilities, ServiceDeskConstants) {
 	return {
 		entitySchemaName: "Change",
 		attributes: {
@@ -62,6 +63,18 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 						"methodName": "onGroupChanged"
 					}
 				]
+			},
+			"Group": {
+				lookupListConfig: {
+					filter: function() {
+						return this.Terrasoft.createColumnInFilterWithParameters("SysAdminUnitTypeValue", [
+							ServiceDeskConstants.SysAdminUnitType.Organization.Value,
+							ServiceDeskConstants.SysAdminUnitType.Division.Value,
+							ServiceDeskConstants.SysAdminUnitType.Managers.Value,
+							ServiceDeskConstants.SysAdminUnitType.Team.Value
+						]);
+					}
+				}
 			},
 			"isFirstAnalysisButtonVisible": {
 				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
@@ -529,7 +542,7 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 			},
 			{
 				"operation": "insert",
-				"name": "STRING9a8c7db1-51bb-40d4-a91e-3442513476c6",
+				"name": "ClouseCommentaae54de4-1feb-4562-ada3-e8542cf9ee2c",
 				"values": {
 					"layout": {
 						"colSpan": 24,
@@ -1563,9 +1576,321 @@ define("ChangePage", ["ProcessModuleUtilities"], function(ProcessModuleUtilities
 					]
 				}
 			},
+			"ScheduledStartDate": {
+				"cf4ffb5e-0f64-4f74-a6e2-ec6f4fc8bf34": {
+					"uId": "cf4ffb5e-0f64-4f74-a6e2-ec6f4fc8bf34",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 1,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"ScheduledClosureDate": {
+				"0750a9bb-b678-462f-a34c-ed519c737e26": {
+					"uId": "0750a9bb-b678-462f-a34c-ed519c737e26",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 1,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"ScheduledImplantationDate": {
+				"219f13e1-2a39-4d2c-ab0e-dc9b894a54f8": {
+					"uId": "219f13e1-2a39-4d2c-ab0e-dc9b894a54f8",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 1,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "1113ecc1-1a83-40ab-af56-329e417a469c",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "d9f8f0b4-975c-45c0-9005-6437f460a1ed",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "ad0bf55d-bdf5-406b-ae2c-be4c7f1d6af7",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"ScheduledCustomerDate": {
+				"4876d790-2264-4d80-9377-969777e2acb3": {
+					"uId": "4876d790-2264-4d80-9377-969777e2acb3",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 1,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "1113ecc1-1a83-40ab-af56-329e417a469c",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"PlannedDateCoordinationOfChange": {
+				"e31933ef-9028-45ca-9ecf-f518881db79e": {
+					"uId": "e31933ef-9028-45ca-9ecf-f518881db79e",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 1,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
+								"dataValueType": 10
+							}
+						},
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "InfStatus"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
+								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
 			"ClouseComment": {
-				"1cdc12e9-ce0b-4a01-9699-dd4a464ac425": {
-					"uId": "1cdc12e9-ce0b-4a01-9699-dd4a464ac425",
+				"16cbf4d6-5c0d-4a52-bda9-fc36777261d8": {
+					"uId": "16cbf4d6-5c0d-4a52-bda9-fc36777261d8",
 					"enabled": true,
 					"removed": false,
 					"ruleType": 0,
