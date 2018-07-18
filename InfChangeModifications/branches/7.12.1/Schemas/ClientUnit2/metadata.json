@@ -1,8 +1,8 @@
 = MetaData.Schema.UId "ac197c10-c443-41eb-a208-32c4a4fa3811"
 = MetaData.Schema.A2 "ClientUnit2"
-= MetaData.Schema.A5 "74e52e89-9f33-4c12-a993-b0f067e33756"
 = MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
 = MetaData.Schema.B8 "7.12.1.924"
+= MetaData.Schema.HD1 "0fc280ad-cec2-41a2-94f6-bf153a37291f"
 + MetaData.Schema.HD11 {
   "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
   "UId": "24d839b3-b216-47ea-91ef-eac3a66529e6",
@@ -15,6 +15,6 @@
   },
   "L9": "16be3651-8fe2-4159-8dd0-a803d4683dd3"
 }
-~ MetaData.Schema.HD11 ["24d839b3-b216-47ea-91ef-eac3a66529e6"]
+~ MetaData.Schema.HD11 ["24d839b3-b216-47ea-91ef-eac3a66529e6","c49bd85e-159a-49ee-b10a-3c3bca63d7d5"]
 - MetaData.Schema.B7
 + MetaData.Schema.B7 false

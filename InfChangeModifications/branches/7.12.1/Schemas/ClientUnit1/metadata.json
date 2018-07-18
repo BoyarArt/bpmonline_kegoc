@@ -1,8 +1,8 @@
 = MetaData.Schema.UId "14b64ce3-e277-4923-88c4-c3923d6cc887"
 = MetaData.Schema.A2 "ClientUnit1"
-= MetaData.Schema.A5 "74e52e89-9f33-4c12-a993-b0f067e33756"
 = MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
 = MetaData.Schema.B8 "7.12.1.924"
+= MetaData.Schema.HD1 "5826ff24-46c6-4169-9223-2aaad9ec2e18"
 + MetaData.Schema.HD11 {
   "BL1": "Terrasoft.Core.ClientUnitSchemaParameter",
   "UId": "6ab21c52-bc7d-4392-a2c5-27ccdfcceb18",
@@ -107,6 +107,6 @@
   },
   "L9": "de5c8d59-d372-407d-8c09-f0523e057e40"
 }
-~ MetaData.Schema.HD11 ["6ab21c52-bc7d-4392-a2c5-27ccdfcceb18","6906f903-2b63-4b09-8454-dd6df02493f7","5bf37c3c-96b6-4ad6-a283-f6f17936a4bc","4d3b6fc4-7808-48b3-8bfe-83754f71736f","aa1856b6-14f5-4c77-9f97-0bf81d1409a1","798b1cf5-1618-42bd-8c9d-94ab9e36b265","56b61761-7b56-4f6e-bf74-9dbf13fc3aee","1f320d5c-5122-476c-b40b-97791eaab969","707665b3-3f14-4f08-ad38-dcd917acab76"]
+~ MetaData.Schema.HD11 ["6ab21c52-bc7d-4392-a2c5-27ccdfcceb18","6906f903-2b63-4b09-8454-dd6df02493f7","5bf37c3c-96b6-4ad6-a283-f6f17936a4bc","4d3b6fc4-7808-48b3-8bfe-83754f71736f","aa1856b6-14f5-4c77-9f97-0bf81d1409a1","798b1cf5-1618-42bd-8c9d-94ab9e36b265","56b61761-7b56-4f6e-bf74-9dbf13fc3aee","1f320d5c-5122-476c-b40b-97791eaab969","707665b3-3f14-4f08-ad38-dcd917acab76","c49bd85e-159a-49ee-b10a-3c3bca63d7d5"]
 - MetaData.Schema.B7
 + MetaData.Schema.B7 false

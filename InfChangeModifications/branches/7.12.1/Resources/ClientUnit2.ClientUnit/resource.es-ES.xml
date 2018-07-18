@@ -4,14 +4,14 @@
 		<Items>
 			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Ver modelo de esquema - Lista de cadena" />
 			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Categoría" />
-			<Item Name="LocalizableStrings.NotesAndFilesTabCaption.Value" Value="Attachments and notes" />
-			<Item Name="LocalizableStrings.NotesGroupCaption.Value" Value="Notes" />
 			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Elemento de configuración A" />
 			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
 			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Categoría." />
 			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Servicio-Servicio" />
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="No seguir el feed" />
-			<Item Name="LocalizableStrings.TabVisaCaption.Value" Value="Aprobaciones" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Caption" Value="Botones" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.0d080fb2-6d46-47df-8dc7-3b1947c98043.Caption" Value="Cerrar" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.7c41f405-8cd4-4cec-ae5f-12ee944027df.Caption" Value="Guardar" />
 		</Items>
 	</Group>
 </Resources>
