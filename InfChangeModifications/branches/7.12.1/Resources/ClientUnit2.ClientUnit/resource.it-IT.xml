@@ -2,7 +2,16 @@
 <Resources Culture="it-IT">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Страница 1" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Rinvia fino al" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Più di un elemento della coda collegato al rocesso. Id processo {0}" />
+			<Item Name="LocalizableStrings.NotesAndFilesTabCaption.Value" Value="Attachments and notes" />
+			<Item Name="LocalizableStrings.NotesGroupCaption.Value" Value="Notes" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Ri-accoda" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Impossibile ri-accodare l'elemento. Messaggio di errore: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="La pagina non è collegata all'elemento della coda del desktop agente. Azione annullata." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Impossibile ri-accodare l'elemento" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Ri-accodato con successo" />
+			<Item Name="LocalizableStrings.TabVisaCaption.Value" Value="Approvazioni" />
 		</Items>
 	</Group>
 </Resources>
