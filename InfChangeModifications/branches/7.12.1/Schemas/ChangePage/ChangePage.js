@@ -3,6 +3,11 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 	return {
 		entitySchemaName: "Change",
 		attributes: {
+			"VisaMenuVisible": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
 			"Customer": {
 				"lookupListConfig": {
 					"columns": ["Account"],
@@ -1052,6 +1057,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				
 				if (status.displayValue === "Регистрация") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: true,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1065,6 +1071,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Первичный анализ") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: true,
 						isScheduledButtonVisible: false,
@@ -1078,6 +1085,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Утверждение") {
 					visibleButtons = {
+						VisaMenuVisible: true,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: true,
@@ -1091,6 +1099,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Запланировано") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1104,6 +1113,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Реализация") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1117,6 +1127,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "В ожидании") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1130,6 +1141,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Реализовано") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1143,6 +1155,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Принято заказчиком") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1156,6 +1169,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Внедрение") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1169,6 +1183,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "В эксплуатации") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1182,6 +1197,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					};
 				} else if (status.displayValue === "Закрыто") {
 					visibleButtons = {
+						VisaMenuVisible: false,
 						isFirstAnalysisButtonVisible: false,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: false,
@@ -1385,20 +1401,22 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				}
 				
 				var status = this.get("InfStatus");
-				if (status.hasOwnProperty("displayValue") === true) {
-					if (status.displayValue === "Закрыто") {
-						setTimeout(this.disabledAllFieldsOfChangePage, 1000);
-					}
+				if (status === null || status === undefined || status === "") {
+					return;
+				}
+				if (status.displayValue === "Закрыто") {
+					setTimeout(this.disabledAllFieldsOfChangePage, 1000);
 				}
 			},
 			onRender: function() {
 				this.callParent(arguments);
 				
 				var status = this.get("InfStatus");
-				if (status.hasOwnProperty("displayValue") === true) {
-					if (status.displayValue === "Закрыто") {
-						setTimeout(this.disabledAllFieldsOfChangePage, 1000);
-					}
+				if (status === null || status === undefined || status === "") {
+					return;
+				}
+				if (status.displayValue === "Закрыто") {
+					setTimeout(this.disabledAllFieldsOfChangePage, 1000);
 				}
 			},
 			getActions: function() {
@@ -1406,12 +1424,12 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				actionMenuItems.addItem(this.getActionsMenuItem({
 					Type: "Terrasoft.MenuSeparator",
 					Caption: "Согласование",
-					"Visible": true
+					"Visible": {bindTo: "VisaMenuVisible"}
 				}));
 				actionMenuItems.addItem(this.getActionsMenuItem({
 					"Caption": "Отправить на согласование",
 					"Click":  {"bindTo": "getVisaGoal"},
-					"Visible": true
+					"Visible": {bindTo: "VisaMenuVisible"}
 				}));
 				actionMenuItems.addItem(this.getActionsMenuItem({
 					Type: "Terrasoft.MenuSeparator",
@@ -1522,6 +1540,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				// Вызов модального окна справочника
 				this.goalText = goalText;
 				this.openLookup(config, function(args) {
+					var stageNumber = this.get("StageNumber");
 					_.forEach(args.selectedRows.collection.items, function(item) {
 						var args = {
 							sysProcessName: "VisaChangeProcess",
@@ -1529,12 +1548,17 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 								ChangeId: this.get("Id"),
 								VisaOwner: item.value,
 								VisaGoal: this.goalText,
-								StageNumber: this.get("StageNumber")
-							}
+								StageNumber: stageNumber
+							},
+							callback: function() {
+								this.updateDetails();
+								//setTimeout(this.reloadEntity(), 3000);
+							},
+							scope: this
 						};
 						ProcessModuleUtilities.executeProcess(args);
 					}.bind(this));
-					this.set("StageNumber", this.get("StageNumber") + 1);
+					this.set("StageNumber", stageNumber + 1);
 					this.save();
 				}, this);
 			},
@@ -1543,10 +1567,10 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				this.setButtonsVisible();
 				
 				var status = this.get("InfStatus");
-				if (status.hasOwnProperty("displayValue") === true) {
-					if (status.displayValue === "Закрыто") {
-						this.disabledAllFieldsOfChangePage();
-					}
+				if (status === null || status === undefined || status === "") {
+					return;
+				} else if (status.displayValue === "Закрыто") {
+					this.disabledAllFieldsOfChangePage();
 				}
 			}
 		},
@@ -1596,30 +1620,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
 								"dataValueType": 10
 							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
-								"dataValueType": 10
-							}
 						}
 					]
 				}
@@ -1642,42 +1642,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 							"rightExpression": {
 								"type": 0,
 								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
 								"dataValueType": 10
 							}
 						}
@@ -1704,78 +1668,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
 								"dataValueType": 10
 							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "1113ecc1-1a83-40ab-af56-329e417a469c",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "d9f8f0b4-975c-45c0-9005-6437f460a1ed",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "ad0bf55d-bdf5-406b-ae2c-be4c7f1d6af7",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
-								"dataValueType": 10
-							}
 						}
 					]
 				}
@@ -1800,54 +1692,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 								"value": "bc93fb1a-33b0-491a-b421-ae6c865a606d",
 								"dataValueType": 10
 							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "35e78c71-7811-470c-9a62-513a409b86bd",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "41164114-afb6-4ecf-af69-1a959158d6ff",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "1113ecc1-1a83-40ab-af56-329e417a469c",
-								"dataValueType": 10
-							}
-						},
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
-								"dataValueType": 10
-							}
 						}
 					]
 				}
@@ -1861,18 +1705,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					"property": 2,
 					"logical": 1,
 					"conditions": [
-						{
-							"comparisonType": 3,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "InfStatus"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": "20367af9-c1bf-4691-a4e1-b9b115bd4c3f",
-								"dataValueType": 10
-							}
-						},
 						{
 							"comparisonType": 3,
 							"leftExpression": {
