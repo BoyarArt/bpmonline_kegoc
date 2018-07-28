@@ -7,6 +7,9 @@ define("VisaDetailV2",
 				SecurityUtilitiesMixin: "Terrasoft.SecurityUtilitiesMixin"
 			},
 			methods: {
+				getDeleteRecordMenuItem: function() {
+					return;
+				},
 				addToolsButtonMenuItems: function(toolsButtonMenu) {
 					this.addRecordOperationsMenuItems(toolsButtonMenu);
 					
