@@ -1086,7 +1086,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				} else if (status.displayValue === "Утверждение") {
 					visibleButtons = {
 						VisaMenuVisible: true,
-						isFirstAnalysisButtonVisible: false,
+						isFirstAnalysisButtonVisible: true,
 						isApprovalButtonVisible: false,
 						isScheduledButtonVisible: true,
 						isRealizationButtonVisible: false,
@@ -1261,26 +1261,60 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				});
 				this.save();
 			},
+			checkVisaAcceptedCount: function(callback) {
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "ChangeVisa"
+				});
+			
+				var greatestStageNumber = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"StageNumber", this.get("StageNumber") - 1);
+
+				var idFilter = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"Change", this.get("Id"));
+					
+				var StatusFilter = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.NOT_EQUAL,
+					"Status.Name", "Положительная");
+
+
+				esq.filters.addItem(greatestStageNumber);
+				esq.filters.addItem(idFilter);
+				esq.filters.addItem(StatusFilter);
+				
+				esq.getEntityCollection(function(result) {
+						if (result.collection.collection.length === 0) {
+							this.callback.call(this.scope);
+						} else {
+							this.scope.showInformationDialog(
+								"Не все визы предыдущего этапа положительны. В переходе на статус Реализация отказано."
+							);
+						}
+					}.bind({callback: callback, scope: this}), this);
+			},
 			//Реализация
 			onRealizationButtonClick: function() {
-				this.set("InfStatus", {
-					displayValue: "Реализация",
-					primaryImageValue: "",
-					value: "41164114-afb6-4ecf-af69-1a959158d6ff"
+				this.checkVisaAcceptedCount.call(this, function() {
+					this.set("InfStatus", {
+						displayValue: "Реализация",
+						primaryImageValue: "",
+						value: "41164114-afb6-4ecf-af69-1a959158d6ff"
+					});
+					this.set("Phase", {
+						displayValue: "Реализация",
+						primaryImageValue: "",
+						value: "044c2fe7-c46b-440c-ae2c-5f2faf9c6521"
+					});
+					if (document.prevStatus !== undefined) {
+						var NumberReturnsFromAcceptance = this.get("NumberReturnsFromAcceptance");
+						this.set("NumberReturnsFromAcceptance", ++NumberReturnsFromAcceptance);
+						document.prevStatus = undefined;
+					}
+					
+					
+					this.save();
 				});
-				this.set("Phase", {
-					displayValue: "Реализация",
-					primaryImageValue: "",
-					value: "044c2fe7-c46b-440c-ae2c-5f2faf9c6521"
-				});
-				if (document.prevStatus !== undefined) {
-					var NumberReturnsFromAcceptance = this.get("NumberReturnsFromAcceptance");
-					this.set("NumberReturnsFromAcceptance", ++NumberReturnsFromAcceptance);
-					document.prevStatus = undefined;
-				}
-				
-				
-				this.save();
 			},
 			//В ожидании
 			onPendingButtonClick: function() {
