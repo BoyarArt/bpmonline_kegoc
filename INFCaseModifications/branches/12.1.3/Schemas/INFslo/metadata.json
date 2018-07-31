@@ -9,7 +9,8 @@
 - MetaData.Schema.EG1.B1.["fe742d1c-4346-4cc5-894e-217df991856c"].C2
 + MetaData.Schema.EG1.B8 "7.12.1.924"
 = MetaData.Schema.EG1.BK8 "66f58f21-6ed1-4e29-b506-6b9f6426d463"
-+ MetaData.Schema.EG1.BK37 {"BL1":"Terrasoft.Core.Process.ProcessSchemaParameter","UId":"cdd58be7-2dba-4a5e-869b-1ad5d6d7513a","A2":"NotificationCaption","A3":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","A4":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","L1":"8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2","L8":{"GS1":3,"GS2":"[#[PropertyValue:Caption]#]"}}
+= MetaData.Schema.EG1.BK37.A3 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
+= MetaData.Schema.EG1.BK37.A4 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
 + MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].IL2 "079c1a2b-96d1-4935-9764-180b73ed11ac"
 - MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL4
 - MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL9
@@ -147,7 +148,6 @@
 ~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8530baaa-586d-4180-886f-e0e0e964d9b1","12c8c6a3-cf60-427d-afd6-15f5f95f0301","cf84feae-2cf2-42db-ac59-caad98861156","c47b141e-8986-402e-8cd7-6871e4b10487","fc92d203-4bf1-4d35-8e43-9d7a9cc7a8ca","1af4d581-2ce4-4803-b37d-41bde3f349c2","050d7af8-d972-4bcc-bcd5-b6914c38a2c5","a2b2b02f-05fd-4219-b2f8-eb214e3e5b08","47e6143e-1a21-435d-a355-4d384c5ab794","98550c9d-8009-42c7-b594-fd65aad9900b"]
 = MetaData.Schema.D20.A2 "INFsloEvents"
 - MetaData.Schema.EG1.BK29
-- MetaData.Schema.EG1.BK28
 - MetaData.Schema.EG1.BK30
 - MetaData.Schema.D1
 - MetaData.Schema.D20.FA15
