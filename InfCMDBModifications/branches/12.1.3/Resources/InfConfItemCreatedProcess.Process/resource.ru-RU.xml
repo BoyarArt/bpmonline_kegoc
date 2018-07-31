@@ -59,7 +59,7 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.SendEmailType.Caption" Value="Как выполняется отправка?" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.SendEmailType.DisplayValue" Value="Отправить email автоматически" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.Caption" Value="От кого" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.DisplayValue" Value="[#Системная настройка.Почтовый ящик для отправки письма информации о визе#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Sender.DisplayValue" Value="[#Системная настройка.Mailbox for sending registration confirmation letter#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowExecutionPage.Caption" Value="Показывать страницу выполнения автоматически" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowExecutionPage.DisplayValue" Value="true" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ShowInScheduler.Caption" Value="Отображать в расписании" />

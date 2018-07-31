@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "1f517e43-2280-436c-a9ca-e05263b614da",
     "Name": "InfConfItemCreatedProcess",
-    "ModifiedOnUtc": "\/Date(1531686661000)\/",
+    "ModifiedOnUtc": "\/Date(1533024721000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Уведомление о создании Конфигурационной единицы",
     "DependsOn": []

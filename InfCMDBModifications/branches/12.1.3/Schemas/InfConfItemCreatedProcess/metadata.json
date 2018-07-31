@@ -319,8 +319,7 @@
           "GT5": "0222ed95-9f70-49d7-8d75-e219a7cc47d2",
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
-            "GS1": 1,
-            "GS2": "Отправить email 1"
+            "GS1": 1
           }
         },
         {
@@ -798,7 +797,8 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 3,
-            "GS2": "[#SysSettings.VisaMailboxSettings<Guid>#]"
+            "GS2": "[#SysSettings.LoginRegistrationMailboxSettings<Guid>#]",
+            "GS5": "1f517e43-2280-436c-a9ca-e05263b614da"
           }
         },
         {
@@ -919,7 +919,8 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 1,
-            "GS2": ""
+            "GS2": "",
+            "GS5": "1f517e43-2280-436c-a9ca-e05263b614da"
           }
         },
         {
@@ -934,7 +935,8 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 1,
-            "GS2": ""
+            "GS2": "",
+            "GS5": "1f517e43-2280-436c-a9ca-e05263b614da"
           }
         },
         {
@@ -1809,7 +1811,7 @@
               "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
               "L8": {
                 "GS1": 3,
-                "GS2": "[#SysSettings.VisaMailboxSettings<Guid>#]",
+                "GS2": "[#SysSettings.LoginRegistrationMailboxSettings<Guid>#]",
                 "GS5": "1f517e43-2280-436c-a9ca-e05263b614da"
               },
               "L9": "5e487721-02e2-48ee-b755-dfa5160f5315"
