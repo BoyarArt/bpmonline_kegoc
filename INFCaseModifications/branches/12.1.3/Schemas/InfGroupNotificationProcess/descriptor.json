@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ee1248b1-c9cd-482c-85b2-1d0358c609ce",
+    "Name": "InfGroupNotificationProcess",
+    "ModifiedOnUtc": "\/Date(1532811394000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление группы о создании обращения",
+    "DependsOn": []
+  }
+}
