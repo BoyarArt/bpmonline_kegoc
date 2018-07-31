@@ -503,7 +503,7 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 3,
-            "GS2": "[#Lookup.5e487721-02e2-48ee-b755-dfa5160f5315.542b9e2a-a053-4cfd-9a34-6389392c9e92#]",
+            "GS2": "[#SysSettings.LoginRegistrationMailboxSettings<Guid>#]",
             "GS5": "75956e53-5835-422d-884e-a84e59acf103"
           }
         },
@@ -1015,7 +1015,7 @@
           "A4": "75956e53-5835-422d-884e-a84e59acf103",
           "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
           "IL2": "69b43a4d-9d2a-44d9-87c3-b3989efdf489",
-          "BL3": "388;167",
+          "BL3": "391;167",
           "BL7": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "BL8": "75956e53-5835-422d-884e-a84e59acf103",
           "BN2": "69;55",
@@ -1491,7 +1491,7 @@
               "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
               "L8": {
                 "GS1": 3,
-                "GS2": "[#Lookup.5e487721-02e2-48ee-b755-dfa5160f5315.542b9e2a-a053-4cfd-9a34-6389392c9e92#]",
+                "GS2": "[#SysSettings.LoginRegistrationMailboxSettings<Guid>#]",
                 "GS5": "75956e53-5835-422d-884e-a84e59acf103"
               },
               "L9": "5e487721-02e2-48ee-b755-dfa5160f5315"
