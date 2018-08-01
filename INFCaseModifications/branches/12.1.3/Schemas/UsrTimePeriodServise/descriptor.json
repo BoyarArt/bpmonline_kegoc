@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "e1f54340-35ca-468c-ac8d-95c67e3381b6",
     "Name": "UsrTimePeriodServise",
-    "ModifiedOnUtc": "\/Date(1530684995000)\/",
+    "ModifiedOnUtc": "\/Date(1533096882000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Сервис расчета периода дат",
     "DependsOn": []

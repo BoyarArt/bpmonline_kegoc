@@ -30,6 +30,7 @@
 			<Item Name="BaseElements.ReadCaseData.Parameters.NumberOfRecords.Caption" Value="Количество записей для чтения" />
 			<Item Name="BaseElements.ReadCaseData.Parameters.OrderInfo.Caption" Value="Порядок сортировки колонок" />
 			<Item Name="BaseElements.ReadCaseData.Parameters.ReadSomeTopRecords.Caption" Value="Читать первые" />
+			<Item Name="BaseElements.ReadCaseData.Parameters.ResultCompositeObjectList.Caption" Value="Результирующая коллекция" />
 			<Item Name="BaseElements.ReadCaseData.Parameters.ResultCount.Caption" Value="Количество записей" />
 			<Item Name="BaseElements.ReadCaseData.Parameters.ResultDateTimeFunction.Caption" Value="Результат функции" />
 			<Item Name="BaseElements.ReadCaseData.Parameters.ResultEntity.Caption" Value="Первый элемент результирующей коллекции" />
@@ -50,6 +51,7 @@
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.NumberOfRecords.Caption" Value="Количество записей для чтения" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.OrderInfo.Caption" Value="Порядок сортировки колонок" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ReadSomeTopRecords.Caption" Value="Читать первые" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultCompositeObjectList.Caption" Value="Результирующая коллекция" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultCount.Caption" Value="Количество записей" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultDateTimeFunction.Caption" Value="Результат функции" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultEntity.Caption" Value="Первый элемент результирующей коллекции" />

@@ -69,7 +69,11 @@ namespace UsrTimePeriodServise
 
             TimeSpan startTime = new TimeSpan(startDate.Hour, startDate.Minute, startDate.Second);
             TimeSpan endTime = new TimeSpan(endDate.Hour, endDate.Minute, endDate.Second);
-            startDate = new DateTime(startDate.Year, startDate.Month, startDate.Day + 1);
+            //startDate = new DateTime(startDate.Year, startDate.Month, startDate.Day + 1);
+            //Вот именно в мессте + 1 и ошибка. Сегодня тот самый последний день в календаре для месяца.
+            //32 числа в июле нету. Внимательно посмотрите на 76 строку и только так добавляте в будущем дни, месяца и года, часы, минуты и т.д.
+            startDate = new DateTime(startDate.Year, startDate.Month, startDate.Day);
+            startDate = startDate.AddDays(1);
             endDate = new DateTime(endDate.Year, endDate.Month, endDate.Day);           
                        
             //var userConnection = (UserConnection)HttpContext.Current.Session["UserConnection"];
