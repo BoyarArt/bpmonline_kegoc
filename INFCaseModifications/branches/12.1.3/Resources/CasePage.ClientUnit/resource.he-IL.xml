@@ -3,17 +3,44 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="עכב עד" />
 			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="תגובה למקרה" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Value" Value="תגובת מקרה {0} {1}" />
 			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
+			<Item Name="LocalizableStrings.EscalationTitle.Value" Value="העברה לטיפול גורם בכיר" />
+			<Item Name="LocalizableStrings.GeneralInfoTabCaption.Value" Value="פרטים" />
+			<Item Name="LocalizableStrings.GroupCaption.Value" Value="קבוצת גורמים מטפלים" />
 			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="הסתר הודעות מערכת" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Value" Value="הסתר הודעות מערכת" />
 			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="היסטוריה" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Value" Value="היסטוריה" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="יותר מרכיב אחד מחובר לתהליך. מזהה תהליך: {0}" />
+			<Item Name="LocalizableStrings.OpenServiceModelByServiceModuleCaption.Value" Value="הצגת תלויות בשירות" />
+			<Item Name="LocalizableStrings.OwnerCaption.Value" Value="OwnerCaption" />
 			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="פרופיל מקרה" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Value" Value="פרופיל מקרה" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="העבר לתור מחדש" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="לא ניתן לסדר מחדש את הפריט בתור. הודעת שגיאה: {0}" />
 			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="מעבד" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Value" Value="מעבד" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="הדף אינו מחובר אל רכיב תור שולחן העבודה של הסוכן. הפעולה בוטלה." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="לא ניתן לסדר מחדש פריט בתור" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="סודר מחדש בתור בהצלחה" />
+			<Item Name="LocalizableStrings.ReclassificationTitle.Value" Value="סווג מחדש" />
 			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="הודעה למשתמש 1" />
 			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="חפש מקרים דומים" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Value" Value="חפש מקרים דומים" />
 			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Value" Value="&lt;P&gt; שירותים קובעים את קטגוריות המקרה וכן תגובת ברירת מחדל וזמן סופי של הפתרון. היקף השירותים נקבע על פי הסכם רמת השירות של הלקוח (SLA). השתמש ב &lt;a href=&quot;../0/Nui/ViewModule.aspx#SectionModuleV2/ServiceItemSection/&quot;&gt; &quot;שירותים&quot; &lt;/a&gt; ו- &lt;a href = &quot;.. / 0 / Nui / ViewModule.aspx # SectionModuleV2 / ServicePactSection / &quot;&gt;&quot; הסכמי שירות &quot;&lt;/a&gt; כדי להגדיר שירותים זמינים &lt;/ p&gt;" />
 			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Value" Value="&lt;P&gt; הסכמי רמת השירות (SLA) קובעים את היקף השירותים הניתנים ללקוחות מסוגים שונים, וכן תנאים למתן שירותים בקבלנות משנה ושירותים פנימיים. השתמש במודול &lt;a href=&quot;../0/Nui/ViewModule.aspx#SectionModuleV2/ServicePactSection/&quot;&gt; &quot;הסכמי שירות&quot; &lt;/a&gt; כדי ליצור ולשנות הסכמי שירות &lt;/ p&gt;" />
+			<Item Name="LocalizableStrings.SetCaseContactMessage.Value" Value="האם לציין את {0} כאיש קשר במקרה?" />
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="הראה הודעות מערכת" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Value" Value="הראה הודעות מערכת" />
+			<Item Name="LocalizableStrings.SolutionFieldPlaceholder.Value" Value="תיאור הפתרון" />
+			<Item Name="LocalizableStrings.SolvedOnSupportLevelCaption.Value" Value="רמת תמיכה" />
+			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="רמת תמיכה" />
+			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="תסמינים" />
 		</Items>
 	</Group>
 </Resources>

@@ -491,7 +491,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 4,
+						"row": 5,
 						"layoutName": "ProfileContainer"
 					},
 					"bindTo": "BusinessService",
@@ -503,6 +503,21 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
 				"index": 4
+			},
+			{
+				"operation": "merge",
+				"name": "CaseCategory",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 4
+					},
+					"enabled": {
+						"bindTo": "isFieldsEnabled"
+					}
+				}
 			},
 			{
 				"operation": "merge",
@@ -519,7 +534,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"name": "ServiceItem",
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -540,16 +555,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				},
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "merge",
-				"name": "CaseCategory",
-				"values": {
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					}
-				}
+				"index": 7
 			},
 			{
 				"operation": "merge",
@@ -870,7 +876,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				},
 				"parentName": "ProcessingTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1975,6 +1981,13 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 					primaryImageValue: "",
 					value: "7e9f1204-f46b-1410-fb9a-0050ba5d6c38"
 				};
+				if (this.get("Status").displayValue === "Приостановлено") {
+					if (this.get("ServiceItem") && this.get("TechService")) {
+						this.CaseTermByTechService();
+					} else if (this.get("ServiceItem") && !this.get("TechService")) {
+						this.CaseTermByITService();
+					}
+				}
 				this.set("Status", status);
 				this.setFieldsEnabled();
 				this.save();

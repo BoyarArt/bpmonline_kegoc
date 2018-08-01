@@ -3,17 +3,44 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Case page" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Ver modelo de esquema - Lista de cadena" />
 			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="No seguir el feed" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Value" Value="Categoría de caso" />
 			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="Problemas" />
+			<Item Name="LocalizableStrings.EscalationTitle.Value" Value="Escalate" />
+			<Item Name="LocalizableStrings.GeneralInfoTabCaption.Value" Value="Perfil del servicio" />
+			<Item Name="LocalizableStrings.GroupCaption.Value" Value="Grupo de responsables" />
 			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Estado" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Value" Value="Estado" />
 			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Historial" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Value" Value="Historial" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Categoría" />
+			<Item Name="LocalizableStrings.OpenServiceModelByServiceModuleCaption.Value" Value="Agente de escritorio" />
+			<Item Name="LocalizableStrings.OwnerCaption.Value" Value="Bpm'online Service Enterprise en 5 minutos" />
 			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Fecha Inicio" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Value" Value="Fecha Inicio" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Elemento de configuración A" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
 			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Usuarios" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Value" Value="Usuarios" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Categoría." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Servicio-Servicio" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="No seguir el feed" />
+			<Item Name="LocalizableStrings.ReclassificationTitle.Value" Value="Departamento" />
 			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Mensaje al usuario 1" />
 			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Search for similar cases" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Value" Value="Search for similar cases" />
 			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="Editar esquema de página - sección &quot;Servicios&quot;" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Value" Value="Casos" />
 			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Value" Value="Lanzamientos" />
+			<Item Name="LocalizableStrings.SetCaseContactMessage.Value" Value="Especifique {0} como contacto en el caso?" />
 			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Tiempo de respuesta" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Value" Value="Tiempo de respuesta" />
+			<Item Name="LocalizableStrings.SolutionFieldPlaceholder.Value" Value="Bpm'online Service Enterprise en 5 minutos" />
+			<Item Name="LocalizableStrings.SolvedOnSupportLevelCaption.Value" Value="Nivel de soporte" />
+			<Item Name="LocalizableStrings.SupportLevelCaption.Value" Value="Nivel de soporte" />
+			<Item Name="LocalizableStrings.SymptomsCaption.Value" Value="Cambios" />
 		</Items>
 	</Group>
 </Resources>
