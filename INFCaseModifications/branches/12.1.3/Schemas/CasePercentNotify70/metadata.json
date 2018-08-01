@@ -837,6 +837,8 @@
           "GT5": "c86fee83-f221-48e1-91af-b96730c70411",
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
+            "GS1": 1,
+            "GS2": "По обращению просрочено 70% от планового срока выполнения",
             "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
@@ -884,7 +886,8 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 1,
-            "GS2": "0"
+            "GS2": "1",
+            "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
         {
@@ -898,8 +901,6 @@
           "GT5": "6b992b79-6228-42d8-97a8-75e14f6f59cb",
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
-            "GS1": 1,
-            "GS2": "481cffab-7a6a-475b-9771-23ccf3279d44",
             "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
@@ -914,8 +915,6 @@
           "GT5": "1e6be52c-a9d5-43c5-9fa8-f045f2842347",
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
-            "GS1": 3,
-            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{ae0e45ca-c495-4fe7-a39d-3ab7278e1617}]#]",
             "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
@@ -931,7 +930,7 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 1,
-            "GS2": "",
+            "GS2": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><meta property=\"og:title\" content=\"\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title></title><style type=\"text/css\">#outlook a {padding:0;}body {width:100% !important;} .ReadMsgBody {width:100%;} .ExternalClass {width:100%;}.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}body, table, td, p, a, li, blockquote {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-line-height-rule:exactly;}table, td {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}body {margin:0; padding:0;}img {border:0; height:auto; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;}a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;}table {border-collapse:collapse !important;}table td {border-collapse:collapse;}body {height:100% !important; margin:0; padding:0; width:100% !important;}@media only screen and (max-width: 480px) {.content-block {font-size: 16px;}body {width:100% !important; min-width:100% !important;}table#backgroundTable, .flexible-container {min-width:200px !important;}img.flexible-image {height:auto !important; width:100% !important; max-width:100% !important;}body,table,td,p,a,li,blockquote {-webkit-text-size-adjust: none !important;}}@media only screen and (max-device-width: 480px) {.content-block {font-size: 16px;}body {width:100% !important; min-width:100% !important;}table#backgroundTable, .flexible-container {min-width:200px !important;}img.flexible-image {height:auto !important; width:100% !important; max-width:100% !important;}body,table,td,p,a,li,blockquote {-webkit-text-size-adjust: none !important;}}.content-block td { width:100%;max-width:750px !important;color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:initial;min-width:200px;border-collapse:collapse; }.content-block td a:link, .content-block td a:visited, .content-block td a .yshortcuts { color:#336699;font-weight:normal;text-decoration:underline;}.content-block td img {display:inline; height:auto;}.text-element p, .html-element p, p {-webkit-margin-before: 0em;-webkit-margin-after: 0em;-webkit-margin-start: 0em;-webkit-margin-end: 0em;margin: 0em;}</style></head><body leftmargin=\"0\" marginwidth=\"0\" topmargin=\"0\" marginheight=\"0\" offset=\"0\" style=\"margin:0\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\" width=\"100%\" style=\"border-collapse:collapse;\"><tr><td align=\"left\" valign=\"top\"><!--[if (gte mso 9)|(IE)]><table width=\"750\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td><![endif]--><table bgcolor=\"#ffffff\" style=\"width:100%;max-width:750px !important;color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:initial;min-width:200px;border-collapse:collapse;\" cellspacing=\"0\" cellpadding=\"10\" id=\"backgroundTable\"><tr><td valign=\"top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr><td valign=\"top\" style=\"width:100%;vertical-align:top;\" class=\"flexible-container\" ><!--[if (gte mso 9)|(IE)]><table width=\"100%\" align=\"center\" valign=\"top\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><![endif]--><!--[if (gte mso 9)|(IE)]><td style=\"padding: 5px;\" width=\"720\" valign=\"top\" ><![endif]--><table align=\"left\" border=\"0\" style=\"max-width:730px;vertical-align:top;width:100%;border-collapse:collapse;\" class=\"flexible-container\"><tr><td><div style=\"color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:inherit;padding:5px;text-align:left;word-wrap:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;\" class=\"text-element\" ><p style=\"text-align: justify;\"><span style=\"font-size:14px\"><span style=\"font-family:tahoma,geneva,sans-serif\">По обращению&nbsp;<img alt=\"[#Читать обращения.Первый элемент результирующей коллекции.Номер#]\" data-type=\"ProcessParameter\" data-value=\"[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{7b8ce6b4-29ca-40c7-bea1-b5bf7b7c404a}]#]\" />&nbsp;истекло 70% от планового срока выполнения</span></span></p>\n</div></td></tr></table><!--[if (gte mso 9)|(IE)]></td><![endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]--></td></tr></table></td></tr></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><br /></td></tr></table></body></html>",
             "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
@@ -947,7 +946,7 @@
           "GT4": "184dbb27-ce13-4d37-8dff-c2ff1df9cf19",
           "GT1": {
             "GS1": 1,
-            "GS2": "",
+            "GS2": "{\"ItemType\":\"sheet\",\"Caption\":\"Дизайнер контента\",\"Items\":[{\"ItemType\":\"block\",\"Items\":[{\"ItemType\":\"text\",\"Column\":0,\"Row\":0,\"ColSpan\":24,\"RowSpan\":0,\"Content\":\"<p style=\\\"text-align: justify;\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:tahoma,geneva,sans-serif\\\">По обращению&nbsp;<img alt=\\\"[#Читать обращения.Первый элемент результирующей коллекции.Номер#]\\\" data-type=\\\"ProcessParameter\\\" data-value=\\\"[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{7b8ce6b4-29ca-40c7-bea1-b5bf7b7c404a}]#]\\\" />&nbsp;истекло 70% от планового срока выполнения</span></span></p>\\n\"}]}],\"Width\":750,\"BackgroundColor\":\"#ffffff\",\"SheetAlign\":\"left\"}",
             "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
           }
         },
@@ -1270,6 +1269,34 @@
           "GT1": {
             "GS2": ""
           }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
+          "UId": "821359f6-d049-47c5-8f38-31c3db2a6122",
+          "A2": "ReadDataUserTask1",
+          "A3": "517fbfd1-cb5c-4497-a3be-e25dbed5745a",
+          "A4": "517fbfd1-cb5c-4497-a3be-e25dbed5745a",
+          "GT2": "[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{5c25073a-30d3-43ab-a0a9-8ea3f61d4876}]",
+          "GT3": "5c25073a-30d3-43ab-a0a9-8ea3f61d4876",
+          "GT5": "555901ef-f707-4803-a887-1bc07e882096",
+          "GT4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+          "GT1": {
+            "GS2": ""
+          }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
+          "UId": "629e714e-765d-4afa-9940-8b569fbba843",
+          "A2": "ReadDataUserTask2",
+          "A3": "517fbfd1-cb5c-4497-a3be-e25dbed5745a",
+          "A4": "517fbfd1-cb5c-4497-a3be-e25dbed5745a",
+          "GT2": "[Element:{259452a3-dde0-4093-9ad4-2483ac5e2ff0}].[Parameter:{69900f56-4b8e-48fd-b342-7ce222620a16}]",
+          "GT3": "69900f56-4b8e-48fd-b342-7ce222620a16",
+          "GT5": "555901ef-f707-4803-a887-1bc07e882096",
+          "GT4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+          "GT1": {
+            "GS2": ""
+          }
         }
       ],
       "BK37": {
@@ -1584,6 +1611,18 @@
               "A4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
               "IL2": "606ec991-e8a3-4082-be5c-779f5c0e68bc",
               "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+              "L8": {
+                "GS2": ""
+              }
+            },
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+              "UId": "5c25073a-30d3-43ab-a0a9-8ea3f61d4876",
+              "A2": "ResultCompositeObjectList",
+              "A3": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "A4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "IL2": "606ec991-e8a3-4082-be5c-779f5c0e68bc",
+              "L1": "651ec16f-d140-46db-b9e2-825c985a8ac2",
               "L8": {
                 "GS2": ""
               }
@@ -2105,6 +2144,7 @@
               "IL2": "17fda5b6-3aef-4c4f-a57c-ce1ea58406a5",
               "L1": "95c6e6c4-2cc8-46be-a1cb-96f942655f86",
               "L8": {
+                "GS1": 1,
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
               }
             },
@@ -2146,7 +2186,7 @@
               "L1": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
               "L8": {
                 "GS1": 1,
-                "GS2": "0",
+                "GS2": "1",
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
               }
             },
@@ -2159,8 +2199,6 @@
               "IL2": "17fda5b6-3aef-4c4f-a57c-ce1ea58406a5",
               "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
               "L8": {
-                "GS1": 1,
-                "GS2": "481cffab-7a6a-475b-9771-23ccf3279d44",
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
               },
               "L9": "93030575-f70f-4041-902e-c4badaf62c63",
@@ -2175,11 +2213,8 @@
               "IL2": "17fda5b6-3aef-4c4f-a57c-ce1ea58406a5",
               "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
               "L8": {
-                "GS1": 3,
-                "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{ae0e45ca-c495-4fe7-a39d-3ab7278e1617}]#]",
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
-              },
-              "L9": "117d32f9-8275-4534-8411-1c66115ce9cd"
+              }
             },
             {
               "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
@@ -2191,7 +2226,7 @@
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
                 "GS1": 1,
-                "GS2": "",
+                "GS2": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><meta property=\"og:title\" content=\"\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title></title><style type=\"text/css\">#outlook a {padding:0;}body {width:100% !important;} .ReadMsgBody {width:100%;} .ExternalClass {width:100%;}.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}body, table, td, p, a, li, blockquote {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-line-height-rule:exactly;}table, td {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}body {margin:0; padding:0;}img {border:0; height:auto; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;}a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;}table {border-collapse:collapse !important;}table td {border-collapse:collapse;}body {height:100% !important; margin:0; padding:0; width:100% !important;}@media only screen and (max-width: 480px) {.content-block {font-size: 16px;}body {width:100% !important; min-width:100% !important;}table#backgroundTable, .flexible-container {min-width:200px !important;}img.flexible-image {height:auto !important; width:100% !important; max-width:100% !important;}body,table,td,p,a,li,blockquote {-webkit-text-size-adjust: none !important;}}@media only screen and (max-device-width: 480px) {.content-block {font-size: 16px;}body {width:100% !important; min-width:100% !important;}table#backgroundTable, .flexible-container {min-width:200px !important;}img.flexible-image {height:auto !important; width:100% !important; max-width:100% !important;}body,table,td,p,a,li,blockquote {-webkit-text-size-adjust: none !important;}}.content-block td { width:100%;max-width:750px !important;color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:initial;min-width:200px;border-collapse:collapse; }.content-block td a:link, .content-block td a:visited, .content-block td a .yshortcuts { color:#336699;font-weight:normal;text-decoration:underline;}.content-block td img {display:inline; height:auto;}.text-element p, .html-element p, p {-webkit-margin-before: 0em;-webkit-margin-after: 0em;-webkit-margin-start: 0em;-webkit-margin-end: 0em;margin: 0em;}</style></head><body leftmargin=\"0\" marginwidth=\"0\" topmargin=\"0\" marginheight=\"0\" offset=\"0\" style=\"margin:0\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\" width=\"100%\" style=\"border-collapse:collapse;\"><tr><td align=\"left\" valign=\"top\"><!--[if (gte mso 9)|(IE)]><table width=\"750\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td><![endif]--><table bgcolor=\"#ffffff\" style=\"width:100%;max-width:750px !important;color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:initial;min-width:200px;border-collapse:collapse;\" cellspacing=\"0\" cellpadding=\"10\" id=\"backgroundTable\"><tr><td valign=\"top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr><td valign=\"top\" style=\"width:100%;vertical-align:top;\" class=\"flexible-container\" ><!--[if (gte mso 9)|(IE)]><table width=\"100%\" align=\"center\" valign=\"top\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><![endif]--><!--[if (gte mso 9)|(IE)]><td style=\"padding: 5px;\" width=\"720\" valign=\"top\" ><![endif]--><table align=\"left\" border=\"0\" style=\"max-width:730px;vertical-align:top;width:100%;border-collapse:collapse;\" class=\"flexible-container\"><tr><td><div style=\"color:#444444;font-family:arial,helvetica,sans-serif;font-size:14px;line-height:inherit;padding:5px;text-align:left;word-wrap:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;\" class=\"text-element\" ><p style=\"text-align: justify;\"><span style=\"font-size:14px\"><span style=\"font-family:tahoma,geneva,sans-serif\">По обращению&nbsp;<img alt=\"[#Читать обращения.Первый элемент результирующей коллекции.Номер#]\" data-type=\"ProcessParameter\" data-value=\"[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{7b8ce6b4-29ca-40c7-bea1-b5bf7b7c404a}]#]\" />&nbsp;истекло 70% от планового срока выполнения</span></span></p>\n</div></td></tr></table><!--[if (gte mso 9)|(IE)]></td><![endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]--></td></tr></table></td></tr></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><br /></td></tr></table></body></html>",
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
               },
               "IsLazy": true
@@ -2206,7 +2241,7 @@
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
                 "GS1": 1,
-                "GS2": "",
+                "GS2": "{\"ItemType\":\"sheet\",\"Caption\":\"Дизайнер контента\",\"Items\":[{\"ItemType\":\"block\",\"Items\":[{\"ItemType\":\"text\",\"Column\":0,\"Row\":0,\"ColSpan\":24,\"RowSpan\":0,\"Content\":\"<p style=\\\"text-align: justify;\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:tahoma,geneva,sans-serif\\\">По обращению&nbsp;<img alt=\\\"[#Читать обращения.Первый элемент результирующей коллекции.Номер#]\\\" data-type=\\\"ProcessParameter\\\" data-value=\\\"[#[IsOwnerSchema:false].[IsSchema:false].[Element:{606ec991-e8a3-4082-be5c-779f5c0e68bc}].[Parameter:{c316822e-cc54-4648-9f97-beaae3b7a947}].[EntityColumn:{7b8ce6b4-29ca-40c7-bea1-b5bf7b7c404a}]#]\\\" />&nbsp;истекло 70% от планового срока выполнения</span></span></p>\\n\"}]}],\"Width\":750,\"BackgroundColor\":\"#ffffff\",\"SheetAlign\":\"left\"}",
                 "GS5": "517fbfd1-cb5c-4497-a3be-e25dbed5745a"
               },
               "IsLazy": true
@@ -2558,6 +2593,18 @@
               "L8": {
                 "GS2": ""
               }
+            },
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+              "UId": "69900f56-4b8e-48fd-b342-7ce222620a16",
+              "A2": "ResultCompositeObjectList",
+              "A3": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "A4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "IL2": "259452a3-dde0-4093-9ad4-2483ac5e2ff0",
+              "L1": "651ec16f-d140-46db-b9e2-825c985a8ac2",
+              "L8": {
+                "GS2": ""
+              }
             }
           ],
           "CL2": "FFFFFFFF",
@@ -2723,7 +2770,8 @@
       "BK18": "Business Process",
       "BK29": true,
       "BK34": "ru-RU",
-      "BK24": []
+      "BK24": [],
+      "BK36": false
     }
   }
 }
