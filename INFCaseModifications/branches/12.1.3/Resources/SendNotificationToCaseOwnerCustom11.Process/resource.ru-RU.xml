@@ -62,7 +62,7 @@
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultType.Caption" Value="Тип результата" />
 			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultType.DisplayValue" Value="0" />
 			<Item Name="BaseElements.SetActivityServiceProcessed.Caption" Value="Обновить признак обработки в активности" />
-			<Item Name="Caption" Value="Переоткрытие обращения и отправка email сообщения ответственному о новом комментарии" />
+			<Item Name="Caption" Value="INF Переоткрытие обращения и отправка email сообщения ответственному о новом комментарии" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="Pool 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />

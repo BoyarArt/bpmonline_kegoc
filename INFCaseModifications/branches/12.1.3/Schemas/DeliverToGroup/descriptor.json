@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "30000756-6ebd-491c-ae58-98dcd3f4646a",
+    "Name": "DeliverToGroup",
+    "ModifiedOnUtc": "\/Date(1533201404000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Направлять в группу если обращение переоткрыто",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "aea74ee5-46b5-47d3-a5ab-ca074993334a",
+    "Name": "Process3",
+    "ModifiedOnUtc": "\/Date(1533225417000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Запуск процесса: расчет сроков для портального обращения",
+    "DependsOn": []
+  }
+}

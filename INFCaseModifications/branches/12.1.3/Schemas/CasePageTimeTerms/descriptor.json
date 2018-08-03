@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "53c785ec-4daa-4257-856b-9342b56d988e",
     "Name": "CasePageTimeTerms",
-    "ModifiedOnUtc": "\/Date(1530720069000)\/",
+    "ModifiedOnUtc": "\/Date(1533224942000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Расчет плановых сроков",
     "DependsOn": []

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Is Feature Run Class Enabled" />
+			<Item Name="BaseElements.ConditionalSequenceFlow2.Caption" Value="Is incident registration mailbox not found" />
+			<Item Name="BaseElements.ReadActivityDataUser.Caption" Value="Read activity data" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.AggregationColumnName.Caption" Value="Имя колонки для агрегирующей функции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.CanReadUncommitedData.Caption" Value="Выполнять &quot;грязное чтение&quot;" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.DataSourceFilters.Caption" Value="Источник данных фильтров" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.EntityColumnMetaPathes.Caption" Value="Перечень колонок для чтения" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.FunctionType.Caption" Value="Тип агрегирующей функции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.IgnoreDisplayValues.Caption" Value="Не читать отображаемые значения колонок Справочников" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.NumberOfRecords.Caption" Value="Количество записей для чтения" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.OrderInfo.Caption" Value="Порядок сортировки колонок" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ReadSomeTopRecords.Caption" Value="Читать первые" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultCompositeObjectList.Caption" Value="Результирующая коллекция" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultCount.Caption" Value="Количество записей" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultDateTimeFunction.Caption" Value="Результат функции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultEntity.Caption" Value="Первый элемент результирующей коллекции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultEntityCollection.Caption" Value="Результирующая коллекция" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultFloatFunction.Caption" Value="Результат функции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultIntegerFunction.Caption" Value="Результат функции" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultRowsCount.Caption" Value="Количество прочитанных записей" />
+			<Item Name="BaseElements.ReadActivityDataUser.Parameters.ResultType.Caption" Value="Тип результата" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="CaseRecordSet" />
+			<Item Name="BaseElements.ScriptTask2.Caption" Value="RunReopenCaseAndNotifyAssigneeClass" />
+			<Item Name="BaseElements.StartSignal1.Caption" Value="Email with connected case created" />
+			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Id записи" />
+			<Item Name="BaseElements.StartSignal2.Caption" Value="Email with connected case" />
+			<Item Name="BaseElements.StartSignal2.EntityFilters.Value" Value="{_isFilter:false,uId:&quot;31ad5fa1-37bd-42fb-987f-417bb01c3d68&quot;,name:&quot;FilterEdit&quot;,items:[{_isFilter:true,_filterSchemaUId:&quot;c449d832-a4cc-4b01-b9d5-8a12c42a9f89&quot;,uId:&quot;f9fd67ec-cd42-432f-ae7b-315d7791c254&quot;,leftExpression:{expressionType:&quot;SchemaColumn&quot;,metaPath:&quot;5491c33f-e927-4ca8-a579-d4810ea54c56&quot;,caption:&quot;Type&quot;,referenceSchemaUId:&quot;75b4d39b-55dc-4bd6-8d10-3f49a58d96c7&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true}},comparisonType:&quot;Equal&quot;,rightExpression:{expressionType:&quot;Parameter&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true},parameterValues:[{displayValue:&quot;&amp;quot;Email&amp;quot;&quot;,parameterValue:&quot;&amp;quot;e2831dec-cfc0-df11-b00f-001d60e938c6&amp;quot;&quot;}]}},{_isFilter:true,_filterSchemaUId:&quot;c449d832-a4cc-4b01-b9d5-8a12c42a9f89&quot;,uId:&quot;e904be7d-1cb5-42fb-95af-d328bae2a4c0&quot;,leftExpression:{expressionType:&quot;SchemaColumn&quot;,metaPath:&quot;af5a73d3-20ec-4419-819b-1575ce196bd2&quot;,caption:&quot;Message type&quot;,referenceSchemaUId:&quot;4b276ad6-71c1-4b9a-be9d-379edc60012f&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true}},comparisonType:&quot;Equal&quot;,rightExpression:{expressionType:&quot;Parameter&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true},parameterValues:[{displayValue:&quot;&amp;quot;Incoming&amp;quot;&quot;,parameterValue:&quot;&amp;quot;7f9d1f86-f36b-1410-068c-20cf30b39373&amp;quot;&quot;}]}},{_isFilter:true,_filterSchemaUId:&quot;c449d832-a4cc-4b01-b9d5-8a12c42a9f89&quot;,uId:&quot;79630011-b95e-4d9d-9108-617679b3cbe1&quot;,leftExpression:{expressionType:&quot;SchemaColumn&quot;,metaPath:&quot;47c4dc47-8529-4d0e-a6fa-f298bb20cd13&quot;,caption:&quot;Case&quot;,referenceSchemaUId:&quot;117d32f9-8275-4534-8411-1c66115ce9cd&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true}},comparisonType:&quot;IsNotNull&quot;}]}" />
+			<Item Name="BaseElements.SubProcess1.Caption" Value="INF Переоткрытие обращения и отправка email сообщения ответственному о новом комментарии 1" />
+			<Item Name="BaseElements.SubProcess1.Parameters.ActivityId.Caption" Value="Activity Id" />
+			<Item Name="BaseElements.SubProcess1.Parameters.ActivityId.DisplayValue" Value="[#Email with connected case.RecordId#]" />
+			<Item Name="BaseElements.SubProcess1.Parameters.AssigneeIsCleared.Caption" Value="Assignee is cleared" />
+			<Item Name="BaseElements.SubProcess1.Parameters.CaseId.Caption" Value="Case Id" />
+			<Item Name="BaseElements.SubProcess1.Parameters.CaseId.DisplayValue" Value="[#Read activity data.Первый элемент результирующей коллекции.Обращение#]" />
+			<Item Name="BaseElements.SubProcess1.Parameters.CaseOwnerId.Caption" Value="Case assignee" />
+			<Item Name="BaseElements.SubProcess1.Parameters.SubjectCaption.Caption" Value="SubjectCaption" />
+			<Item Name="Caption" Value="INF Запуск процесса Переоткрытие обращения и отправка email сообщения ответственному о новом комментарии - Копия" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="Pool 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />
+			<Item Name="Parameters.ActivityId.Caption" Value="Activity Id" />
+			<Item Name="Parameters.CaseId.Caption" Value="Case Id" />
+			<Item Name="Parameters.IsFeatureEnable.Caption" Value="IsFeatureEnable" />
+			<Item Name="Parameters.IsIncidentRegistrationMailbox.Caption" Value="Is incident registration mailbox" />
+			<Item Name="Parameters.IsIncidentRegistrationMailbox.DisplayValue" Value="[#Логическое значение.Да#]" />
+		</Items>
+	</Group>
+</Resources>

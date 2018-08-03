@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d8a96e93-5640-4740-bf78-6d080e0ad0af",
+    "Name": "RunSendNotificationCaseOwnerProcess1",
+    "ModifiedOnUtc": "\/Date(1533199849000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Run process: Reopen case and notify assignee on receiving an answer regarding the case",
+    "DependsOn": []
+  }
+}

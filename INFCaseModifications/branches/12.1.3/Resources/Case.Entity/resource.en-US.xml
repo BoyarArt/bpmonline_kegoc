@@ -37,6 +37,8 @@
 			<Item Name="Columns.StopReason.Caption" Value="Причина приостановки" />
 			<Item Name="Columns.TechService.Caption" Value="Технический сервис" />
 			<Item Name="Columns.TimeInLifeWithoutPause.Caption" Value="Длительность выполнения без учета приостановки" />
+			<Item Name="EventsProcessSchema.BaseElements.NewOwnerSynchronizeSubjectReminding.Parameters.IsSingleReminder.Caption" Value="Одиночное напоминание" />
+			<Item Name="EventsProcessSchema.BaseElements.OldOwnerSynchronizeSubjectReminding.Parameters.IsSingleReminder.Caption" Value="Одиночное напоминание" />
 			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Caption" Value="Pool 3" />
 			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_01f9155e49a34e9eaacdf2ce482406c2.Lanes.Lane4_0f92d505d2a14efb9f0b8084e855ae91.Caption" Value="Lane 4" />
 		</Items>
