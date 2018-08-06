@@ -143,8 +143,18 @@ define("CaseSection", [],
 					}
 				]/**SCHEMA_DIFF*/,
 				methods: {
+					"ServerChannelSubscriber": function(scope, message) {
+						if (message) {
+							//Глобальные оповещения
+							if (message.Header.Sender === "ExecuteReloadCaseGridGlobal") {
+								this.reloadGridData();
+							}
+						}
+					},
 					init: function() {
 						this.callParent(arguments);
+						//Подписка на широковещательные сообщения по websocket протоколу
+						Terrasoft.ServerChannel.on(Terrasoft.EventName.ON_MESSAGE, this.ServerChannelSubscriber, this);
 						this.sandbox.subscribe("ButtonVisibilityMessage",
 							function(items) {
 								this.setButtonVisible(items);

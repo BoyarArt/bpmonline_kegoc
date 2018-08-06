@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "273f030f-f50d-4572-a205-b7961cbeb3bb",
+    "Name": "InfReloadCaseGridProcess",
+    "ModifiedOnUtc": "\/Date(1533590261000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Обращения: перезагрузить реестр",
+    "DependsOn": []
+  }
+}
