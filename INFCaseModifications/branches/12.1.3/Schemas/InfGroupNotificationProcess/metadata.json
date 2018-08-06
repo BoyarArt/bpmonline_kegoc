@@ -282,6 +282,20 @@
           "GT1": {
             "GS2": ""
           }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
+          "UId": "d2b72416-851d-47db-820a-770d98062120",
+          "A2": "ReadDataUserTask1",
+          "A3": "ee1248b1-c9cd-482c-85b2-1d0358c609ce",
+          "A4": "ee1248b1-c9cd-482c-85b2-1d0358c609ce",
+          "GT2": "[Element:{89c41392-679e-4bb1-8e58-e9c9253b52d0}].[Parameter:{2e1892ed-199a-4631-bf01-33c5b1bb0bdd}]",
+          "GT3": "2e1892ed-199a-4631-bf01-33c5b1bb0bdd",
+          "GT5": "555901ef-f707-4803-a887-1bc07e882096",
+          "GT4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+          "GT1": {
+            "GS2": ""
+          }
         }
       ],
       "BK37": {
@@ -308,6 +322,7 @@
           "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
           "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
           "BL8": "ee1248b1-c9cd-482c-85b2-1d0358c609ce",
+          "BM1": 0,
           "BM4": [
             {
               "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
@@ -379,8 +394,9 @@
           "DZ2": false,
           "DZ3": true,
           "DZ5": 1,
+          "DZ8": true,
           "DZ12": "{\"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\"$values\":[]}",
-          "DZ13": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Case\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Case\\\"}\"}"
+          "DZ13": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"d97b583a-07e6-4cf5-ba3a-3c59bd96361e\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":4,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"Origin\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"d97b583a-07e6-4cf5-ba3a-3c59bd96361e\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Происхождение\\\",\\\"referenceSchemaName\\\":\\\"CaseOrigin\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":10,\\\"value\\\":{\\\"Name\\\":\\\"Портал самообслуживания\\\",\\\"Id\\\":\\\"debf4124-f46b-1410-3592-0050ba5d6c38\\\",\\\"Image\\\":\\\"\\\",\\\"value\\\":\\\"debf4124-f46b-1410-3592-0050ba5d6c38\\\",\\\"displayValue\\\":\\\"Портал самообслуживания\\\"}}}]}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Case\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"d97b583a-07e6-4cf5-ba3a-3c59bd96361e\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":4,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"Origin\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":10,\\\"value\\\":\\\"debf4124-f46b-1410-3592-0050ba5d6c38\\\"}}]}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Case\\\"}\"}"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaUserTask",
@@ -614,6 +630,18 @@
               "A4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
               "IL2": "89c41392-679e-4bb1-8e58-e9c9253b52d0",
               "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+              "L8": {
+                "GS2": ""
+              }
+            },
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+              "UId": "2e1892ed-199a-4631-bf01-33c5b1bb0bdd",
+              "A2": "ResultCompositeObjectList",
+              "A3": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "A4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
+              "IL2": "89c41392-679e-4bb1-8e58-e9c9253b52d0",
+              "L1": "651ec16f-d140-46db-b9e2-825c985a8ac2",
               "L8": {
                 "GS2": ""
               }

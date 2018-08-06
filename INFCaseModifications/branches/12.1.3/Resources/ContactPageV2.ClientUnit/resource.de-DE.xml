@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Images.72a10ccc-5746-4ee1-9a4d-61fb14d53899.Caption" Value="EnrichCloudIcon" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Verschieben bis" />
+			<Item Name="LocalizableStrings.CompletenessHint.Caption" Value="Nachricht an Nutzer 1" />
+			<Item Name="LocalizableStrings.CompletenessHint.Value" Value="Vollstädigkeit des Profils in Prozent. Kilcken Sie auf den Indikator, um zu sehen, welche Proofildaten fehlen." />
+			<Item Name="LocalizableStrings.CompletenessLabel.Value" Value="Profil fertiggestellt" />
+			<Item Name="LocalizableStrings.ContactPageServiceTab.Value" Value="Wartung" />
+			<Item Name="LocalizableStrings.EnrichCloudCaption.Value" Value="Neue Daten gefunden" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.FillContactWithSocialNetworksDataActionCaption.Value" Value="Mit Daten der sozialen Netzwerke aktualisieren" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Mehr als ein mit Prozess verbundenes Queue--Element gefunden. Prozess-ID: {0}" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-queue" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Item kann nicht wieder gequeued werden. Fehlernachricht: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Seite ist nicht zum Agentendesktop-Queueelement verbunden. Aktion abgebrochen." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Item kann nicht wieder gequeued werden" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Erfolgreich Re-Queued" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Dem Feed folgen" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="Sie folgen jetzt dem Feed: {0}" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Timeline" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Feed nicht mehr folgen" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="Sie folgen nicht mehr dem Feed: {0}" />
+		</Items>
+	</Group>
+</Resources>

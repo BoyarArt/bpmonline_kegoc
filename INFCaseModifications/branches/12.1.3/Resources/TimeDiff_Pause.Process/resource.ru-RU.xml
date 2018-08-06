@@ -114,6 +114,9 @@
 			<Item Name="BaseElements.ScriptTask1.Caption" Value="Расчет" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="Обращение вышло из приостановки" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
+			<Item Name="BaseElements.SubProcess1.Caption" Value="Обращение: уведомление о выходе из приостановки 1" />
+			<Item Name="BaseElements.SubProcess1.Parameters.CaseId.Caption" Value="CaseId" />
+			<Item Name="BaseElements.SubProcess1.Parameters.CaseId.DisplayValue" Value="[#Обращение вышло из приостановки.Уникальный идентификатор записи#]" />
 			<Item Name="Caption" Value="Расчет длительности приостановки" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />

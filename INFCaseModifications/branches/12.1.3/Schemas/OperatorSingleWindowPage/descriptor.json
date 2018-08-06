@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "0affc67a-6373-4a93-bb09-6407c6b63cf8",
+    "Name": "OperatorSingleWindowPage",
+    "ModifiedOnUtc": "\/Date(1533542174000)\/",
+    "Parent": {
+      "UId": "b09d02eb-31bd-48de-8bb3-905b10d4e991",
+      "Name": "OperatorSingleWindowPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Agent desktop page",
+    "DependsOn": []
+  }
+}

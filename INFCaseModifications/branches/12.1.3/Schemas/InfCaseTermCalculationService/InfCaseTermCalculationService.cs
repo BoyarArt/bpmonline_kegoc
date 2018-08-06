@@ -482,6 +482,25 @@ namespace Terrasoft.Configuration.Calendars
 			return ReactionTime;
 		}
 		
+		public DateTime CalculateReactionTimeByDefaultSetting(int SysMinutes) {
+			
+			var calendarUtility = new CalendarUtility(UserConnection);
+			
+			var startDate = DateTime.Now;
+			
+			TimeTerm ReactionTimeTerm = new TimeTerm();
+			
+			DateTime ReactionTime = new DateTime();
+			
+				ReactionTimeTerm.Type = CalendarTimeUnit.WorkingMinute;
+				ReactionTimeTerm.Value = SysMinutes;
+				ReactionTimeTerm.CalendarId = new Guid(CalendarId);
+				
+				ReactionTime = calendarUtility.Add(startDate, ReactionTimeTerm, System.TimeZoneInfo.Local);
+			
+			return ReactionTime;
+		}
+		
 		public DateTime _CalculateTerms(string ITServiceId, string categoryname) {
 
 			FindITService(ITServiceId, categoryname);

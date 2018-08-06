@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "75956e53-5835-422d-884e-a84e59acf103",
     "Name": "INFNewCaseEmailProcess",
-    "ModifiedOnUtc": "\/Date(1533024492000)\/",
+    "ModifiedOnUtc": "\/Date(1533479808000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Обращения: Отправка email при регистрации нового обращения",
     "DependsOn": []

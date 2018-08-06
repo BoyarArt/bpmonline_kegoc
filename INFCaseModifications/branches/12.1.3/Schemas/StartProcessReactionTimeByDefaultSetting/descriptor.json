@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a88399da-5c62-4344-b153-c668113901eb",
+    "Name": "StartProcessReactionTimeByDefaultSetting",
+    "ModifiedOnUtc": "\/Date(1533479623000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Запуск процесса: расчет времени реакции по умолчанию для портального пользователя",
+    "DependsOn": []
+  }
+}

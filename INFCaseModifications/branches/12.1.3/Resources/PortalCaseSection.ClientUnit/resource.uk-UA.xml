@@ -2,7 +2,7 @@
 <Resources Culture="uk-UA">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Page schema - &quot;Cases&quot; section on Portal" />
+			<Item Name="Caption" Value="Схема раздела: &quot;Обращения портала&quot;" />
 		</Items>
 	</Group>
 </Resources>

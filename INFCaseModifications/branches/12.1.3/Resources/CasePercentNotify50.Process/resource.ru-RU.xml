@@ -30,10 +30,9 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.DurationPeriod.DisplayValue" Value="минут" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateEntityId.Caption" Value="Запись для формирования макросов" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.Caption" Value="Письмо по шаблону" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.EmailTemplateId.DisplayValue" Value="Истечение 50% от срока исполнения обращения (US)" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.ExecutionContext.Caption" Value="Контекст выполнения" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.Caption" Value="Игнорировать ошибки отправки" />
-			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="true" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.IgnoreErrors.DisplayValue" Value="false" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Importance.Caption" Value="Важность" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Importance.DisplayValue" Value="Высокая" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Incident.Caption" Value="Инцидент" />
@@ -95,7 +94,7 @@
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultIntegerFunction.Caption" Value="Результат функции" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultRowsCount.Caption" Value="Количество прочитанных записей" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Тип результата" />
-			<Item Name="BaseElements.StartTimerEvent1.Caption" Value="Стартовый таймер" />
+			<Item Name="BaseElements.StartTimerEvent2.Caption" Value="Стартовый таймер 2" />
 			<Item Name="Caption" Value="Уведомление исполнителю обращения при 50% от срока исполнения" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />

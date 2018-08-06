@@ -51,6 +51,8 @@
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.QueueItem.Caption" Value="Элемент очереди" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient1.Caption" Value="Кому 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient1.DisplayValue" Value="[#Получатели#]" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.Caption" Value="Кому 2" />
+			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recipient2.DisplayValue" Value="[#Читать обращения.Первый элемент результирующей коллекции.Ответственный#]" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Caption" Value="Рекомендация" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.DisplayValue" Value="Отправить email 1" />
 			<Item Name="BaseElements.EmailTemplateUserTask1.Parameters.Recommendation.Value" Value="Отправить email 1" />

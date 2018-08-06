@@ -2,8 +2,8 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Схема раздела: &quot;Обращения портала&quot;" />
-			<Item Name="LocalizableStrings.Caption.Value" Value="Обращения портала" />
+			<Item Name="Caption" Value="Схема раздела: &quot;Мои обращения&quot;" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Мои обращения" />
 		</Items>
 	</Group>
 </Resources>

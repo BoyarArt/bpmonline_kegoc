@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a9de36ca-c171-4eb5-8083-08d156478f62",
+    "Name": "ReactionTimeTermByDefaultSetting",
+    "ModifiedOnUtc": "\/Date(1533477705000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Расчет плановых сроков",
+    "DependsOn": []
+  }
+}

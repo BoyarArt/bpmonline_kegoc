@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ar-SA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Images.72a10ccc-5746-4ee1-9a4d-61fb14d53899.Caption" Value="EnrichCloudIcon" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="تأجيل حتى" />
+			<Item Name="LocalizableStrings.CompletenessHint.Caption" Value="رسالة للمستخدم1" />
+			<Item Name="LocalizableStrings.CompletenessHint.Value" Value="نسبة اكتمال ملف التعريف. انقر فوق المؤشر لمعاينة البيانات التي تحتاج لإكمال ملف التعريف." />
+			<Item Name="LocalizableStrings.CompletenessLabel.Value" Value="ملف تعريف كامل" />
+			<Item Name="LocalizableStrings.ContactPageServiceTab.Value" Value="صيانة" />
+			<Item Name="LocalizableStrings.EnrichCloudCaption.Value" Value="New data found" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="تغذية" />
+			<Item Name="LocalizableStrings.FillContactWithSocialNetworksDataActionCaption.Value" Value="تحديث مع بيانات الشبكات الاجتماعية" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="أكثر من عنصر قائمة انتظار  متصل بالعملية. معرف العملية: {0}" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="اعادة وضعه في الانتظار" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="تعذر اعادة ادراج العنصر في قائمة الانتظار. رسالة الخطأ: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="صفحة غير متصلة بعنصر قائمة انتظار سطح مكتب الوكيل. إلغاء الإجراء." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="تعذر اعادة ادراج العنصر في قائمة الانتظار" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="تمت اعادة وضعه في الانتظار بنجاح" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="متابعة التغذية" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="أنت الآن متابع للتغذية: {0}" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Timeline" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="إلغاء متابعة التغذية" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="لقد قمت بايقاف التغذية التالية: {0}" />
+		</Items>
+	</Group>
+</Resources>

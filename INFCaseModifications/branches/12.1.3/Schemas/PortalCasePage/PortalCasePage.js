@@ -12,6 +12,11 @@ function(ModalBox, FormatUtils, resources, BusinessRuleModule, Enums, Constant, 
 		entitySchemaName: "Case",
 		mixins: {},
 		attributes: {
+			"isSaveButtonVisible": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": false
+			},
 			"BusinessService": {
 				lookupListConfig: {
 					filter: function() {
@@ -90,15 +95,33 @@ function(ModalBox, FormatUtils, resources, BusinessRuleModule, Enums, Constant, 
 						}
 					]
 				}
+			},
+			"Subject": {
+				"a1809055-5d80-47c8-9853-dde568e72afb": {
+					"uId": "a1809055-5d80-47c8-9853-dde568e72afb",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 1,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 4,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Operation"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": "edit",
+								"dataValueType": 1
+							}
+						}
+					]
+				}
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
 		diff: /**SCHEMA_DIFF*/[
-			{
-				"operation": "remove",
-				"parentName": "LeftContainer",
-				"propertyName": "items",
-				"name": "SaveButton"
-			},
 			{
 				"operation": "insert",
 				"name": "BusinessService",
@@ -125,6 +148,25 @@ function(ModalBox, FormatUtils, resources, BusinessRuleModule, Enums, Constant, 
 				}
 			},
 			{
+				"operation": "insert",
+				"name": "Subjectca331dfa-51eb-46be-b639-fc272cef80a0",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Header"
+					},
+					"bindTo": "Subject",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
 				"operation": "merge",
 				"name": "SatisfactionLevelComment",
 				"values": {
@@ -134,6 +176,26 @@ function(ModalBox, FormatUtils, resources, BusinessRuleModule, Enums, Constant, 
 						"column": 0,
 						"row": 1
 					}
+				}
+			},
+			{
+				"operation": "remove",
+				"name": "SaveButton"
+			},
+			{
+				"operation": "insert",
+				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"name": "SaveButtonINF",
+				"values": {
+					"itemType": Terrasoft.ViewItemType.BUTTON,
+					"caption": {"bindTo": "Resources.Strings.SaveButtonCaption"},
+					"classes": {"textClass": "actions-button-margin-right"},
+					"click": {"bindTo": "save"},
+					"style": Terrasoft.controls.ButtonEnums.style.GREEN,
+					"visible": {"bindTo": "isSaveButtonVisible"},
+					"tag": "save",
+					"markerValue": "SaveButton"
 				}
 			},
 			{
@@ -219,6 +281,32 @@ function(ModalBox, FormatUtils, resources, BusinessRuleModule, Enums, Constant, 
 			},
 			CleanItService: function() {
 				this.set("ServiceItem", Terrasoft.GUID_EMPTY);
+			},
+			setSubject: function() {
+				return true;
+			},
+			onEntityInitialized: function() {
+				this.callParent(arguments);
+				document.scope = this;
+				if (this.get("Status").displayValue === "Выполнено") {
+					this.set("isSaveButtonVisible", true);
+				}
+				if (this.isAddMode()) {
+					var cat = {
+						displayValue: "Запрос на обслуживание",
+						primaryImageValue: "",
+						value: "1c0bc159-150a-e111-a31b-00155d04c01d"
+					};
+					this.set("Category", cat);
+				}
+			},
+			save: function() {
+				this.callParent(arguments);
+				if (this.get("Status").displayValue === "Выполнено") {
+					this.set("isSaveButtonVisible", true);
+				} else {
+					this.set("isSaveButtonVisible", false);
+				}
 			},
 			initActionButtonMenu: function() {
 				this.publishPropertyValueToSection("IsCardInEditMode", this.isEditMode());

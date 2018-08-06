@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2d9c213d-8f4a-4896-b198-2d95dddf641d",
+    "Name": "Process4",
+    "ModifiedOnUtc": "\/Date(1533534656000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "INF обработка обращений в очередях",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="es-ES">
+	<Group Type="String">
+		<Items>
+			<Item Name="Images.72a10ccc-5746-4ee1-9a4d-61fb14d53899.Caption" Value="EnrichCloudIcon" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Ver modelo de esquema - Lista de cadena" />
+			<Item Name="LocalizableStrings.CompletenessHint.Caption" Value="Mensaje al usuario 1" />
+			<Item Name="LocalizableStrings.CompletenessHint.Value" Value="Percentage of profile completion. Click on the indicator to view which data you need to complete the profile." />
+			<Item Name="LocalizableStrings.CompletenessLabel.Value" Value="Ingeniero de servicio Editar página" />
+			<Item Name="LocalizableStrings.ContactPageServiceTab.Value" Value="Destinatario del servicio" />
+			<Item Name="LocalizableStrings.EnrichCloudCaption.Value" Value="Nuevos datos encontrados" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.FillContactWithSocialNetworksDataActionCaption.Value" Value="Enriquecer con datos de redes sociales" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Categoría" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Elemento de configuración A" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Categoría." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Servicio-Servicio" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="No seguir el feed" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Sigue el feed" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="Ahora estás siguiendo el feed: {0}" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Línea de tiempo" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Dejar de seguir el feed" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="Has dejado de seguir el feed: {0}" />
+		</Items>
+	</Group>
+</Resources>

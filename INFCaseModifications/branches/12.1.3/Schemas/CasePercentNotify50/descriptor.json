@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "7fcf86d9-01e5-4039-b0e6-538c4e5af64a",
     "Name": "CasePercentNotify50",
-    "ModifiedOnUtc": "\/Date(1533097558000)\/",
+    "ModifiedOnUtc": "\/Date(1533554332000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Уведомления инициатору или координатору обращения при 50% от срока исполнения",
     "DependsOn": []

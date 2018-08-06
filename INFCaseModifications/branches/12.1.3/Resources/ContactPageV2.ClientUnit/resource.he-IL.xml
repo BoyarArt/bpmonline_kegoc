@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="he-IL">
+	<Group Type="String">
+		<Items>
+			<Item Name="Images.72a10ccc-5746-4ee1-9a4d-61fb14d53899.Caption" Value="EnrichCloudIcon" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="עכב עד" />
+			<Item Name="LocalizableStrings.CompletenessHint.Caption" Value="Message to user 1" />
+			<Item Name="LocalizableStrings.CompletenessHint.Value" Value="Percentage of profile completion. Click on the indicator to view which data you need to complete the profile." />
+			<Item Name="LocalizableStrings.CompletenessLabel.Value" Value="Profile complete" />
+			<Item Name="LocalizableStrings.ContactPageServiceTab.Value" Value="תחזוקה" />
+			<Item Name="LocalizableStrings.EnrichCloudCaption.Value" Value="נמצאו נתונים חדשים" />
+			<Item Name="LocalizableStrings.ESNTabCaption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.FillContactWithSocialNetworksDataActionCaption.Value" Value="Update with social networks data" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="יותר מרכיב אחד מחובר לתהליך. מזהה תהליך: {0}" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="העבר לתור מחדש" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="לא ניתן לסדר מחדש את הפריט בתור. הודעת שגיאה: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="הדף אינו מחובר אל רכיב תור שולחן העבודה של הסוכן. הפעולה בוטלה." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="לא ניתן לסדר מחדש פריט בתור" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="סודר מחדש בתור בהצלחה" />
+			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Follow the feed" />
+			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="You are now following feed: {0}" />
+			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="ציר זמן" />
+			<Item Name="LocalizableStrings.UnsubscribeCaption.Value" Value="Unfollow the feed" />
+			<Item Name="LocalizableStrings.UnsubscribedInformationDialog.Value" Value="You have stopped following feed: {0}" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8e090741-846c-451d-847c-e20cf5c8025a",
+    "Name": "onVipAttributeChanged",
+    "ModifiedOnUtc": "\/Date(1533565352000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Атрибут vip в обращениях при его изменении в контакте",
+    "DependsOn": []
+  }
+}

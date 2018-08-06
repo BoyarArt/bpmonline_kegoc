@@ -127,6 +127,14 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 					}
 				]
 			},
+			"Contact": {
+				"dependencies": [
+					{
+						"columns": ["Contact"],
+						"methodName": "chechContactPhoneNumber"
+					}
+				]
+			},
 			"Status": {
 				"dataValueType": Terrasoft.DataValueType.LOOKUP,
 				"dependencies": [
@@ -438,11 +446,45 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"column": 0,
 						"row": 1
 					},
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					},
+					"enabled": true,
 					"contentType": 5
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "STRINGa2082b8b-fbea-4f20-be5c-5b367e71471c",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 2,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "PhoneNumber",
+					"enabled": false
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "BOOLEAN191d90eb-a03d-459d-8fe5-cba720d0194b",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "isVip",
+					"enabled": false
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "merge",
@@ -452,7 +494,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 2
+						"row": 4
 					},
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
@@ -468,7 +510,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 3
+						"row": 5
 					},
 					"contentType": 5,
 					"enabled": {
@@ -481,28 +523,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"name": "ServicePact",
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "LOOKUP4956359c-cdf4-4fc4-8c3f-277610c7ad6b",
-				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 5,
-						"layoutName": "ProfileContainer"
-					},
-					"bindTo": "BusinessService",
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					},
-					"contentType": 5
-				},
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "merge",
@@ -512,7 +533,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 4
+						"row": 6
 					},
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
@@ -520,25 +541,8 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				}
 			},
 			{
-				"operation": "merge",
-				"name": "ServiceItem",
-				"values": {
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					},
-					"contentType": 5
-				}
-			},
-			{
-				"operation": "move",
-				"name": "ServiceItem",
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
 				"operation": "insert",
-				"name": "LOOKUPe7771ef2-284e-4208-ac62-807a2513b7cc",
+				"name": "LOOKUP4956359c-cdf4-4fc4-8c3f-277610c7ad6b",
 				"values": {
 					"layout": {
 						"colSpan": 24,
@@ -547,7 +551,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"row": 7,
 						"layoutName": "ProfileContainer"
 					},
-					"bindTo": "TechService",
+					"bindTo": "BusinessService",
 					"enabled": {
 						"bindTo": "isFieldsEnabled"
 					},
@@ -559,7 +563,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 			},
 			{
 				"operation": "merge",
-				"name": "ConfItem",
+				"name": "ServiceItem",
 				"values": {
 					"layout": {
 						"colSpan": 24,
@@ -575,10 +579,54 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 			},
 			{
 				"operation": "move",
-				"name": "ConfItem",
+				"name": "ServiceItem",
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
 				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUPe7771ef2-284e-4208-ac62-807a2513b7cc",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 9,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "TechService",
+					"enabled": {
+						"bindTo": "isFieldsEnabled"
+					},
+					"contentType": 5
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "merge",
+				"name": "ConfItem",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 10
+					},
+					"enabled": {
+						"bindTo": "isFieldsEnabled"
+					},
+					"contentType": 5
+				}
+			},
+			{
+				"operation": "move",
+				"name": "ConfItem",
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 10
 			},
 			{
 				"operation": "merge",
@@ -588,7 +636,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 9
+						"row": 11
 					},
 					"enabled": {
 						"bindTo": "isGroupEnabled"
@@ -604,7 +652,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 10
+						"row": 12
 					},
 					"enabled": {
 						"bindTo": "isOwnerEnabled"
@@ -646,9 +694,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 						"column": 0,
 						"row": 3
 					},
-					"enabled": {
-						"bindTo": "isFieldsEnabled"
-					}
+					"enabled": false
 				}
 			},
 			{
@@ -697,7 +743,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				"values": {
 					"layout": {
 						"colSpan": 24,
-						"rowSpan": 2,
+						"rowSpan": 1,
 						"column": 0,
 						"row": 5,
 						"layoutName": "CaseInformation_gridLayout"
@@ -1615,6 +1661,79 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 			ServiceItemChanged: function() {
 				this.set("TechService", null);
 			},
+			chechContactPhoneNumber: function() {
+				if (this.get("Contact")) {
+					var currentUserId = this.get("Contact").value;
+					
+					var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+						rootSchemaName: "Contact"
+					});
+					var f1 = esq.createColumnFilterWithParameter(
+						Terrasoft.ComparisonType.EQUAL,
+						"Id",
+						currentUserId
+					);
+					esq.addColumn("Id");
+					esq.addColumn("Phone");
+					esq.addColumn("isVip");
+					esq.filters.addItem(f1);
+					var phone = "";
+					
+					esq.getEntityCollection(function(result) {
+						result.collection.each(function(item) {
+							if (item.get("Id") === currentUserId) {
+								phone = item.get("Phone");
+								if (phone !== "" && this.get("PhoneNumber") !== phone) {
+									this.set("PhoneNumber", phone);
+								} else {
+									this.set("PhoneNumber", "Номер не найден");
+								}
+								if (item.get("isVip")) {
+									this.set("isVip", true);
+								} else {
+									this.set("isVip", false);
+								}
+							}
+						}.bind(this));
+					}, this);
+				} else {
+					this.set("PhoneNumber", "");
+					this.set("isVip", false);
+				}
+			},
+			chechContactPhoneNumberOnInit: function() {
+				if (this.get("Contact")) {
+					var currentUserId = this.get("Contact").value;
+					
+					var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+						rootSchemaName: "Contact"
+					});
+					var f1 = esq.createColumnFilterWithParameter(
+						Terrasoft.ComparisonType.EQUAL,
+						"Id",
+						currentUserId
+					);
+					esq.addColumn("Id");
+					esq.addColumn("Phone");
+					esq.filters.addItem(f1);
+					var phone = "";
+					
+					esq.getEntityCollection(function(result) {
+						result.collection.each(function(item) {
+							if (item.get("Id") === currentUserId) {
+								phone = item.get("Phone");
+								if (phone !== "" && this.get("PhoneNumber") !== phone) {
+									this.set("PhoneNumber", phone);
+									this.save();
+								} else {
+									this.set("PhoneNumber", "Номер не найден");
+									this.save();
+								}
+							}
+						}.bind(this));
+					}, this);
+				}
+			},
 			isUserInDefaultGroup: function() {
 				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
 				var groupId;
@@ -1853,11 +1972,12 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 					this.setCalculatedResponseDate(reactionTime);
 					this.setCalculatedSolutionDate(solutionTime);
 				},
-			
+				
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				document.scope = this;
 				this.isUserInGroup();
+				this.chechContactPhoneNumberOnInit();
 				this.getDefaultGroup();
 				this.setGroupEnabled();
 				this.setFieldsEnabled();
@@ -2341,6 +2461,30 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 							"rightExpression": {
 								"type": 1,
 								"attribute": "ClosureCode"
+							}
+						}
+					]
+				}
+			},
+			"isVip": {
+				"6188a7e9-f3ee-4d41-aca8-1990cbf293d6": {
+					"uId": "6188a7e9-f3ee-4d41-aca8-1990cbf293d6",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 0,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "isVip"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": true,
+								"dataValueType": 12
 							}
 						}
 					]

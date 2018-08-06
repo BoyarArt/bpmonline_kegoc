@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "98ce61f2-3688-4e5e-b4e8-5698b7616206",
+    "Name": "SendEmailAfterSuspend",
+    "ModifiedOnUtc": "\/Date(1533567236000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Обращение: уведомление о выходе из приостановки",
+    "DependsOn": []
+  }
+}

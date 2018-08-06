@@ -6,6 +6,7 @@
 			<Item Name="Columns.BusinessService.Caption" Value="Бизнес услуга" />
 			<Item Name="Columns.ClosureCode.Caption" Value="Код выполнения" />
 			<Item Name="Columns.Comment.Caption" Value="Описание причины приостановки" />
+			<Item Name="Columns.Contact.Caption" Value="Контакт (инициатор)" />
 			<Item Name="Columns.CreatedOn.Caption" Value="Дата регистрации" />
 			<Item Name="Columns.DoneNumber.Caption" Value="Выполнено раз" />
 			<Item Name="Columns.INFLastTimeInGroup.Caption" Value="Дата и время последнего направления в группу" />
@@ -28,8 +29,10 @@
 			<Item Name="Columns.isReassigned.Caption" Value="Наличие переназначения исполнителя" />
 			<Item Name="Columns.isRegrouped.Caption" Value="Наличие переназначения группы" />
 			<Item Name="Columns.isResolved.Caption" Value="Было выполнено" />
+			<Item Name="Columns.isVip.Caption" Value="VIP" />
 			<Item Name="Columns.PercentNotify50.Caption" Value="Было отправлено уведомление о 50%" />
 			<Item Name="Columns.PercentNotify70.Caption" Value="Было отправлено уведомление о 70%" />
+			<Item Name="Columns.PhoneNumber.Caption" Value="Номер телефона" />
 			<Item Name="Columns.RenewalDate.Caption" Value="Дата возобновления" />
 			<Item Name="Columns.ResolutionTime50.Caption" Value="50% от срока разрешения" />
 			<Item Name="Columns.ResolutionTime70.Caption" Value="70% от срока разрешения" />
