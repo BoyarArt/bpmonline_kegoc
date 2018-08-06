@@ -513,6 +513,23 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
+				"name": "Author2ee1333a-7c6a-414b-a715-26484aed7580",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 4,
+						"layoutName": "Header"
+					},
+					"bindTo": "Author"
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
 				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
 				"values": {
 					"layout": {
@@ -539,7 +556,8 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 						"row": 0,
 						"layoutName": "Execution_GridLayout"
 					},
-					"bindTo": "NumberReturnsFromAcceptance"
+					"bindTo": "NumberReturnsFromAcceptance",
+					"enabled": false
 				},
 				"parentName": "Execution_GridLayout",
 				"propertyName": "items",
@@ -911,25 +929,13 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "merge",
-				"name": "Author",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 0
-					}
-				}
-			},
-			{
-				"operation": "merge",
 				"name": "RegisteredOn",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
-						"row": 1
+						"row": 0
 					}
 				}
 			},
@@ -990,6 +996,10 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "remove",
+				"name": "Author"
+			},
+			{
+				"operation": "remove",
 				"name": "ScheduledClosureDate"
 			},
 			{
@@ -1047,9 +1057,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				}
 			},
 			onGroupChanged: function() {
-				if (this.get("Group") === undefined || this.get("Group") === null) {
-					this.set("Owner", null);
-				}
+				this.set("Owner", null);
 			},
 			setButtonsVisible: function() {
 				var status = this.get("InfStatus");

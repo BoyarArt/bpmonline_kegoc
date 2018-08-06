@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9e30cde7-5816-4cc0-9848-653e959ff85f",
+    "Name": "Process5",
+    "ModifiedOnUtc": "\/Date(1533531656000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "INF:Обработка изменений в едином окне",
+    "DependsOn": []
+  }
+}

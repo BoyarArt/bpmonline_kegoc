@@ -2,15 +2,16 @@
 <Resources Culture="uk-UA">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Postpone till" />
-			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="More than one queue element connected to the process. Process Id: {0}" />
-			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-queue" />
-			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Unable to re-queue item. Error message: {0}" />
-			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Page is not connected to the agent desktop queue element. Action cancelled." />
-			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Unable to re-queue item" />
-			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Successfully re-queued" />
+			<Item Name="Caption" Value="Edit page schema - Changes section" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Запланувати на дату" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Знайдено більше одного елементу черги пов'язаних з процесом. Ідентифікатор процесу: {0}" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Повернути в чергу" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Помилка повернення елемента в чергу. Повідомлення про помилку: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="Сторінку не пов'язана з елементом черги єдиного вікна. Дія скасована." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Помилка при поверненні елемента в чергу" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Елемент успішно повернений в чергу" />
 			<Item Name="LocalizableStrings.ReleaseCaption.Caption" Value="Release" />
-			<Item Name="LocalizableStrings.ReleaseCaption.Value" Value="Release" />
+			<Item Name="LocalizableStrings.ReleaseCaption.Value" Value="Реліз" />
 		</Items>
 	</Group>
 </Resources>
