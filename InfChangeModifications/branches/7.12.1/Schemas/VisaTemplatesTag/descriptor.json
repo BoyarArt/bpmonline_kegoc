@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c3e64b62-5cbc-43b9-91ca-a80d14c6a232",
+    "Name": "VisaTemplatesTag",
+    "ModifiedOnUtc": "\/Date(1533580523000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тег раздела Шаблоны согласований",
+    "DependsOn": []
+  }
+}

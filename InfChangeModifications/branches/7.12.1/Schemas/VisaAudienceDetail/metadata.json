@@ -1,0 +1,9 @@
+= MetaData.Schema.UId "933ceb67-c9bd-4ad0-ac94-d0a7ed4dd8be"
+= MetaData.Schema.A2 "VisaAudienceDetail"
+= MetaData.Schema.A5 "ac4f7f0f-d5d5-4e8b-997a-a2f7c46f033e"
+= MetaData.Schema.B2.["8f7c31a4-b656-47c9-a503-a72d0b3dd077"].A4 "933ceb67-c9bd-4ad0-ac94-d0a7ed4dd8be"
+= MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
+= MetaData.Schema.B8 "7.12.1.924"
+= MetaData.Schema.HD5 []
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false

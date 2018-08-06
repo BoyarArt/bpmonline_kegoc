@@ -1,0 +1,59 @@
+= MetaData.Schema.UId "627150a3-fdb1-43a5-b101-ec9ce424598d"
+= MetaData.Schema.A2 "VisaAudience"
+= MetaData.Schema.A5 "4d908a76-a441-4cbd-927a-2d97c55e901f"
+= MetaData.Schema.B6 "58ec2dbe-dbef-4791-8d2d-4e166c4836b1"
+= MetaData.Schema.B8 "7.12.1.924"
+= MetaData.Schema.EG1.UId "440277b1-128c-49e0-b4b3-fab2e88c6f4b"
+= MetaData.Schema.EG1.A2 "VisaAudienceEventsProcess"
+= MetaData.Schema.EG1.A5 "4d908a76-a441-4cbd-927a-2d97c55e901f"
+- MetaData.Schema.EG1.B1.["fe742d1c-4346-4cc5-894e-217df991856c"].C2
++ MetaData.Schema.EG1.B8 "7.12.1.924"
+= MetaData.Schema.EG1.BK8 "0ac85496-05fc-40de-b2d5-09b365636472"
++ MetaData.Schema.EG1.BK37 {"BL1":"Terrasoft.Core.Process.ProcessSchemaParameter","UId":"cdd58be7-2dba-4a5e-869b-1ad5d6d7513a","A2":"NotificationCaption","A3":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","A4":"bb4d6607-026b-4b27-b640-8f5c77c1e89d","L1":"8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2","L8":{"GS1":3,"GS2":"[#[PropertyValue:Caption]#]"}}
++ MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].IL2 "079c1a2b-96d1-4935-9764-180b73ed11ac"
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL4
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL9
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BL9
+- MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
+- MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
+- MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
+- MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16
+- MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
+- MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
++ MetaData.Schema.D2 {
+  "UId": "e05c90d7-a208-4139-a0aa-d821a4d882fd",
+  "A2": "VisaOwner",
+  "A3": "627150a3-fdb1-43a5-b101-ec9ce424598d",
+  "A4": "627150a3-fdb1-43a5-b101-ec9ce424598d",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "84f44b9a-4bc3-4cbf-a1a8-cec02c1c029c",
+  "E6": true,
+  "E17": "VisaOwnerId",
+  "E18": "VisaOwnerName"
+}
++ MetaData.Schema.D2 {
+  "UId": "53941e98-d5bf-44c0-95d0-9c6bf74ec1d9",
+  "A2": "Template",
+  "A3": "627150a3-fdb1-43a5-b101-ec9ce424598d",
+  "A4": "627150a3-fdb1-43a5-b101-ec9ce424598d",
+  "A5": "4d908a76-a441-4cbd-927a-2d97c55e901f",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "1906b2c0-daf3-48ff-a6ca-c133497864f8",
+  "E6": true,
+  "E17": "TemplateId",
+  "E18": "TemplateName"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","e05c90d7-a208-4139-a0aa-d821a4d882fd","53941e98-d5bf-44c0-95d0-9c6bf74ec1d9"]
+= MetaData.Schema.D20.A2 "VisaAudienceEvents"
+- MetaData.Schema.EG1.BK29
+- MetaData.Schema.EG1.BK30
+- MetaData.Schema.D1
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false

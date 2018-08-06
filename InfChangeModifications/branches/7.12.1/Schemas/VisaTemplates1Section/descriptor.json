@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7b304000-e826-4223-80bd-13249c51ad68",
+    "Name": "VisaTemplates1Section",
+    "ModifiedOnUtc": "\/Date(1533580507000)\/",
+    "Parent": {
+      "UId": "7912fb69-4fee-429f-8b23-93943c35d66d",
+      "Name": "BaseSectionV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема раздела: \"Шаблоны согласований\"",
+    "DependsOn": []
+  }
+}

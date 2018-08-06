@@ -1417,7 +1417,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				this.callParent(arguments);
 				document.thisChangeScope = this;
 				this.sandbox.subscribe("msgVisaMenuButtonClick", function(arg) {
-					this.getVisaGoal();
+					this.mainVisaMethod();
 				}, this, ["ChangeVisaSandbox"]);
 				this.setButtonsVisible();
 				
@@ -1470,7 +1470,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				}));
 				actionMenuItems.addItem(this.getActionsMenuItem({
 					"Caption": "Отправить на согласование",
-					"Click":  {"bindTo": "getVisaGoal"},
+					"Click":  {"bindTo": "mainVisaMethod"},
 					"Visible": {bindTo: "VisaMenuVisible"}
 				}));
 				actionMenuItems.addItem(this.getActionsMenuItem({
@@ -1494,7 +1494,56 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				};
 				ProcessModuleUtilities.executeProcess(args);
 			},
-			getVisaGoal: function() {
+			getVisaTemplate: function() {
+				var FilterGroup = this.Terrasoft.createFilterGroup();
+				//Конфигурационный объект
+				var config = {
+					// Название схемы объекта, записи которого будут отображены в справочнике.
+					entitySchemaName: "VisaTemplates",
+					// Возможность множественного выбора.
+					multiSelect: false,
+					// Колонки, которые будут отображены в справочнике 
+					columns: ["Name", "Goal"],
+					filters: FilterGroup
+				};
+				// Вызов модального окна справочника
+				this.openLookup(config, function(args) {
+					this.TemplateGoal = args.selectedRows.collection.items[0].Goal;
+					var TemplateId = args.selectedRows.collection.items[0].value;
+					var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+						rootSchemaName: "VisaAudience"
+					});
+					esq.addColumn("VisaOwner");
+					var templateFilter = esq.createColumnFilterWithParameter(
+						Terrasoft.ComparisonType.EQUAL,
+						"Template", TemplateId);
+					esq.filters.addItem(templateFilter);
+					esq.getEntityCollection(function(result) {
+						var stageNumber = this.get("StageNumber");
+						result.collection.collection.each(function(item) {
+							var args = {
+								sysProcessName: "VisaChangeProcess",
+								parameters: {
+									ChangeId: this.get("Id"),
+									VisaOwner: item.values.VisaOwner.value,
+									VisaGoal: this.TemplateGoal,
+									StageNumber: this.get("StageNumber")
+								},
+								callback: function() {
+									this.updateDetails();
+								},
+								scope: this
+							};
+							ProcessModuleUtilities.executeProcess(args);
+						},
+							this
+						);
+						this.set("StageNumber", stageNumber + 1);
+						this.save();
+					}, this);
+				}, this);
+			},
+			mainVisaMethod: function() {
 				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
 					rootSchemaName: "ChangeVisa"
 				});
@@ -1517,41 +1566,52 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				esq.filters.addItem(StatusFilter);
 				
 				esq.getEntityCollection(function(result) {
-						if (result.collection.collection.length !== 0) {
-							this.showInformationDialog(
-								"Невозможно отправить Изменение на согласование, так как предыдущий этап согласования ещё не закончился."
-							);
-						} else {
-							Terrasoft.utils.inputBox(
-								"Заголовок окна ввода",
-								function(args) {
-									if (args === "Next") {
-										this.sendVisaMethod.call(this, arguments[1].text.value);
-									}
-								}.bind(this),
-								[{
-									className: "Terrasoft.Button",
-									returnCode: "Next",
-									style: "green",
-									caption: "Далее"
-								}, {
-									className: "Terrasoft.Button",
-									returnCode: "Exit",
-									style: "red",
-									caption: "Отмена"
-								}],
-								this,
-								{
-									text: {
-										dataValueType: Terrasoft.DataValueType.TEXT,
-										caption: "Цель",
-										value: ""
-									}
+					if (result.collection.collection.length !== 0) {
+						this.showInformationDialog(
+							"Невозможно отправить Изменение на согласование, так как предыдущий этап согласования ещё не закончился."
+						);
+					} else {
+						this.showConfirmationDialog(
+							"Создать согласование по шаблону?",
+							function(arg) {
+								if (arg === "yes") {
+									this.getVisaTemplate.call(this);
+								} else {
+									this.getVisaGoal.call(this);
 								}
-							);
+							}.bind(this),
+							["yes", "no"]
+						);
+					}
+				}, this);
+			},
+			getVisaGoal: function() {
+				Terrasoft.utils.inputBox(
+					"Заголовок окна ввода",
+					function(args) {
+						if (args === "Next") {
+							this.sendVisaMethod.call(this, arguments[1].text.value);
 						}
-					},
-					this
+					}.bind(this),
+					[{
+						className: "Terrasoft.Button",
+						returnCode: "Next",
+						style: "green",
+						caption: "Далее"
+					}, {
+						className: "Terrasoft.Button",
+						returnCode: "Exit",
+						style: "red",
+						caption: "Отмена"
+					}],
+					this,
+					{
+						text: {
+							dataValueType: Terrasoft.DataValueType.TEXT,
+							caption: "Цель",
+							value: ""
+						}
+					}
 				);
 			},
 			sendVisaMethod: function(goalText) {

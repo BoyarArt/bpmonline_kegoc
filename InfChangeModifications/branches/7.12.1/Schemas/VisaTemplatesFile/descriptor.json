@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "2249251d-68b0-4284-8b59-b35e1e317418",
+    "Name": "VisaTemplatesFile",
+    "ModifiedOnUtc": "\/Date(1533580516000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Файл и ссылка объекта Шаблоны согласований",
+    "DependsOn": []
+  }
+}

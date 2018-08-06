@@ -102,7 +102,7 @@ define("ChangeSection", [], function() {
 			"createActivityFlow": function() {
 				this.sandbox.publish("msgActivityMenuButtonClick", null, ["ActivityMenuSandbox"]);
 			},
-			"getVisaGoal": function() {
+			"mainVisaMethod": function() {
 				this.sandbox.publish("msgVisaMenuButtonClick", null, ["ChangeVisaSandbox"]);
 			},
 			//Первичный анализ

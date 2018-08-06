@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Card schema: &quot;Шаблоны согласований&quot;" />
+			<Item Name="LocalizableStrings.Tabf28842fdTabLabelTabCaption.Value" Value="Аудитория" />
+		</Items>
+	</Group>
+</Resources>

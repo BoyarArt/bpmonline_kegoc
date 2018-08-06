@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "627150a3-fdb1-43a5-b101-ec9ce424598d",
+    "Name": "VisaAudience",
+    "ModifiedOnUtc": "\/Date(1533581252000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Аудитория согласования",
+    "DependsOn": []
+  }
+}
