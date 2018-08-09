@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+    "Name": "TermsScheduler",
+    "ModifiedOnUtc": "\/Date(1533651563000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Планировщик: проверка подходящий плановых сроков в обращениях",
+    "DependsOn": []
+  }
+}

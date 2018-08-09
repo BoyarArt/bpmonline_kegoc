@@ -1,0 +1,182 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessSchemaManager",
+      "UId": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+      "A2": "TermsScheduler",
+      "A5": "d32541bf-bc19-499a-87c2-196076138684",
+      "B1": [],
+      "B2": [],
+      "B3": [
+        {
+          "UId": "3bb8948c-813b-4461-a036-111f8f613298",
+          "A2": "Quartz",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "66f0892b-1f28-46eb-98ef-f30effd3b541",
+          "A2": "Quartz.Impl",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "6c2d45c8-3f78-4e6c-91e3-bca1eac2efb3",
+          "A2": "Quartz.Impl.Triggers",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "30f1e5a9-3ace-4bc7-9290-ff0df7733a68",
+          "A2": "Terrasoft.Core.Scheduler",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        }
+      ],
+      "B6": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+      "B8": "7.12.2.935",
+      "FJ1": [],
+      "IJ1": true,
+      "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+      "BK15": [],
+      "BK37": {
+        "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+        "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+        "A2": "NotificationCaption",
+        "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+        "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+        "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+        "L8": {
+          "GS1": 3,
+          "GS2": "[#[PropertyValue:Caption]#]"
+        }
+      },
+      "BK1": "FFFFFFFF",
+      "BK2": "FFBBBBBB",
+      "BK3": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaLaneSet",
+          "UId": "32d55650-6205-4c0d-9177-c6adbc1ceaec",
+          "A2": "LaneSet1",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "BM4": [
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
+              "UId": "4ca6225c-12d2-4a6b-b302-33c996445a95",
+              "A2": "Lane1",
+              "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+              "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+              "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+              "IL2": "32d55650-6205-4c0d-9177-c6adbc1ceaec",
+              "BL7": "abcd74b9-5912-414b-82ac-f1aa4dcd554e",
+              "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+              "CD1": [],
+              "CD2": [],
+              "CD4": "32d55650-6205-4c0d-9177-c6adbc1ceaec",
+              "CD7": []
+            }
+          ]
+        }
+      ],
+      "BK5": [],
+      "BK4": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaStartEvent",
+          "UId": "b104f74a-cfe7-46b4-8272-8e1f53771b65",
+          "A2": "StartEvent1",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "4ca6225c-12d2-4a6b-b302-33c996445a95",
+          "BL3": "50;184",
+          "BL7": "53818048-7868-48f6-ada0-0ebaa65af628",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": []
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
+          "UId": "a34a3d5a-a918-4a8e-b8fe-34487d055c83",
+          "A2": "TerminateEvent1",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "4ca6225c-12d2-4a6b-b302-33c996445a95",
+          "BL3": "600;184",
+          "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": []
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaScriptTask",
+          "UId": "9ac172d8-ae3d-4022-802a-adde7f1b10b6",
+          "A2": "ScriptTask1",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "4ca6225c-12d2-4a6b-b302-33c996445a95",
+          "BL3": "297;169",
+          "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "BN2": "69;55",
+          "BO3": true,
+          "BP2": [],
+          "CL2": "FFFFFFFF",
+          "CH1": "//Удаление задачи и связвнных тригеров если они ранее существовали\r\nstring processName = \"onSolutionTime70PercentEnded\";\r\nstring processName1 = \"onSolutionTime50PercentEnded\";\r\nAppScheduler.RemoveJob(processName + \"Job\", processName + \"Group\");\r\n// Создание задания для запуска процесса.\r\nIJobDetail job = AppScheduler.CreateProcessJob(processName + \"Job\", processName + \"Group\", processName,\r\n    UserConnection.Workspace.Name, UserConnection.CurrentUser.Name);\r\n// Создание Cron-триггера, соответствующего графику запуска задания.\r\nITrigger trigger = new CronTriggerImpl(processName + \"Job\", processName + \"Group\", \"0 0/1 * 1/1 * ? *\");\r\n// Добавление задания и триггера в планировщик.\r\nAppScheduler.Instance.ScheduleJob(job, trigger);\r\n\r\nAppScheduler.RemoveJob(processName1 + \"Job\", processName1 + \"Group\");\r\n// Создание задания для запуска процесса.\r\nIJobDetail job1 = AppScheduler.CreateProcessJob(processName1 + \"Job\", processName1 + \"Group\", processName1,\r\n    UserConnection.Workspace.Name, UserConnection.CurrentUser.Name);\r\n// Создание Cron-триггера, соответствующего графику запуска задания.\r\nITrigger trigger1 = new CronTriggerImpl(processName1 + \"Job\", processName1 + \"Group\", \"0 0/1 * 1/1 * ? *\");\r\n// Добавление задания и триггера в планировщик.\r\nAppScheduler.Instance.ScheduleJob(job1, trigger1);\r\n\r\nreturn true;"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "7a4a6f84-dec4-4e70-9b89-727e10b56a55",
+          "A2": "SequenceFlow1",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "CI1": "b104f74a-cfe7-46b4-8272-8e1f53771b65",
+          "CI2": "9ac172d8-ae3d-4022-802a-adde7f1b10b6",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI8": "-1;0"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "0a206d04-c58f-4fc9-a27c-8acc0936481e",
+          "A2": "SequenceFlow2",
+          "A3": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A4": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "f120c039-2392-4dbf-a60b-1cbb4c40615d",
+          "CI1": "9ac172d8-ae3d-4022-802a-adde7f1b10b6",
+          "CI2": "a34a3d5a-a918-4a8e-b8fe-34487d055c83",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI7": "1;0"
+        }
+      ],
+      "BK9": [],
+      "BK18": "Business Process",
+      "BK29": true,
+      "BK34": "ru-RU",
+      "BK24": []
+    }
+  }
+}

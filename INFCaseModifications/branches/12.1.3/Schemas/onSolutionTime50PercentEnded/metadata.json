@@ -1,0 +1,247 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessSchemaManager",
+      "UId": "e72834de-95d7-4476-826b-da9f85335834",
+      "A2": "onSolutionTime50PercentEnded",
+      "A5": "d32541bf-bc19-499a-87c2-196076138684",
+      "B1": [],
+      "B2": [],
+      "B3": [
+        {
+          "UId": "0516b2b4-e076-4987-ab29-b606f883e415",
+          "A2": "Terrasoft.Configuration",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "eeae60cb-c05d-4af1-abfb-3c7eaf2529e8",
+          "A2": "System.Text",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "d11db867-1fd2-4715-92bc-f32fd1b49ca1",
+          "A2": "System",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "11b69f01-0b7d-4f25-8455-194086a10ce7",
+          "A2": "System.Linq",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "7fef7807-1f3d-409e-b478-801af74e14bb",
+          "A2": "Terrasoft.Mail",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "64ea2726-fdd4-4a7d-9213-d5e901e76e8a",
+          "A2": "Terrasoft.Mail.Sender",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        },
+        {
+          "UId": "5a10330e-08b2-4a72-b1c8-67a28a21c5f1",
+          "A2": "Terrasoft.Core.Factories",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "d32541bf-bc19-499a-87c2-196076138684",
+          "GF1": "null"
+        }
+      ],
+      "B6": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+      "B8": "7.12.2.935",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "43f74841-57a0-4760-9c80-c184db2af506",
+          "A2": "KmCurrentDate",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+          "L8": {}
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "998e37bd-8976-479b-a828-6891aa9d5e55",
+          "A2": "result",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "L1": "c0f04627-4620-4bc0-84e5-9419dc8516b1",
+          "L8": {}
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "6957ba23-b61b-415a-b18f-735bcd05ac2b",
+          "A2": "hyperId",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "L1": "5ca35f10-a101-4c67-a96a-383da6afacfc",
+          "L8": {}
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "2f221156-7eae-4d86-924c-bfc05fdfbc20",
+          "A2": "Number",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "L1": "5ca35f10-a101-4c67-a96a-383da6afacfc",
+          "L8": {}
+        }
+      ],
+      "IJ1": true,
+      "IJ3": false,
+      "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+      "BK15": [],
+      "BK37": {
+        "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+        "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+        "A2": "NotificationCaption",
+        "A3": "e72834de-95d7-4476-826b-da9f85335834",
+        "A4": "e72834de-95d7-4476-826b-da9f85335834",
+        "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+        "L8": {
+          "GS1": 3,
+          "GS2": "[#[PropertyValue:Caption]#]"
+        }
+      },
+      "BK1": "FFFFFFFF",
+      "BK2": "FFBBBBBB",
+      "BK3": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaLaneSet",
+          "UId": "28e0f9c2-703c-4bc3-94ad-59d014bca8eb",
+          "A2": "LaneSet1",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "BM1": 0,
+          "BM4": [
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
+              "UId": "689c2c7e-951d-4192-9dcc-395c92dbefc0",
+              "A2": "Lane1",
+              "A3": "e72834de-95d7-4476-826b-da9f85335834",
+              "A4": "e72834de-95d7-4476-826b-da9f85335834",
+              "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+              "IL2": "28e0f9c2-703c-4bc3-94ad-59d014bca8eb",
+              "BL7": "abcd74b9-5912-414b-82ac-f1aa4dcd554e",
+              "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+              "CD1": [],
+              "CD2": [],
+              "CD4": "28e0f9c2-703c-4bc3-94ad-59d014bca8eb",
+              "CD7": []
+            }
+          ]
+        }
+      ],
+      "BK5": [],
+      "BK4": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaStartEvent",
+          "UId": "15edc7b4-23f4-43e2-9ec3-00a90efc7321",
+          "A2": "StartEvent1",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "689c2c7e-951d-4192-9dcc-395c92dbefc0",
+          "BL3": "50;184",
+          "BL7": "53818048-7868-48f6-ada0-0ebaa65af628",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": [],
+          "ED1": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
+          "UId": "04b5dbd8-5faf-4ce5-a7cb-b1c2cbafc61a",
+          "A2": "TerminateEvent1",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "689c2c7e-951d-4192-9dcc-395c92dbefc0",
+          "BL3": "733;184",
+          "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "BN2": "27;27",
+          "BO3": true,
+          "FC1": []
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaScriptTask",
+          "UId": "de33ba95-362f-4bc5-abae-b19d2c82b597",
+          "A2": "ScriptTask1",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "IL2": "689c2c7e-951d-4192-9dcc-395c92dbefc0",
+          "BL3": "340;170",
+          "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "BN2": "69;55",
+          "BO3": true,
+          "BP2": [],
+          "CL2": "FFFFFFFF",
+          "CH1": "var senderEmail = Terrasoft.Core.Configuration.SysSettings.GetValue<string>(UserConnection, \r\n\t\"SupportServiceEmail\", string.Empty);\r\n//------------------------------------------------------------------------------------------//\r\nvar esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, \"Case\");\r\nvar currentDate = DateTime.Now;\r\nKmCurrentDate = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, currentDate.Hour, currentDate.Minute, 0);\r\n\r\nesq.AddColumn(\"Status.Name\");\r\nesq.AddColumn(\"ResolutionTime50\");\r\nesq.AddColumn(\"PercentNotify50\");\r\nesq.AddColumn(\"Group\");\r\nesq.AddColumn(\"Number\");\r\nvar group = esq.AddColumn(\"[SysAdminUnit:Id:Group].Name\").Name;\r\nvar ownerEmailpath = esq.AddColumn(\"[Contact:Id:Owner].Email\").Name;\r\nvar contactEmailpath = esq.AddColumn(\"[Contact:Id:Contact].Email\").Name;\r\nvar CaseId = esq.AddColumn(esq.RootSchema.GetPrimaryColumnName());\r\n\r\nesq.Filters.Add(\r\n\tesq.CreateFilterWithParameters(FilterComparisonType.Equal, \"PercentNotify50\", false)\r\n);\r\nesq.Filters.Add(\r\n\tesq.CreateFilterWithParameters(FilterComparisonType.LessOrEqual, \"ResolutionTime50\", KmCurrentDate)\r\n);\r\nesq.Filters.Add(\r\n\tesq.CreateFilterWithParameters(FilterComparisonType.NotEqual, \"Status.Name\", \"Закрыто\")\r\n);\r\nesq.Filters.Add(\r\n\tesq.CreateFilterWithParameters(FilterComparisonType.NotEqual, \"Status.Name\", \"Выполнено\")\r\n);\r\nesq.Filters.Add(\r\n\tesq.CreateFilterWithParameters(FilterComparisonType.NotEqual, \"Status.Name\", \"Приостановлено\")\r\n);\r\n\r\nesq.Filters.LogicalOperation = LogicalOperationStrict.And;\r\n\r\nvar units = esq.GetEntityCollection(UserConnection);\r\nif (units.Count > 0) {\r\n\tforeach (var unit in units) {\r\n\t\tvar adminUnitEsq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, \"SysAdminUnit\");\r\n\t\r\n\t\tvar emailColumnName = adminUnitEsq.AddColumn(\"Contact.Email\").Name;\r\n\t\t\r\n\t\tvar groupId = unit.GetTypedColumnValue<Guid>(\"GroupId\");\r\n\t\tvar GroupName = unit.GetTypedColumnValue<string>(group);\r\n\t\tvar ownerEmail = unit.GetTypedColumnValue<string>(ownerEmailpath);\r\n\t\tvar contactEmail = unit.GetTypedColumnValue<string>(contactEmailpath);\r\n\t\t\t\r\n\t\tadminUnitEsq.Filters.Add(adminUnitEsq.CreateFilterWithParameters(FilterComparisonType.Equal, \"[SysUserInRole:SysUser].[SysAdminUnit:Id:SysRole].Name\", GroupName + \". Группа руководителей\"));\r\n\t\t\r\n\t\tadminUnitEsq.Filters.LogicalOperation = LogicalOperationStrict.Or;\r\n\t\tvar collection = adminUnitEsq.GetEntityCollection(UserConnection);\r\n\t\t\r\n\t\tresult = string.Join(\";\", collection.Select(e => e.GetTypedColumnValue<string>(emailColumnName)));\r\n\t\t\tif (!string.IsNullOrWhiteSpace(ownerEmail)) {\r\n\t\t\t\tresult = result + \";\" + ownerEmail + \";\";\r\n\t\t\t\t}\r\n\t\t\tif (!string.IsNullOrWhiteSpace(result)) {\r\n\t\t\t\tvar entitySchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"Activity\");\r\n\t\t\t\tvar _email = entitySchema.CreateEntity(UserConnection);\r\n\t\t\t\t_email.SetDefColumnValues();\r\n\t\t\t\t Guid _emailId = Guid.NewGuid();\r\n\t\t\t\t _email.SetColumnValue(entitySchema.GetPrimaryColumnName(), _emailId);\r\n\t\t\t\t_email.SetColumnValue(\"TypeId\", Guid.Parse(\"E2831DEC-CFC0-DF11-B00F-001D60E938C6\"));\r\n\t\t\t\t_email.SetColumnValue(\"MessageTypeId\", Guid.Parse(\"7F9D1F86-F36B-1410-068C-20CF30B39373\"));\r\n\t\t\t\t_email.SetColumnValue(\"ActivityCategoryId\", Guid.Parse(\"8038A396-7825-E011-8165-00155D043204\"));\r\n\t\t\t\tstring hyperLink = \"https://itsm-app-1.corp.kegoc.kz/0/Nui/ViewModule=.aspx#CardModuleV2/CasePage/edit/\";\r\n\t\t\t\tstring link = hyperLink + hyperId;\r\n\t\t\t\t_email.SetColumnValue(\"Title\", \"По обращению просрочены сроки\");\r\n\t\t\t\t_email.SetColumnValue(\"Body\", \"По обращению \" + unit.GetTypedColumnValue<string>(\"Number\") + \" прошло 50% времени от планового разрешения. Чтобы перейти в обращение перейдите по ссылке: \" + link);\r\n\t\t\t\t_email.SetColumnValue(\"Sender\", senderEmail);\r\n\t\t\t\t_email.SetColumnValue(\"Recepient\", result);\r\n\t\t\t\t\r\n\t\t\t\t_email.Save();\r\n\t\t\t\t\r\n\t\t\t\tvar emailClientFactory = ClassFactory.Get<EmailClientFactory>(new ConstructorArgument(\"userConnection\", UserConnection));\r\n\t\t\t\tvar activityEmailSender = new ActivityEmailSender(emailClientFactory, UserConnection);\r\n\t\t\t\tactivityEmailSender.Send(_emailId);\r\n\t\t\t\t\r\n\t\t\t\tvar update = new Update(UserConnection, \"Case\")\r\n\t\t\t\t.Set(\"PercentNotify50\", Column.Parameter(true))\r\n\t\t\t\t.Where(\"Id\").IsEqual(Column.Parameter(unit.GetTypedColumnValue<Guid>(CaseId.Name))) as Update;\r\n\t\t\t\tupdate.Execute();\r\n\t\t\t}\r\n\t\t\t\r\n\t}\r\n}\r\n\r\nreturn true;"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "4b553ae6-19e1-46f1-9a87-ee89129aa87e",
+          "A2": "SequenceFlow1",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "CI1": "15edc7b4-23f4-43e2-9ec3-00a90efc7321",
+          "CI2": "de33ba95-362f-4bc5-abae-b19d2c82b597",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI8": "-1;0"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "1b73da7b-2cf2-4eac-af6d-8dd82f5fd171",
+          "A2": "SequenceFlow2",
+          "A3": "e72834de-95d7-4476-826b-da9f85335834",
+          "A4": "e72834de-95d7-4476-826b-da9f85335834",
+          "A5": "47a56ca5-3b04-489e-aca3-9d0a90fdf053",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "e72834de-95d7-4476-826b-da9f85335834",
+          "CI1": "de33ba95-362f-4bc5-abae-b19d2c82b597",
+          "CI2": "04b5dbd8-5faf-4ce5-a7cb-b1c2cbafc61a",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI7": "1;0",
+          "CI8": "-1;0"
+        }
+      ],
+      "BK9": [],
+      "BK18": "Business Process",
+      "BK29": true,
+      "BK34": "null",
+      "BK24": []
+    }
+  }
+}

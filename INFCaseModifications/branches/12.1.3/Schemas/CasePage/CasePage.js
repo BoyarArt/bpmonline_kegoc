@@ -429,8 +429,12 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 							"margin-right": "5px"
 						}
 					},
-					"enabled": false,
-					"visible": false
+					"enabled": {
+						"bindto": "isCloseButtonVisible"
+					},
+					"visible": {
+						"bindto": "isCloseButtonVisible"
+					}
 				},
 				"parentName": "LeftContainer",
 				"propertyName": "items",
@@ -1807,6 +1811,30 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 					this.isUserGroupSupervisor();
 				}, this);
 			},
+			checkCloseButtonEnabled: function() {
+				var groupName = "Process Managers";
+				var esq = Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "SysAdminUnit"
+				});
+				esq.addColumn("Id");
+				esq.addColumn("Contact", "ContactId");
+			
+				var f1 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.EQUAL,
+					"[SysUserInRole:SysUser:Id].[SysAdminUnit:Id:SysRole].Name", groupName);
+
+
+				esq.filters.addItem(f1);
+
+				esq.getEntityCollection(function(result) {
+					result.collection.each(function(item) {
+						if ((item.get("ContactId").value === Terrasoft.SysValue.CURRENT_USER_CONTACT.value) &&
+						this.get("INFReInit") >= 3) {
+							this.set("isCloseButtonVisible", true);
+						}
+					}.bind(this));
+				}, this);
+			},
 			isUserGroupSupervisor: function() {
 				var currentUserId = Terrasoft.core.enums.SysValue.CURRENT_USER_CONTACT.value;
 				var groupId;
@@ -1979,6 +2007,7 @@ CaseServiceUtility, ServiceHelper, CasesEstimateLabel, ServiceDeskConstants, res
 				this.isUserInGroup();
 				this.chechContactPhoneNumberOnInit();
 				this.getDefaultGroup();
+				this.checkCloseButtonEnabled();
 				this.setGroupEnabled();
 				this.setFieldsEnabled();
 				this.set("CurrentGroup", this.get("Group").displayValue);
