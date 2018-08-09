@@ -1348,57 +1348,6 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 				"index": 0
 			},
 			{
-				"operation": "insert",
-				"name": "ServerTypee4b7cdfa-7b9f-41b0-ba54-c593e2a9c879",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 1,
-						"layoutName": "GeneralInfoTabGridLayoutd03a15bd"
-					},
-					"bindTo": "ServerType"
-				},
-				"parentName": "GeneralInfoTabGridLayoutd03a15bd",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "SupportLevel490c9116-1289-4e83-a91a-a556c9dd6029",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "GeneralInfoTabGridLayoutd03a15bd"
-					},
-					"bindTo": "SupportLevel"
-				},
-				"parentName": "GeneralInfoTabGridLayoutd03a15bd",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "ServerTypee1520805-dd8c-4de5-840d-68b88f03864e",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 5,
-						"layoutName": "GeneralInfoTabGridLayoutd03a15bd"
-					},
-					"bindTo": "ServerType"
-				},
-				"parentName": "GeneralInfoTabGridLayoutd03a15bd",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
 				"operation": "merge",
 				"name": "Owner",
 				"values": {
@@ -1848,6 +1797,18 @@ define("ConfItemPage", ["BusinessRuleModule"], function(BusinessRuleModule) {
 					"comparisonType": 3,
 					"type": 1,
 					"attribute": "Status"
+				}
+			},
+			"EquipType": {
+				"5e967c03-f2f4-4ce3-898d-3b80ea3ffa01": {
+					"uId": "5e967c03-f2f4-4ce3-898d-3b80ea3ffa01",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "ConfItemType",
+					"comparisonType": 3,
+					"type": 1,
+					"attribute": "Type"
 				}
 			}
 		}/**SCHEMA_BUSINESS_RULES*/

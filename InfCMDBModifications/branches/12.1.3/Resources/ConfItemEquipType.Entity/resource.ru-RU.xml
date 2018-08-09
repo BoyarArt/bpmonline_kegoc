@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Тип оборудования" />
+			<Item Name="Columns.ConfItemType.Caption" Value="Тип конфигурационной единицы" />
 			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
 		</Items>
 	</Group>

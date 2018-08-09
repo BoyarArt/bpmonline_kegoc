@@ -3,6 +3,16 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="ConfItemPage" />
+			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Adiar até" />
+			<Item Name="LocalizableStrings.MultipleQueueItemsFoundError.Value" Value="Mais de uma fila de elementos ligada ao processo. ID do processo: {0}" />
+			<Item Name="LocalizableStrings.OpenServiceModelModuleCaption.Value" Value="Display dependencies" />
+			<Item Name="LocalizableStrings.PostponeQueueItemButtonCaption.Value" Value="Re-enfileirar" />
+			<Item Name="LocalizableStrings.PostponeQueueItemError.Value" Value="Não é possível recolocar item na fila. Mensagem de erro: {0}" />
+			<Item Name="LocalizableStrings.QueueItemIsEmptyError.Value" Value="A página não está ligada ao elemento fila de desktop de agente. Ação cancelada." />
+			<Item Name="LocalizableStrings.QueueItemPostponeFailedMessage.Value" Value="Nao é possível recolocar item na fila" />
+			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Item recolocado na fila com sucesso" />
+			<Item Name="LocalizableStrings.RelationshipTabCaption.Caption" Value="Connected to" />
+			<Item Name="LocalizableStrings.RelationshipTabCaption.Value" Value="Connected to" />
 		</Items>
 	</Group>
 </Resources>

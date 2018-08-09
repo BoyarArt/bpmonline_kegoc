@@ -2,13 +2,13 @@
   "Descriptor": {
     "UId": "a75c0d0e-aa66-41df-bcd1-d3f858e63d2b",
     "Name": "ConfItemEquipType",
-    "ModifiedOnUtc": "\/Date(1530774627000)\/",
+    "ModifiedOnUtc": "\/Date(1533809300000)\/",
     "Parent": {
       "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
       "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Base lookup",
+    "Caption": "Тип оборудования",
     "DependsOn": []
   }
 }
