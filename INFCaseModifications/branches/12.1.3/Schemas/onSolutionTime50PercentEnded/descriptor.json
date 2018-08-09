@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "e72834de-95d7-4476-826b-da9f85335834",
     "Name": "onSolutionTime50PercentEnded",
-    "ModifiedOnUtc": "\/Date(1533807403000)\/",
+    "ModifiedOnUtc": "\/Date(1533812440000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Уведомление при 50% от планового срока обращения",
     "DependsOn": []

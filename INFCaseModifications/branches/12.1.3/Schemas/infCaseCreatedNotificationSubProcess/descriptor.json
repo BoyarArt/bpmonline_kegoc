@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "6078e911-34d4-4134-af7a-f2091254709e",
     "Name": "infCaseCreatedNotificationSubProcess",
-    "ModifiedOnUtc": "\/Date(1532813090000)\/",
+    "ModifiedOnUtc": "\/Date(1533814392000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Обращение: уведомление (центр уведомлений)",
     "DependsOn": []
