@@ -648,6 +648,30 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
+				"name": "Caseaa4587bd-372f-47ef-845d-297365892c38",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 9,
+						"layoutName": "Header"
+					},
+					"bindTo": "Case",
+					"labelConfig": {
+						"caption": {
+							"bindTo": "Resources.Strings.Caseaa4587bd372f47ef845d297365892c38LabelCaption"
+						}
+					},
+					"enabled": false,
+					"contentType": 5
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 14
+			},
+			{
+				"operation": "insert",
 				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
 				"values": {
 					"layout": {
@@ -2034,6 +2058,25 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 								"type": 0,
 								"value": "6fc17cb3-9e85-47ec-9154-de1052c11789",
 								"dataValueType": 10
+							}
+						}
+					]
+				}
+			},
+			"Case": {
+				"a08727d2-c338-463e-9df7-f3606677c383": {
+					"uId": "a08727d2-c338-463e-9df7-f3606677c383",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 0,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 2,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "Case"
 							}
 						}
 					]

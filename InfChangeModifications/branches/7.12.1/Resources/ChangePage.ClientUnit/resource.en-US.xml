@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="LocalizableStrings.Caseaa4587bd372f47ef845d297365892c38LabelCaption.Value" Value="Создано из обращения" />
 			<Item Name="LocalizableStrings.ChangeQueueItemDateButtonCaption.Value" Value="Postpone till" />
 			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Caption" Value="��������� ������������ 1" />
 			<Item Name="LocalizableStrings.ChangesHistoryTabCaption.Value" Value="History of changes" />
