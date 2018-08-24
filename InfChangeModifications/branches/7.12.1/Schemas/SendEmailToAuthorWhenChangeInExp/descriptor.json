@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d85b6543-55ee-479d-8767-4b1ecdfd172e",
+    "Name": "SendEmailToAuthorWhenChangeInExp",
+    "ModifiedOnUtc": "\/Date(1535099952000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление Автору о переходе в статус \"В эксплуатации\"",
+    "DependsOn": []
+  }
+}

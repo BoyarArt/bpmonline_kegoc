@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "786add85-d7d4-4799-9f50-66332c44af1b",
+    "Name": "Schema5Detail",
+    "ModifiedOnUtc": "\/Date(1535093980000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Обращение (по колонке изменения)\"",
+    "DependsOn": []
+  }
+}

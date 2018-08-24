@@ -16,6 +16,10 @@
 			<Item Name="LocalizableStrings.QueueItemPostponeSucceedMessage.Value" Value="Successfully re-queued" />
 			<Item Name="LocalizableStrings.ReleaseCaption.Caption" Value="Release" />
 			<Item Name="LocalizableStrings.ReleaseCaption.Value" Value="Release" />
+			<Item Name="LocalizableStrings.Tab9cce6275TabLabelGroup46a3b203GroupCaption.Value" Value="Сроки" />
+			<Item Name="LocalizableStrings.Tab9cce6275TabLabelGroup54b20f1bGroupCaption.Value" Value="Трудозатраты" />
+			<Item Name="LocalizableStrings.Tab9cce6275TabLabelGroupa1dafcd4GroupCaption.Value" Value="Информация по изменению" />
+			<Item Name="LocalizableStrings.Tab9cce6275TabLabelTabCaption.Value" Value="Информация" />
 		</Items>
 	</Group>
 </Resources>

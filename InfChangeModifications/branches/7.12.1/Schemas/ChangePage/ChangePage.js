@@ -171,6 +171,30 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					"endDateColumn": "ScheduledClosureDate",
 					"startDateColumn": "ScheduledStartDate"
 				}
+			},
+			"ActivityChangeDetail7ac05fe5": {
+				"schemaName": "ActivityChangeDetail",
+				"entitySchemaName": "Activity",
+				"filter": {
+					"detailColumn": "Change",
+					"masterColumn": "Id"
+				}
+			},
+			"EmailDetailV27873d2d3": {
+				"schemaName": "EmailDetailV2",
+				"entitySchemaName": "Activity",
+				"filter": {
+					"detailColumn": "Change",
+					"masterColumn": "Id"
+				}
+			},
+			"Schema5Detail432ed961": {
+				"schemaName": "Schema5Detail",
+				"entitySchemaName": "Case",
+				"filter": {
+					"detailColumn": "Change",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
@@ -530,6 +554,100 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
+				"name": "STRING3a07728a-bee5-47f3-832f-ed128ff7e50c",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 5,
+						"layoutName": "Header"
+					},
+					"bindTo": "Risks",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "STRING7f589b1c-c3ba-422a-8d4d-87d09b5fb497",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 6,
+						"layoutName": "Header"
+					},
+					"bindTo": "Requirements",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "STRINGbb549328-030f-4768-8d3c-c5d45f3a2bde",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 7,
+						"layoutName": "Header"
+					},
+					"bindTo": "AcceptCriterion",
+					"enabled": true,
+					"contentType": 0
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 11
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUP6fecd767-bd16-48f0-9f28-91d88d0b8897",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 8,
+						"layoutName": "Header"
+					},
+					"bindTo": "Type",
+					"enabled": true,
+					"contentType": 3
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 12
+			},
+			{
+				"operation": "insert",
+				"name": "STRING9ea65925-043c-4655-aa0a-11e1bdff4257",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 8,
+						"layoutName": "Header"
+					},
+					"bindTo": "Cost",
+					"enabled": true
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 13
+			},
+			{
+				"operation": "insert",
 				"name": "PerformanceCode758a8ffe-3b69-4797-b782-315fc1005224",
 				"values": {
 					"layout": {
@@ -584,329 +702,392 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			},
 			{
 				"operation": "insert",
-				"name": "ExecutionTabGroupfe7e8f47",
+				"name": "Tab9cce6275TabLabel",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.ExecutionTabGroupfe7e8f47GroupCaption"
+						"bindTo": "Resources.Strings.Tab9cce6275TabLabelTabCaption"
+					},
+					"items": []
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Tab9cce6275TabLabelGroupa1dafcd4",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.Tab9cce6275TabLabelGroupa1dafcd4GroupCaption"
 					},
 					"itemType": 15,
 					"markerValue": "added-group",
 					"items": []
 				},
-				"parentName": "ExecutionTab",
+				"parentName": "Tab9cce6275TabLabel",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "ExecutionTabGridLayout7988c9f9",
+				"name": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"values": {
 					"itemType": 0,
 					"items": []
 				},
-				"parentName": "ExecutionTabGroupfe7e8f47",
+				"parentName": "Tab9cce6275TabLabelGroupa1dafcd4",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "ScheduledStartDate74e31858-f7f0-4686-95e7-a0c53ce46ba9",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 0,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ScheduledStartDate"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ScheduledClosureDate695d204c-2249-4690-8b09-4b634186fec8",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 0,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ScheduledClosureDate"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "ScheduledImplantationDated5f11815-f974-47db-9af0-fe161ab7b812",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 1,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ScheduledImplantationDate"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "ScheduledCustomerDate4f8fd35f-6ec2-4000-91bd-55291c24e386",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 1,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ScheduledCustomerDate"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "PlannedDateCoordinationOfChangea23b4b50-5282-4efa-9544-9f6596e1b04f",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 2,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "PlannedDateCoordinationOfChange"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "ClosureDateafd07c76-fed2-40e6-b73e-ec38f3e9c414",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 12,
-						"row": 2,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ClosureDate"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "ExpirationDateAnalysisIntroduction59ac467c-bc18-4f50-a4c2-a9ea6a634cfd",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "ExecutionTabGridLayout7988c9f9"
-					},
-					"bindTo": "ExpirationDateAnalysisIntroduction"
-				},
-				"parentName": "ExecutionTabGridLayout7988c9f9",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "ExecutionTabGroup4e8dd99a",
-				"values": {
-					"caption": {
-						"bindTo": "Resources.Strings.ExecutionTabGroup4e8dd99aGroupCaption"
-					},
-					"itemType": 15,
-					"markerValue": "added-group",
-					"items": []
-				},
-				"parentName": "ExecutionTab",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "ExecutionTabGridLayout385ceff2",
-				"values": {
-					"itemType": 0,
-					"items": []
-				},
-				"parentName": "ExecutionTabGroup4e8dd99a",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ChangeRealizationPurposee4df274a-b190-4ded-9e9b-371cfea9840c",
+				"name": "ChangeRealizationPurposef101c551-7cfc-45fb-b20d-8967dea039e6",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 0,
-						"layoutName": "ExecutionTabGridLayout385ceff2"
+						"layoutName": "Tab9cce6275TabLabelGridLayoutdb8d48e7"
 					},
 					"bindTo": "ChangeRealizationPurpose",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "ExecutionTabGridLayout385ceff2",
+				"parentName": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "PlannedEffectOfChangeRealization77dfd7a4-dc92-459e-a290-7344192b4365",
+				"name": "PlannedEffectOfChangeRealization5014acac-d32b-4d9a-803a-8bc010e839f7",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 1,
-						"layoutName": "ExecutionTabGridLayout385ceff2"
+						"layoutName": "Tab9cce6275TabLabelGridLayoutdb8d48e7"
 					},
 					"bindTo": "PlannedEffectOfChangeRealization",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "ExecutionTabGridLayout385ceff2",
+				"parentName": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"propertyName": "items",
 				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "PlanOfReturnToPreviousState19f2f869-0ace-4db9-907f-dec808571eef",
+				"name": "PlanOfReturnToPreviousState1fddd330-0bb4-4e91-b019-d39d38ca7e88",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 2,
-						"layoutName": "ExecutionTabGridLayout385ceff2"
+						"layoutName": "Tab9cce6275TabLabelGridLayoutdb8d48e7"
 					},
 					"bindTo": "PlanOfReturnToPreviousState",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "ExecutionTabGridLayout385ceff2",
+				"parentName": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"propertyName": "items",
 				"index": 2
 			},
 			{
 				"operation": "insert",
-				"name": "CommentsOnExpansion4a89f53a-1260-40da-aefe-367549606140",
+				"name": "CommentsOnExpansion554e3462-081f-4ce5-ae25-8550e0b71b01",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 3,
-						"layoutName": "ExecutionTabGridLayout385ceff2"
+						"layoutName": "Tab9cce6275TabLabelGridLayoutdb8d48e7"
 					},
 					"bindTo": "CommentsOnExpansion",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "ExecutionTabGridLayout385ceff2",
+				"parentName": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"propertyName": "items",
 				"index": 3
 			},
 			{
 				"operation": "insert",
-				"name": "SpecialConditionsOfIntroduction12f63d8e-fc43-414e-8f58-d7db9022b143",
+				"name": "SpecialConditionsOfIntroduction1214da5b-fc1d-4cc8-88ef-39664a881f70",
 				"values": {
 					"layout": {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 4,
-						"layoutName": "ExecutionTabGridLayout385ceff2"
+						"layoutName": "Tab9cce6275TabLabelGridLayoutdb8d48e7"
 					},
 					"bindTo": "SpecialConditionsOfIntroduction",
 					"enabled": true,
 					"contentType": 0
 				},
-				"parentName": "ExecutionTabGridLayout385ceff2",
+				"parentName": "Tab9cce6275TabLabelGridLayoutdb8d48e7",
 				"propertyName": "items",
 				"index": 4
 			},
 			{
 				"operation": "insert",
-				"name": "ExecutionTabGroupd4cb3017",
+				"name": "Tab9cce6275TabLabelGroup46a3b203",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.ExecutionTabGroupd4cb3017GroupCaption"
+						"bindTo": "Resources.Strings.Tab9cce6275TabLabelGroup46a3b203GroupCaption"
 					},
 					"itemType": 15,
 					"markerValue": "added-group",
 					"items": []
 				},
-				"parentName": "ExecutionTab",
+				"parentName": "Tab9cce6275TabLabel",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "ExecutionTabGridLayoutc2377b46",
+				"name": "Tab9cce6275TabLabelGridLayout21f47cc5",
 				"values": {
 					"itemType": 0,
 					"items": []
 				},
-				"parentName": "ExecutionTabGroupd4cb3017",
+				"parentName": "Tab9cce6275TabLabelGroup46a3b203",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "ActualLabor3ac36a25-23b6-454b-81e7-91016901f751",
+				"name": "StartOfJobadfb2715-b7a7-49d8-a2cc-550324303156",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 0,
-						"layoutName": "ExecutionTabGridLayoutc2377b46"
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
 					},
-					"bindTo": "ActualLabor"
+					"bindTo": "StartOfJob"
 				},
-				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "PlannedLabor6370182b-74c7-4f27-b373-2a75ae0830b0",
+				"name": "ScheduledStartDate67134710-7acd-4a84-8ab5-5580c641e590",
 				"values": {
 					"layout": {
 						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 12,
 						"row": 0,
-						"layoutName": "ExecutionTabGridLayoutc2377b46"
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ScheduledStartDate"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ScheduledImplantationDate83eff6fd-f046-4246-b57b-2d282bb85084",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 1,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ScheduledImplantationDate"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ScheduledClosureDateb4e6f393-3d5c-4535-bd66-6bc77af2ba89",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 1,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ScheduledClosureDate"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PlannedDateCoordinationOfChangef4ee94f5-e2f3-4f95-941f-5bbfe1dbea33",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 2,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "PlannedDateCoordinationOfChange"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "ScheduledCustomerDate8eaf0981-c99b-49e7-b806-4e807fb53dd4",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 2,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ScheduledCustomerDate"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "ExpirationDateAnalysisIntroductionf886aba7-016c-4a30-9dfc-f2f71e8ab58b",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ExpirationDateAnalysisIntroduction"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "ClosureDate10fda513-12a8-48aa-b078-c90920962f80",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
+					},
+					"bindTo": "ClosureDate"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Tab9cce6275TabLabelGroup54b20f1b",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.Tab9cce6275TabLabelGroup54b20f1bGroupCaption"
+					},
+					"itemType": 15,
+					"markerValue": "added-group",
+					"items": []
+				},
+				"parentName": "Tab9cce6275TabLabel",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Tab9cce6275TabLabelGridLayoutc29cd69a",
+				"values": {
+					"itemType": 0,
+					"items": []
+				},
+				"parentName": "Tab9cce6275TabLabelGroup54b20f1b",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ActualLaborac7f266b-71dd-4cb9-8a38-d28b50d542a7",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Tab9cce6275TabLabelGridLayoutc29cd69a"
+					},
+					"bindTo": "ActualLabor"
+				},
+				"parentName": "Tab9cce6275TabLabelGridLayoutc29cd69a",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "PlannedLaborf2910cee-1404-4d1e-8b0e-4469e4477a1a",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 0,
+						"layoutName": "Tab9cce6275TabLabelGridLayoutc29cd69a"
 					},
 					"bindTo": "PlannedLabor"
 				},
-				"parentName": "ExecutionTabGridLayoutc2377b46",
+				"parentName": "Tab9cce6275TabLabelGridLayoutc29cd69a",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ActivityChangeDetail7ac05fe5",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "Tab9cce6275TabLabel",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "EmailDetailV27873d2d3",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "Tab9cce6275TabLabel",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Schema5Detail432ed961",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "Tab9cce6275TabLabel",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "merge",
@@ -961,7 +1142,7 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				},
 				"parentName": "Tabs",
 				"propertyName": "tabs",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1017,6 +1198,14 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 			{
 				"operation": "remove",
 				"name": "ParentChange"
+			},
+			{
+				"operation": "remove",
+				"name": "Activity"
+			},
+			{
+				"operation": "remove",
+				"name": "EmailDetailV2"
 			},
 			{
 				"operation": "move",
@@ -1315,6 +1504,9 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 						primaryImageValue: "",
 						value: "044c2fe7-c46b-440c-ae2c-5f2faf9c6521"
 					});
+					if (this.get("Type").displayValue !== "Срочное" && this.get("Type")) {
+						this.set("StartOfJob", new Date());
+					}
 					if (document.prevStatus !== undefined) {
 						var NumberReturnsFromAcceptance = this.get("NumberReturnsFromAcceptance");
 						this.set("NumberReturnsFromAcceptance", ++NumberReturnsFromAcceptance);
@@ -1390,6 +1582,9 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					primaryImageValue: "",
 					value: "6eef2f0f-545b-4644-bc1d-27283e61c5ea"
 				});
+				if (this.get("Type").displayValue !== "Срочное" && this.get("Type")) {
+					this.set("ClosureDate", new Date());
+				}
 				this.set("Phase", {
 					displayValue: "PIR",
 					primaryImageValue: "",

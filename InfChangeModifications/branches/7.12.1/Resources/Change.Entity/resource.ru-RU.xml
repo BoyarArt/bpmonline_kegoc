@@ -2,12 +2,14 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.AcceptCriterion.Caption" Value="Критерий приемки" />
 			<Item Name="Columns.Account.Caption" Value="Контрагент" />
 			<Item Name="Columns.ChangeRealizationPurpose.Caption" Value="Цель реализации изменения" />
 			<Item Name="Columns.ClosureDateFlag.Caption" Value="Флаг ПС завершения реализации" />
 			<Item Name="Columns.ClouseComment.Caption" Value="Комментарий к выполнению" />
 			<Item Name="Columns.CommentsOnExpansion.Caption" Value="Комментарии по развертыванию" />
 			<Item Name="Columns.CoordinationOfChangeFlag.Caption" Value="Флаг ПС согласования изменения" />
+			<Item Name="Columns.Cost.Caption" Value="Стоимость" />
 			<Item Name="Columns.Customer.Caption" Value="Заказчик" />
 			<Item Name="Columns.CustomerDateFlag.Caption" Value="Флаг ПС приемки заказчиком" />
 			<Item Name="Columns.ExpirationDateAnalysisIntroduction.Caption" Value="Дата окончания анализа внедрения" />
@@ -19,6 +21,8 @@
 			<Item Name="Columns.PlannedDateCoordinationOfChange.Caption" Value="Плановый срок согласования изменения" />
 			<Item Name="Columns.PlannedEffectOfChangeRealization.Caption" Value="Планируемый эффект от реализации изменения" />
 			<Item Name="Columns.PlanOfReturnToPreviousState.Caption" Value="План возврата к предыдущему состоянию" />
+			<Item Name="Columns.Requirements.Caption" Value="Требования" />
+			<Item Name="Columns.Risks.Caption" Value="Риски" />
 			<Item Name="Columns.ScheduledClosureDate.Caption" Value="Плановый срок завершения реализации" />
 			<Item Name="Columns.ScheduledCustomerDate.Caption" Value="Плановый срок приемки заказчиком" />
 			<Item Name="Columns.ScheduledImplantationDate.Caption" Value="Плановый срок внедрения" />
@@ -26,6 +30,8 @@
 			<Item Name="Columns.SpecialConditionsOfIntroduction.Caption" Value="Особые условия внедрения" />
 			<Item Name="Columns.StageNumber.Caption" Value="Этап" />
 			<Item Name="Columns.StartDateFlag.Caption" Value="Флаг ПС начала реализации" />
+			<Item Name="Columns.StartOfJob.Caption" Value="Факт начала работ" />
+			<Item Name="Columns.Type.Caption" Value="Тип" />
 		</Items>
 	</Group>
 </Resources>
