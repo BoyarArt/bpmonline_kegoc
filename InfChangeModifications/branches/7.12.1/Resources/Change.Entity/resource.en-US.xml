@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.AcceptCriterion.Caption" Value="Критерий приемки" />
 			<Item Name="Columns.Account.Caption" Value="Контрагент" />
+			<Item Name="Columns.Case.Caption" Value="Обращение" />
 			<Item Name="Columns.ChangeRealizationPurpose.Caption" Value="Цель реализации изменения" />
 			<Item Name="Columns.ClosureDateFlag.Caption" Value="Флаг ПС завершения реализации" />
 			<Item Name="Columns.ClouseComment.Caption" Value="Комментарий к выполнению" />

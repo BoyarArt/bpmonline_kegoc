@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "9c521f4a-f7ab-446c-bba4-d1b88f0291ee",
     "Name": "INFChangeType",
-    "ModifiedOnUtc": "\/Date(1535093499000)\/",
+    "ModifiedOnUtc": "\/Date(1535101546000)\/",
     "Parent": {
       "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
       "Name": "BaseLookup"
