@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "95b24ad9-0ef1-45d4-aa4e-33ef3af63c7c",
+    "Name": "CaseReport",
+    "ModifiedOnUtc": "\/Date(1534766374000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "CaseReport",
+    "DependsOn": []
+  }
+}

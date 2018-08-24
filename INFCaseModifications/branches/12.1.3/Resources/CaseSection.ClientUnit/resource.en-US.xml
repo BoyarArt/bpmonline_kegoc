@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Схема раздела: &quot;Обращения&quot;" />
+			<Item Name="LocalizableStrings.GenerateReport.Value" Value="Generate report" />
 		</Items>
 	</Group>
 </Resources>

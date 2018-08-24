@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "246bd31e-3184-409b-b5d0-3264c37963a3",
+    "Name": "GetParamReport",
+    "ModifiedOnUtc": "\/Date(1534762339000)\/",
+    "Parent": {
+      "UId": "21620f25-166f-42f1-8b4d-224a959040a3",
+      "Name": "BasePageProcessTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Страница генерации отчета",
+    "DependsOn": []
+  }
+}
