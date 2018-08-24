@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "98556d4f-847d-4661-b8c0-1a76df9ceb40",
+    "Name": "TakeOffChangePortalRightsProcess",
+    "ModifiedOnUtc": "\/Date(1533837846000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Забрать права на изменение у портального пользователя",
+    "DependsOn": []
+  }
+}

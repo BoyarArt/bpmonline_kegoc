@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "49240fe2-022a-4b74-9403-5dafe8b20df6",
+    "Name": "AddPortalChangeRightsProcess",
+    "ModifiedOnUtc": "\/Date(1533837474000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Дать права на чтение изменения (портал)",
+    "DependsOn": []
+  }
+}

@@ -168,6 +168,13 @@ define("ChangeSection", [], function() {
 		},
 		diff: /**SCHEMA_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "CombinedModeAddRecordButton",
+				"values": {
+					"visible": false
+				}
+			},
+			{
 				"operation": "insert",
 				"parentName": "CombinedModeActionButtonsCardLeftContainer",
 				"propertyName": "items",

@@ -26,9 +26,7 @@ define("ChangePortalPage", ["BaseFiltersGenerateModule", "ServiceDeskConstants",
 							"colSpan": 16
 						},
 						"bindTo": "Name",
-						"caption": {
-							"bindTo": "Resources.Strings.NameCaption"
-						},
+						"caption": "Тема",
 						"contentType": this.Terrasoft.ContentType.SHORT_TEXT,
 						"labelConfig": {
 							"visible": true
@@ -48,9 +46,7 @@ define("ChangePortalPage", ["BaseFiltersGenerateModule", "ServiceDeskConstants",
 							"rowSpan": 1
 						},
 						"bindTo": "Number",
-						"caption": {
-							"bindTo": "Resources.Strings.NumberCaption"
-						},
+						"caption": "Номер",
 						"contentType": this.Terrasoft.ContentType.SHORT_TEXT,
 						"labelConfig": {
 							"visible": true
@@ -72,9 +68,7 @@ define("ChangePortalPage", ["BaseFiltersGenerateModule", "ServiceDeskConstants",
 							"rowSpan": 1
 						},
 						"bindTo": "Description",
-						"caption": {
-							"bindTo": "Resources.Strings.DescriptionCaption"
-						},
+						"caption": "Описание",
 						"contentType": this.Terrasoft.ContentType.LONG_TEXT,
 						"labelConfig": {
 							"visible": true
@@ -110,10 +104,22 @@ define("ChangePortalPage", ["BaseFiltersGenerateModule", "ServiceDeskConstants",
 				{
 					"operation": "remove",
 					"name": "ESNTab"
+				},
+				{
+					"operation": "merge",
+					"name": "DcmActionsDashboardContainer",
+					"values": {
+						"visible": false
+					}
 				}
 			]/**SCHEMA_DIFF*/,
 			attributes: {},
-			methods: {},
+			methods: {
+				onEntityInitialized: function() {
+					this.callParent(arguments);
+					document.thisChangeScope = this;
+				}
+			},
 			rules: {},
 			userCode: {}
 		};
