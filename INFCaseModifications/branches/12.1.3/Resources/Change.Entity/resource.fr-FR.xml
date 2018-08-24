@@ -2,7 +2,7 @@
 <Resources Culture="fr-FR">
 	<Group Type="String">
 		<Items>
-			<Item Name="EventsProcessSchema.Caption" Value="Processus métier" />
+			<Item Name="Caption" Value="Change" />
 		</Items>
 	</Group>
 </Resources>
