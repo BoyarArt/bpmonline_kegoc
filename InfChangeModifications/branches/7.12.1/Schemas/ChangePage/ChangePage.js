@@ -8,6 +8,11 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
 				"value": false
 			},
+			"PlannedDateCoordinationOfChangeVisible": {
+				"dataValueType": Terrasoft.DataValueType.BOOLEAN,
+				"type": Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"value": true
+			},
 			"Customer": {
 				"lookupListConfig": {
 					"columns": ["Account"],
@@ -963,7 +968,10 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 						"row": 2,
 						"layoutName": "Tab9cce6275TabLabelGridLayout21f47cc5"
 					},
-					"bindTo": "PlannedDateCoordinationOfChange"
+					"bindTo": "PlannedDateCoordinationOfChange",
+					"enabled": {
+						"bindTo": "PlannedDateCoordinationOfChangeVisible"
+					}
 				},
 				"parentName": "Tab9cce6275TabLabelGridLayout21f47cc5",
 				"propertyName": "items",
@@ -1259,6 +1267,9 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					}
 				});
 			},
+			needUpdateClosureDate: function() {
+				return false;
+			},
 			onCustomerChanged: function() {
 				if (this.get("Customer") !== undefined && this.get("Customer") !== null) {
 					this.set("Account", this.get("Customer").Account);
@@ -1467,6 +1478,9 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					value: "53ac4643-e6ef-4bb6-b6f4-01c89065cc2c"
 				});
 				this.save();
+				if (this.get("PlannedDateCoordinationOfChange")) {
+					this.set("PlannedDateCoordinationOfChangeVisible", false);
+				}
 			},
 			//Запланировано
 			onScheduledButtonClick: function() {
@@ -1500,11 +1514,16 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				var StatusFilter = esq.createColumnFilterWithParameter(
 					Terrasoft.ComparisonType.NOT_EQUAL,
 					"Status.Name", "Положительная");
+					
+				var StatusFilter2 = esq.createColumnFilterWithParameter(
+					Terrasoft.ComparisonType.NOT_EQUAL,
+					"Status.Name", "Отменена");
 
 
 				esq.filters.addItem(greatestStageNumber);
 				esq.filters.addItem(idFilter);
 				esq.filters.addItem(StatusFilter);
+				esq.filters.addItem(StatusFilter2);
 				
 				esq.getEntityCollection(function(result) {
 						if (result.collection.collection.length === 0) {
@@ -1606,9 +1625,6 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					primaryImageValue: "",
 					value: "6eef2f0f-545b-4644-bc1d-27283e61c5ea"
 				});
-				if (this.get("Type").displayValue !== "Срочное" && this.get("Type")) {
-					this.set("ClosureDate", new Date());
-				}
 				this.set("Phase", {
 					displayValue: "PIR",
 					primaryImageValue: "",
@@ -1666,6 +1682,10 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 				if (status.displayValue === "Закрыто") {
 					setTimeout(this.disabledAllFieldsOfChangePage, 1000);
 				}
+				if (status.displayValue === "Утверждение") {
+					this.set("PlannedDateCoordinationOfChangeVisible", false);
+				}
+				
 			},
 			onRender: function() {
 				this.callParent(arguments);
@@ -1890,6 +1910,35 @@ function(ProcessModuleUtilities, ServiceDeskConstants) {
 					return;
 				} else if (status.displayValue === "Закрыто") {
 					this.disabledAllFieldsOfChangePage();
+				}
+			},
+			save: function() {
+				if (this.get("ScheduledStartDate") < this.get("PlannedDateCoordinationOfChange") &&
+				this.get("ScheduledStartDate")) {
+					this.showInformationDialog(
+								"Плановый срок начала реализации не может быть меньше чем плановый срок согласования изменения"
+							);
+				} else if (this.get("ScheduledClosureDate") < this.get("ScheduledStartDate") &&
+				this.get("ScheduledClosureDate")) {
+					this.showInformationDialog(
+								"Плановый срок завершения реализации не может быть меньше чем плановый срок начала реализации"
+							);
+				} else if (this.get("ScheduledImplantationDate") < this.get("ScheduledClosureDate") &&
+				this.get("ScheduledImplantationDate")) {
+					this.showInformationDialog(
+								"Плановый срок внедрения не может быть меньше чем плановый срок завершения реализации"
+							);
+				} else if (this.get("ScheduledCustomerDate") < this.get("ScheduledImplantationDate") &&
+				this.get("ScheduledCustomerDate")) {
+					this.showInformationDialog(
+								"Плановый срок приемки заказчиком не может быть меньше чем плановый срок внедрения"
+							);
+				} else if (this.get("StartOfJob") > this.get("ClosureDate") && this.get("ClosureDate")) {
+					this.showInformationDialog(
+								"Фактическое начало работ не может быть меньше чем фактическое завершение"
+							);
+				} else {
+					this.callParent(arguments);
 				}
 			}
 		},

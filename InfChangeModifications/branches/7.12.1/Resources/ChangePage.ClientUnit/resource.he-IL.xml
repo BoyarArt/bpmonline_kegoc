@@ -3,7 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page schema - Changes section" />
-			<Item Name="LocalizableStrings.ReleaseCaption.Caption" Value="שחרור גרסה" />
 		</Items>
 	</Group>
 </Resources>

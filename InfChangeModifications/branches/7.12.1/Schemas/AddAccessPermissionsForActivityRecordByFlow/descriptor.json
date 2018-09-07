@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "65b669ad-fe6b-4faf-a296-40b47ebfef40",
+    "Name": "AddAccessPermissionsForActivityRecordByFlow",
+    "ModifiedOnUtc": "\/Date(1536311946000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Выдать права на редактирование активности после выполнения предыдущей",
+    "DependsOn": []
+  }
+}

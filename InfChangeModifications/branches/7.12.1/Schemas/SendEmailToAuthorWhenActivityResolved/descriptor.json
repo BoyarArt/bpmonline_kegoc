@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "42a5a778-94d9-4929-ac92-60fd5e03c41f",
+    "Name": "SendEmailToAuthorWhenActivityResolved",
+    "ModifiedOnUtc": "\/Date(1536233870000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление автору когда активность завершена",
+    "DependsOn": []
+  }
+}

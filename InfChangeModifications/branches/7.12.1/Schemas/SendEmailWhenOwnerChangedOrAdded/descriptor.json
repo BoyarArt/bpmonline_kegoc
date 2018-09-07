@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "94079225-2544-48c6-a0bd-281b8122c158",
+    "Name": "SendEmailWhenOwnerChangedOrAdded",
+    "ModifiedOnUtc": "\/Date(1536233630000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Отправить уведомление о назначении активности Исполнителю",
+    "DependsOn": []
+  }
+}

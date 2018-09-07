@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "96606ab2-2269-43cc-b5d3-061242d399d5",
+    "Name": "AddPermissionsForActivitySubProcess",
+    "ModifiedOnUtc": "\/Date(1536311865000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Выдать права на редактирование активности",
+    "DependsOn": []
+  }
+}

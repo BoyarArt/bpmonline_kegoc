@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "b122adf1-a386-40ca-a582-f06b4b5429a8",
     "Name": "InfCancelChangeVisaProcess",
-    "ModifiedOnUtc": "\/Date(1529782504000)\/",
+    "ModifiedOnUtc": "\/Date(1535532180000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Отменить визу изменения",
     "DependsOn": []
