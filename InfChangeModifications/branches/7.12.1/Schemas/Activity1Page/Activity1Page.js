@@ -15,6 +15,15 @@ define("Activity1Page", [], function() {
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"click": {
+						"bindTo": "saveByButton"
+					}
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "Title7fb19ab4-c55f-444e-a49a-407a682dbbd9",
 				"values": {
@@ -103,6 +112,25 @@ define("Activity1Page", [], function() {
 			},
 			{
 				"operation": "insert",
+				"name": "AllowedResult42f2afec-9ec7-4fd2-90db-840f46952c8f",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Header"
+					},
+					"bindTo": "AllowedResult",
+					"visible": false,
+					"enabled": false
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
 				"name": "Tab65fcf59cTabLabel",
 				"values": {
 					"caption": {
@@ -150,16 +178,18 @@ define("Activity1Page", [], function() {
 			onEntityInitialized: function() {
 				this.callParent(arguments);
 				document.thisActivityPage = this;
-				
-				this.set("Title", "");
 				this.set("Type", {
 					Name: "Задача",
 					Id: "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
 					value: "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
 					displayValue: "Задача"
 				});
+			},
+			saveByButton: function() {
+				this.save();
 			}
 		},
+		attributes: {},
 		rules: {},
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/
 	};

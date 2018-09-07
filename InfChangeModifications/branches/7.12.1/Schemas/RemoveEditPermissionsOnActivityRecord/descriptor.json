@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "7329f87a-384a-41d0-9ed5-25b6f37c07bc",
+    "Name": "RemoveEditPermissionsOnActivityRecord",
+    "ModifiedOnUtc": "\/Date(1536322450000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Забрать права на изменение завершенной активности",
+    "DependsOn": []
+  }
+}

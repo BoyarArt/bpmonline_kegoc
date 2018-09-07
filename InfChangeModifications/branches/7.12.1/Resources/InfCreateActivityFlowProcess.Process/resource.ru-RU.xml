@@ -114,8 +114,8 @@
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Project.Caption" Value="Проект" />
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Property.Caption" Value="Объект недвижимости" />
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Recommendation.Caption" Value="Рекомендация" />
-			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Recommendation.DisplayValue" Value="Заполните данные" />
-			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Recommendation.Value" Value="Заполните данные" />
+			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Recommendation.DisplayValue" Value="Укажите название" />
+			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Recommendation.Value" Value="Укажите название" />
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.RecordColumnValues.Caption" Value="Значения полей по умолчанию" />
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.RecordId.Caption" Value="Идентификатор записи" />
 			<Item Name="BaseElements.OpenEditPageUserTask1.Parameters.Release.Caption" Value="Релиз" />

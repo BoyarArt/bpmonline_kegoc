@@ -1040,7 +1040,8 @@
           "GT4": "b0d3ad9f-7a27-46a3-9483-ed70c26872ae",
           "GT1": {
             "GS1": 1,
-            "GS2": "false"
+            "GS2": "false",
+            "GS5": "ebc389a1-1684-42f4-bd43-fb5be5c9259f"
           }
         },
         {
@@ -1054,7 +1055,8 @@
           "GT5": "56058d2d-4e1c-4e6b-8787-bcbb5b9efb7e",
           "GT4": "b0d3ad9f-7a27-46a3-9483-ed70c26872ae",
           "GT1": {
-            "GS2": ""
+            "GS1": 1,
+            "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"AllowedResult\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\",\\\"dataValueType\\\":1,\\\"leftExpressionCaption\\\":\\\"Возможные результаты\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":1,\\\"value\\\":\\\"SaveButtonPressed\\\"}}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Activity\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"AllowedResult\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":1,\\\"value\\\":\\\"SaveButtonPressed\\\"}}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Activity\\\"}\"}"
           }
         },
         {
@@ -2498,7 +2500,6 @@
           "GT4": "0ebbb23c-f6db-45eb-ad13-a1445b7ef081",
           "GT1": {
             "GS1": 1,
-            "GS2": "[{Id:\"cb570513-b7a5-4588-9b32-0fceb590cd33\",Name:\"Сотрудник\",CanRead:true,CanEdit:true,CanDelete:true,Source:\"3\",Grantee:\"Employee\",Value:\"[#SysVariable.CurrentUserContact#]\",OperationRightLevel:\"2\"}]",
             "GS5": "ebc389a1-1684-42f4-bd43-fb5be5c9259f"
           }
         }
@@ -3747,7 +3748,9 @@
               "IL2": "f82a638e-7c67-43f1-9c2e-7c2bcdd3135b",
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
-                "GS2": ""
+                "GS1": 1,
+                "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"AllowedResult\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\",\\\"dataValueType\\\":1,\\\"leftExpressionCaption\\\":\\\"Возможные результаты\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":1,\\\"value\\\":\\\"SaveButtonPressed\\\"}}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Activity\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"1f14c1dd-f34a-487b-a6da-fc9debe6111a\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"AllowedResult\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":1,\\\"value\\\":\\\"SaveButtonPressed\\\"}}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"Activity\\\"}\"}",
+                "GS5": "ebc389a1-1684-42f4-bd43-fb5be5c9259f"
               }
             },
             {
